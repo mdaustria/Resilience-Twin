@@ -1,4 +1,35 @@
-# Purpose: Declare approved Python workspace dependencies and tooling.
-# Task: docs/plan.md 1.1, 3.1.
-# Uses: docs/architecture.md, docs/plan.md.
-# TODO(agent): implement
+[project]
+name = "resilience-twin"
+version = "0.1.0"
+description = "Local bootstrap for the Resilience Twin proof of concept"
+requires-python = "==3.13.16"
+dependencies = [
+  "fastapi==0.143.0",
+  "pydantic==2.14.1",
+  "uvicorn==0.53.0",
+]
+
+[dependency-groups]
+dev = [
+  "pytest==9.1.1",
+  "ruff==0.17.0",
+  "mypy==2.4.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py313"
+extend-exclude = ["services/osm-import"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+explicit_package_bases = true
+exclude = ["services/osm-import"]

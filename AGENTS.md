@@ -5,15 +5,16 @@ Target: production public self-service application; current stage: documentation
 
 ## Commands
 
-Run from the repository root. Application commands below are planned interfaces, not currently available: Task 1.1 creates install/run/test/lint commands; Task 1.3 adds browser tests; Task 1.4 adds the combined check. Do not report an unavailable command as passing.
+Run from the repository root with the approved versions in `release/dependencies.md`. Task 1.1 provides the install/run/test/lint commands and `pnpm check:bootstrap`. Task 1.3 adds browser tests; Task 1.4 adds the combined check. Do not report an unavailable command as passing.
 
 - Install: `uv sync --frozen`, then `pnpm install --frozen-lockfile`.
 - Run: `pnpm dev` (local web and API; synthetic fixtures until provider/data gates pass).
 - Test: `uv run pytest` and `pnpm test` (non-watch mode).
 - Browser test: `pnpm exec playwright test`.
 - Lint: `uv run ruff check .`, `uv run mypy packages services`, and `pnpm lint`.
+- Bootstrap check: `pnpm check:bootstrap` (generated-client drift, Python/web tests, lint, types, and web build).
 - Combined check: `pnpm check` (lint, type checks, tests, contract drift, and applicable integration/browser checks; missing prerequisites must fail visibly).
-- Current documentation-only check (PowerShell): `@('AGENTS.md','docs/plan.md','docs/progress.md','docs/architecture-essentials.md','docs/architecture.md','docs/PRD.md') | ForEach-Object { if (!(Test-Path -LiteralPath $_ -PathType Leaf)) { throw "Missing: $_" }; if (!(Get-Content -LiteralPath $_ -Raw).Trim()) { throw "Empty: $_" } }`.
+- Documentation check (PowerShell): `@('AGENTS.md','docs/plan.md','docs/progress.md','docs/architecture-essentials.md','docs/architecture.md','docs/PRD.md') | ForEach-Object { if (!(Test-Path -LiteralPath $_ -PathType Leaf)) { throw "Missing: $_" }; if (!(Get-Content -LiteralPath $_ -Raw).Trim()) { throw "Empty: $_" } }`.
 
 Install prerequisites and exact approved versions are recorded by Task 1.1 in `release/dependencies.md`. Do not substitute an arbitrary installed runtime or silently install tools.
 

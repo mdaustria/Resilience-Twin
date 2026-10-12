@@ -15,7 +15,7 @@ Authority: [PRD.md](PRD.md) governs scope and acceptance; [architecture.md](arch
 
 ## User-requested structural preparation
 
-- [ ] 0.1 Reserve the complete planned structure without implementation
+- [x] 0.1 Reserve the complete planned structure without implementation
   - Goal: Create every explicitly named file and directory in phases 1–6, plus the architecture folder map, with purpose/task/uses/TODO headers and empty module exports only. Structure is ready for review; the requested working build/test startup remains blocked on Task 1.1.
   - Files: All file and directory entries in phases 1–6; architecture §4 directory placeholders; `docs/scaffold-tree.md`, `docs/architecture.md`, `docs/architecture-essentials.md`, `docs/plan.md`, `docs/progress.md`. Preserve existing document content. This explicit user request overrides Task 1.1's instruction against broad scaffolding for this preparation only.
   - Depends on: none for structure; approved runtimes/dependencies and Task 1.1 configuration for build/test startup.
@@ -27,9 +27,9 @@ Authority: [PRD.md](PRD.md) governs scope and acceptance; [architecture.md](arch
 
 Day-one integration target: complete 1.1–1.3 as the first vertical slice, subject to dependency approval. One synthetic case travels from browser to generated client to API to pure engine and back with computed results. Keep it local, small, and visibly provisional. Full geography, AI extraction, cloud infrastructure, and public onboarding come after this path works.
 
-- [ ] 1.1 Bootstrap the smallest runnable workspace
+- [x] 1.1 Bootstrap the smallest runnable workspace
   - Goal: Propose exact compatible runtimes and minimal dependencies, obtain approval, then create the Python/web workspaces and local launch scripts. Select the client generator through one tiny schema fixture. Do not scaffold every future package.
-  - Files: `release/dependencies.md`, `pyproject.toml`, `uv.lock`, `package.json`, `pnpm-workspace.yaml`, `pnpm-lock.yaml`, `.gitignore`, `apps/web/package.json`, `apps/web/index.html`, `apps/web/src/main.tsx`, `apps/web/tsconfig.json`, `apps/web/vite.config.ts`, `apps/web/eslint.config.js`, `services/api/`, `scripts/dev.mjs`, `scripts/check_bootstrap.mjs`, `scripts/generate_client.py`, `tests/contracts/test_bootstrap.py`, `AGENTS.md`.
+  - Files: `release/dependencies.md`, `pyproject.toml`, `uv.lock`, `package.json`, `pnpm-workspace.yaml`, `pnpm-lock.yaml`, `.gitignore`, `apps/web/package.json`, `apps/web/index.html`, `apps/web/src/main.tsx`, `apps/web/src/generated/bootstrap.ts`, `apps/web/tsconfig.json`, `apps/web/vite.config.ts`, `apps/web/eslint.config.js`, `services/api/`, `scripts/dev.mjs`, `scripts/check_bootstrap.mjs`, `scripts/generate_client.py`, `tests/contracts/test_bootstrap.py`, `AGENTS.md`. The generated client file is required to type-check the Python-derived response; ignored `.runtime/` holds only local approved tools.
   - Depends on: none; dependency approval is required before installing or adding packages.
   - **Done when:** `pnpm check:bootstrap` passes and frozen installs resolve, the web/API launch locally, a generated tiny client type-checks, and the guide's install/run/test/lint commands match actual scripts.
 

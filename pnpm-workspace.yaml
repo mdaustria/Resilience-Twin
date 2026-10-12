@@ -1,4 +1,2 @@
-# Purpose: Declare JavaScript workspace membership.
-# Task: docs/plan.md 1.1.
-# Uses: docs/architecture.md, docs/plan.md.
-# TODO(agent): implement
+packages:
+  - apps/web

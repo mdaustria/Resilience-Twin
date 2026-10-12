@@ -1,8 +1,17 @@
 {
-  "_comment": [
-    "Purpose: Declare root workspace commands and dependencies after approval.",
-    "Task: docs/plan.md 1.1, 1.3, 1.4.",
-    "Uses: docs/architecture.md, docs/plan.md.",
-    "TODO(agent): implement"
-  ]
+  "name": "resilience-twin",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.11.2",
+  "engines": { "node": "24.10.0" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "test": "node --test scripts/check_bootstrap.mjs",
+    "lint": "pnpm --filter @resilience-twin/web lint",
+    "typecheck": "pnpm --filter @resilience-twin/web typecheck",
+    "build": "pnpm --filter @resilience-twin/web build",
+    "generate:client": "uv run python -m scripts.generate_client",
+    "check:bootstrap": "node scripts/check_bootstrap.mjs --check"
+  },
+  "devDependencies": { "openapi-typescript": "7.13.0" }
 }

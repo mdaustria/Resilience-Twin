@@ -1,4 +1,13 @@
-# Purpose: Exclude generated outputs and local secrets once tooling is configured.
-# Task: docs/plan.md 1.1.
-# Uses: docs/architecture.md, docs/plan.md.
-# TODO(agent): implement
+.venv/
+.runtime/
+node_modules/
+apps/web/node_modules/
+apps/web/dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example

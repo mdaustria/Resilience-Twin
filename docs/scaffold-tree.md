@@ -7,9 +7,9 @@ TODO(agent): implement
 
 # Scaffold review tree
 
-12 October 2026. All repository paths are shown except Git internals. Existing project documents retain their content; new implementation files contain only headers and empty exports. This inventory is the review artifact, not application logic.
+12 October 2026. This is the complete 253-file empty-scaffold snapshot before Task 1.1, excluding Git internals. Existing project documents retained their content; new implementation files contained only headers and empty exports. Later tasks add and implement files, so this remains a review artifact for Task 0.1 rather than a live repository inventory.
 
-Builds, test runners, lockfiles, containers, and CI are not configured. Task 1.1 must establish approved tooling before these can be verified. No implementation task is complete, and no commit has been made. Requested commit message after user approval: scaffold: empty structure.
+At the snapshot point, builds, test runners, lockfiles, containers, and CI were not configured. Task 1.1 subsequently established approved local tooling and completed the runnable part of Task 0.1. No scaffold commit has been made; the requested commit message after user approval was `scaffold: empty structure`.
 
 ```text
 Resilience Twin/

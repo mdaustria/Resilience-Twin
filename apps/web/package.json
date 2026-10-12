@@ -1,8 +1,23 @@
 {
-  "_comment": [
-    "Purpose: Declare web workspace commands and dependencies after approval.",
-    "Task: docs/plan.md 1.1.",
-    "Uses: docs/architecture.md, docs/plan.md.",
-    "TODO(agent): implement"
-  ]
+  "name": "@resilience-twin/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "10.10.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.1",
+    "vite": "8.3.4"
+  }
 }
