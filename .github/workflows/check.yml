@@ -1,4 +1,37 @@
-# Purpose: Run required integration checks in CI once the workflow is implemented.
-# Task: docs/plan.md 1.4, 4.1.
-# Uses: package.json, pyproject.toml, release/dependencies.md.
-# TODO(agent): implement
+name: check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  walking-skeleton:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24.10.0'
+      - uses: astral-sh/setup-uv@v10.2.0
+        with:
+          version: '0.13.0'
+          enable-cache: false
+      - name: Install approved Python and pnpm versions
+        run: |
+          uv python install 3.13.16
+          npm install --global pnpm@12.11.2
+      - name: Frozen installs
+        run: |
+          uv sync --frozen
+          pnpm install --frozen-lockfile
+      - name: Install matching Chromium
+        run: pnpm exec playwright install chromium
+      - name: Run the combined check
+        run: pnpm check

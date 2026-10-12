@@ -16,13 +16,9 @@ SCHEMAS = (
 )
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--check", action="store_true", help="fail if generated output differs")
-    args = parser.parse_args()
-
+def generate_clients(*, check: bool, schemas: tuple[tuple[str, Path, bool], ...] = SCHEMAS) -> int:
     with tempfile.TemporaryDirectory() as directory:
-        for name, output, local_fixture_mode in SCHEMAS:
+        for name, output, local_fixture_mode in schemas:
             source = Path(directory) / f"{name}-openapi.json"
             result = Path(directory) / f"{name}.ts"
             source.write_text(
@@ -45,7 +41,7 @@ def main() -> int:
                 check=True,
             )
             generated = result.read_text(encoding="utf-8")
-            if args.check:
+            if check:
                 if not output.exists() or output.read_text(encoding="utf-8") != generated:
                     raise SystemExit(
                         f"Generated {name} client differs; run pnpm generate:client"
@@ -56,6 +52,13 @@ def main() -> int:
                 output.write_text(generated, encoding="utf-8")
                 print(f"Generated {output.relative_to(ROOT)}")
     return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--check", action="store_true", help="fail if generated output differs")
+    args = parser.parse_args()
+    return generate_clients(check=args.check)
 
 
 if __name__ == "__main__":

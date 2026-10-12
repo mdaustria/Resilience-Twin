@@ -13,7 +13,8 @@
     "typecheck": "pnpm --filter @resilience-twin/web typecheck",
     "build": "pnpm --filter @resilience-twin/web build",
     "generate:client": "uv run python -m scripts.generate_client",
-    "check:bootstrap": "node scripts/check_bootstrap.mjs --check"
+    "check:bootstrap": "node scripts/check_bootstrap.mjs --check",
+    "check": "uv run python -m scripts.check"
   },
   "devDependencies": {
     "@playwright/test": "1.64.0",

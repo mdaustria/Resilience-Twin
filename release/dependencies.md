@@ -41,3 +41,13 @@ $env:PLAYWRIGHT_BROWSERS_PATH = (Resolve-Path '.runtime').Path + '\playwright-br
 ```
 
 On a fresh machine, install the exact approved runtime/tool versions first, then run `uv sync --frozen` and `pnpm install --frozen-lockfile`. Run `pnpm exec playwright install chromium` to install Playwright's matching browser before `pnpm exec playwright test tests/e2e/walking-skeleton.spec.ts`. Task 1.3 downloaded Chrome for Testing 156.0.8078.4 (Playwright Chromium revision 1248), matching headless shell revision 1248, into ignored `.runtime/playwright-browsers/`. Run `pnpm generate:client` only after an intentional Python schema change, and use `pnpm check:bootstrap` to reject generated-client drift. The later PDF validator/scanner, geospatial native stack, routing candidate, database drivers, and provider SDK remain unselected or unapproved.
+
+Task 1.4's GitHub workflow uses these exact setup actions, separately approved by the user on 12 October 2026. They install the already approved runtime and package versions above on `ubuntu-24.04` before `pnpm check`:
+
+| CI action | Exact release | Purpose |
+| --- | --- | --- |
+| [actions/checkout](https://github.com/actions/checkout/releases/tag/v7.0.1) | v7.0.1 | Fetch the repository for checks |
+| [actions/setup-node](https://github.com/actions/setup-node/releases/tag/v7.1.0) | v7.1.0 | Install Node 24.10.0 |
+| [astral-sh/setup-uv](https://github.com/astral-sh/setup-uv/releases/tag/v10.2.0) | v10.2.0 | Install uv 0.13.0; uv installs Python 3.13.16 |
+
+The repository currently has no Git remote, so a hosted CI run has not been observed. The local combined check covers the same application commands but does not prove the GitHub runner configuration.

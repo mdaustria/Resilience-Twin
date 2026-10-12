@@ -47,7 +47,7 @@ Day-one integration target: complete 1.1–1.3 as the first vertical slice, subj
 
 - [ ] 1.4 Make the integration path repeatable in CI
   - Goal: Add one combined check for lint, types, Python/web tests, generated-contract drift, and the browser smoke flow. Test import boundaries; make missing prerequisites fail with actionable messages. Extend this check as later suites and database prerequisites appear.
-  - Files: `scripts/check.py`, `scripts/generate_client.py`, `package.json`, `.github/workflows/check.yml`, `tests/contracts/test_import_boundaries.py`, `tests/contracts/test_generated_client.py`, `AGENTS.md`.
+  - Files: `scripts/check.py`, `scripts/generate_client.py`, `package.json`, `.github/workflows/check.yml`, `tests/contracts/test_import_boundaries.py`, `tests/contracts/test_generated_client.py`, `AGENTS.md`, `release/dependencies.md`. The dependency record also lists the user-approved exact CI action versions.
   - Depends on: 1.3.
   - **Done when:** `pnpm check` passes from a clean install and CI reproduces the same browser/API/engine flow; changing a Python contract without regenerating the client makes the check fail.
 

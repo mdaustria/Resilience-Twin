@@ -1,11 +1,11 @@
 # Resilience Twin: agent guide
 
 Resilience Twin helps researchers, residents, students, and community groups independently evaluate public Philippine disaster plans through evidence review and deterministic evacuation/water simulations.
-Target: production public self-service application; current stage: documentation only, with a thin POC and model validation first (PRD milestone A).
+Target: production public self-service application; current stage: local synthetic walking skeleton, with model validation next (PRD milestone A).
 
 ## Commands
 
-Run from the repository root with the approved versions in `release/dependencies.md`. Task 1.1 provides the install/run/test/lint commands and `pnpm check:bootstrap`. Task 1.3 adds browser tests; Task 1.4 adds the combined check. Do not report an unavailable command as passing.
+Run from the repository root with the approved versions in `release/dependencies.md`. Task 1.1 provides the install/run/test/lint commands and `pnpm check:bootstrap`. Task 1.3 adds browser tests. Task 1.4 provides `pnpm check` locally; its GitHub CI run remains unverified until a remote is available. Do not report an unavailable or unverified command as passing.
 
 - Install: `uv sync --frozen`, then `pnpm install --frozen-lockfile`.
 - Run: `pnpm dev` (local web and API; synthetic fixtures until provider/data gates pass).
