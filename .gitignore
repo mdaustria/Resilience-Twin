@@ -1,0 +1,4 @@
+# Purpose: Exclude generated outputs and local secrets once tooling is configured.
+# Task: docs/plan.md 1.1.
+# Uses: docs/architecture.md, docs/plan.md.
+# TODO(agent): implement

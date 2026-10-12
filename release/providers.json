@@ -1,0 +1,8 @@
+{
+  "_comment": [
+    "Purpose: Provide providers support for: Resolve document-processing and remaining dependency choices.",
+    "Task: docs/plan.md 3.1, 4.3, 6.7.",
+    "Uses: docs/architecture.md, docs/plan.md.",
+    "TODO(agent): implement"
+  ]
+}

@@ -1,0 +1,4 @@
+# Purpose: Pin resolved Python dependencies after approval; this is not a generated lockfile.
+# Task: docs/plan.md 1.1, 3.1.
+# Uses: docs/architecture.md, docs/plan.md.
+# TODO(agent): implement

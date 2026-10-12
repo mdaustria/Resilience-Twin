@@ -1,0 +1,4 @@
+# Purpose: Run required integration checks in CI once the workflow is implemented.
+# Task: docs/plan.md 1.4, 4.1.
+# Uses: package.json, pyproject.toml, release/dependencies.md.
+# TODO(agent): implement
