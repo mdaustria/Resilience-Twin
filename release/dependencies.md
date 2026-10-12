@@ -1,6 +1,6 @@
-# Dependency baseline — Task 1.1
+# Dependency baseline — Tasks 1.1 and 1.3
 
-Approved by the user on 12 October 2026 for the local walking skeleton. Direct dependencies are pinned exactly in `pyproject.toml` and the two package manifests; transitive resolutions are pinned in `uv.lock` and `pnpm-lock.yaml`. This is a bootstrap selection, not approval for later geography, provider, database, or browser-test packages.
+The Task 1.1 runtime and bootstrap dependencies were approved by the user on 12 October 2026. The user separately approved `@playwright/test` 1.64.0 and its matching Chromium browser for Task 1.3 on the same date. Direct dependencies are pinned exactly in `pyproject.toml` and the two package manifests; transitive resolutions are pinned in `uv.lock` and `pnpm-lock.yaml`. Later geography, provider, and database packages remain unapproved.
 
 | Runtime/tool | Exact version | Purpose |
 | --- | --- | --- |
@@ -24,8 +24,9 @@ Approved by the user on 12 October 2026 for the local walking skeleton. Direct d
 | ESLint | 10.10.0 | Web lint |
 | typescript-eslint | 8.71.1 | TypeScript ESLint parser and recommended rules |
 | openapi-typescript | 7.13.0 | Generate browser types from FastAPI OpenAPI |
+| @playwright/test | 1.64.0 | Browser smoke test runner and assertions against the local web/API/engine path |
 
-Compatibility evidence: [uv lists CPython 3.13 as Tier 1](https://docs.astral.sh/uv/reference/policies/python/); [Node 24 is an LTS release](https://nodejs.org/en/about/previous-releases); [Vite 8 accepts Node 22.12+ and newer](https://vite.dev/blog/announcing-vite8.html); [pnpm 12 supports Node 24 and Windows x64](https://pnpm.io/installation/). The [openapi-typescript package](https://www.npmjs.com/package/openapi-typescript) supports OpenAPI 3.0/3.1 and Node 20+. A [typescript-eslint compatibility report](https://github.com/typescript-eslint/typescript-eslint/issues/12518) documents TypeScript 7 outside the earlier 8.x peer range, so Task 1.1 pins TypeScript 6.0.3 and confirms resolution with a real install and lint run. Exact package releases are recorded by their [PyPI](https://pypi.org/) and [npm](https://www.npmjs.com/) release pages and the lockfiles.
+Compatibility evidence: [uv lists CPython 3.13 as Tier 1](https://docs.astral.sh/uv/reference/policies/python/); [Node 24 is an LTS release](https://nodejs.org/en/about/previous-releases); [Vite 8 accepts Node 22.12+ and newer](https://vite.dev/blog/announcing-vite8.html); [pnpm 12 supports Node 24 and Windows x64](https://pnpm.io/installation/). The [openapi-typescript package](https://www.npmjs.com/package/openapi-typescript) supports OpenAPI 3.0/3.1 and Node 20+. A [typescript-eslint compatibility report](https://github.com/typescript-eslint/typescript-eslint/issues/12518) documents TypeScript 7 outside the earlier 8.x peer range, so Task 1.1 pins TypeScript 6.0.3 and confirms resolution with a real install and lint run. [Playwright's package metadata](https://registry.npmjs.org/@playwright/test/1.64.0) requires Node 20+, and its [installation guide](https://playwright.dev/docs/intro) supports Node 24.x and Windows 11+. Exact package releases are recorded by their [PyPI](https://pypi.org/) and [npm](https://www.npmjs.com/) release pages and the lockfiles.
 
 The approved tools were downloaded into ignored `.runtime/` for this local verification because the preexisting PATH held Node 22.18.0, a pnpm 11.25.0 wrapper, Python 3.9.1, and no uv. To use these workspace-local tools in PowerShell, set the following variables from the repository root before running the guide's commands:
 
@@ -36,6 +37,7 @@ $env:UV_CACHE_DIR = (Resolve-Path '.runtime').Path + '\uv-cache'
 $env:PNPM_HOME = (Resolve-Path '.runtime').Path + '\pnpm-home'
 $env:TEMP = (Resolve-Path '.runtime/tmp').Path
 $env:TMP = $env:TEMP
+$env:PLAYWRIGHT_BROWSERS_PATH = (Resolve-Path '.runtime').Path + '\playwright-browsers'
 ```
 
-On a fresh machine, install the exact approved runtime/tool versions first, then run `uv sync --frozen` and `pnpm install --frozen-lockfile`. Run `pnpm generate:client` only after an intentional Python schema change, and use `pnpm check:bootstrap` to reject generated-client drift. The later PDF validator/scanner, geospatial native stack, routing candidate, browser-test runner, database drivers, and provider SDK remain unselected or unapproved.
+On a fresh machine, install the exact approved runtime/tool versions first, then run `uv sync --frozen` and `pnpm install --frozen-lockfile`. Run `pnpm exec playwright install chromium` to install Playwright's matching browser before `pnpm exec playwright test tests/e2e/walking-skeleton.spec.ts`. Task 1.3 downloaded Chrome for Testing 156.0.8078.4 (Playwright Chromium revision 1248), matching headless shell revision 1248, into ignored `.runtime/playwright-browsers/`. Run `pnpm generate:client` only after an intentional Python schema change, and use `pnpm check:bootstrap` to reject generated-client drift. The later PDF validator/scanner, geospatial native stack, routing candidate, database drivers, and provider SDK remain unselected or unapproved.

@@ -3,7 +3,9 @@
   "private": true,
   "type": "module",
   "packageManager": "pnpm@12.11.2",
-  "engines": { "node": "24.10.0" },
+  "engines": {
+    "node": "24.10.0"
+  },
   "scripts": {
     "dev": "node scripts/dev.mjs",
     "test": "node --test scripts/check_bootstrap.mjs",
@@ -13,5 +15,8 @@
     "generate:client": "uv run python -m scripts.generate_client",
     "check:bootstrap": "node scripts/check_bootstrap.mjs --check"
   },
-  "devDependencies": { "openapi-typescript": "7.13.0" }
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "openapi-typescript": "7.13.0"
+  }
 }

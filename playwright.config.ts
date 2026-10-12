@@ -1,6 +1,18 @@
-// Purpose: Configure browser tests against the local web application and API.
-// Task: docs/plan.md 1.3.
-// Uses: docs/architecture.md, docs/plan.md.
-// TODO(agent): implement
+import { defineConfig } from '@playwright/test';
 
-export default {};
+export default defineConfig({
+  testDir: './tests/e2e',
+  outputDir: './.runtime/playwright-results',
+  reporter: 'list',
+  use: {
+    baseURL: 'http://127.0.0.1:5173',
+    browserName: 'chromium',
+    headless: true,
+  },
+  webServer: {
+    command: 'pnpm dev',
+    url: 'http://127.0.0.1:5173/api/v1/bootstrap',
+    timeout: 60_000,
+    reuseExistingServer: false,
+  },
+});

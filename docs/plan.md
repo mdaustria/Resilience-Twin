@@ -39,9 +39,9 @@ Day-one integration target: complete 1.1–1.3 as the first vertical slice, subj
   - Depends on: 1.1.
   - **Done when:** `uv run pytest tests/integration/test_skeleton_api.py tests/contracts/test_skeleton_contract.py` passes and an HTTP request computes the expected result through the engine, rejects invalid data, and cannot read a second fixture owner's case. This tiny synchronous fixture endpoint must not accept production workloads.
 
-- [ ] 1.3 Add a browser-to-engine smoke flow
+- [x] 1.3 Add a browser-to-engine smoke flow
   - Goal: Add one minimal review/run/result surface using the generated client. Show source/assumption labels, computed arrivals and water shortfall, and a recoverable API error. Keep the smoke flow within the future four-screen structure.
-  - Files: `apps/web/src/app/`, `apps/web/src/features/community-twin/`, `apps/web/src/features/simulation/`, `apps/web/src/lib/`, `tests/e2e/walking-skeleton.spec.ts`, `playwright.config.ts`, `package.json`, `release/dependencies.md`, `pnpm-lock.yaml`.
+  - Files: `apps/web/src/app/`, `apps/web/src/features/community-twin/`, `apps/web/src/features/simulation/`, `apps/web/src/lib/`, `apps/web/src/main.tsx`, `tests/e2e/walking-skeleton.spec.ts`, `playwright.config.ts`, `package.json`, `release/dependencies.md`, `pnpm-lock.yaml`. The web entry point must mount the new app flow in place of the Task 1.1 bootstrap status view.
   - Depends on: 1.2; approval for any test dependencies not approved in 1.1.
   - **Done when:** `pnpm exec playwright test tests/e2e/walking-skeleton.spec.ts` passes against a real local API and the browser shows the hand-calculated synthetic result without hardcoded response metrics or mocked HTTP.
 
