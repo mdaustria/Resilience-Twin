@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "owner_id": "fixture-a",
+      "case": {
+        "schema_version": "skeleton.case.v1",
+        "case_id": "one-trip-water",
+        "cohort_people": 10,
+        "vehicle_seats": 6,
+        "shelter_spaces": 8,
+        "travel_time_seconds": 300,
+        "horizon_seconds": 600,
+        "shelter_water_ml": 4000,
+        "arrival_water_need_ml_per_person": 1000,
+        "source_label": "Synthetic training fixture; no source plan",
+        "assumption_label": "One direct vehicle trip; arrival water allowance only"
+      }
+    },
+    {
+      "owner_id": "fixture-b",
+      "case": {
+        "schema_version": "skeleton.case.v1",
+        "case_id": "private-case",
+        "cohort_people": 3,
+        "vehicle_seats": 3,
+        "shelter_spaces": 3,
+        "travel_time_seconds": 120,
+        "horizon_seconds": 300,
+        "shelter_water_ml": 3000,
+        "arrival_water_need_ml_per_person": 1000,
+        "source_label": "Separate synthetic owner fixture",
+        "assumption_label": "One direct vehicle trip; arrival water allowance only"
+      }
+    }
+  ]
+}

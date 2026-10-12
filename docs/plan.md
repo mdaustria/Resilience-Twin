@@ -33,9 +33,9 @@ Day-one integration target: complete 1.1–1.3 as the first vertical slice, subj
   - Depends on: none; dependency approval is required before installing or adding packages.
   - **Done when:** `pnpm check:bootstrap` passes and frozen installs resolve, the web/API launch locally, a generated tiny client type-checks, and the guide's install/run/test/lint commands match actual scripts.
 
-- [ ] 1.2 Connect a synthetic case through the real API and pure engine
+- [x] 1.2 Connect a synthetic case through the real API and pure engine
   - Goal: Define a minimal versioned input/result schema and compute one hand-calculated evacuation/water case through an application use case. Return validation errors for missing inputs. Use an isolated local fixture owner and synthetic in-memory adapters, explicitly disabled outside development.
-  - Files: `packages/contracts/`, `packages/application/`, `packages/simulation/`, `packages/adapters/local/`, `packages/client-generated/`, `services/api/`, `tests/fixtures/skeleton/`, `tests/integration/test_skeleton_api.py`, `tests/contracts/test_skeleton_contract.py`.
+  - Files: `packages/contracts/`, `packages/application/`, `packages/simulation/`, `packages/adapters/local/`, `packages/client-generated/`, `services/api/`, `tests/fixtures/skeleton/`, `tests/integration/test_skeleton_api.py`, `tests/contracts/test_skeleton_contract.py`, `scripts/dev.mjs`, `scripts/generate_client.py`, `apps/web/eslint.config.js`. The two scripts are needed to enable the isolated fixture only under the local dev launch and regenerate its Python-derived browser contract. The ESLint config excludes the prior build output so repeat checks remain valid.
   - Depends on: 1.1.
   - **Done when:** `uv run pytest tests/integration/test_skeleton_api.py tests/contracts/test_skeleton_contract.py` passes and an HTTP request computes the expected result through the engine, rejects invalid data, and cannot read a second fixture owner's case. This tiny synchronous fixture endpoint must not accept production workloads.
 

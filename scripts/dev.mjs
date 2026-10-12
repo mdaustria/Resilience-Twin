@@ -6,7 +6,10 @@ const commands = [
   ['Web', 'pnpm', ['--filter', '@resilience-twin/web', 'dev']],
 ];
 const children = commands.map(([label, command, args]) => {
-  const child = spawn(command, args, { stdio: 'inherit', shell: windows });
+  const env = label === 'API'
+    ? { ...process.env, RESILIENCE_TWIN_ENV: 'development', RESILIENCE_TWIN_LOCAL_FIXTURES: '1' }
+    : process.env;
+  const child = spawn(command, args, { stdio: 'inherit', shell: windows, env });
   child.on('error', (error) => {
     console.error(`${label} failed to start: ${error.message}`);
     stop(1);
