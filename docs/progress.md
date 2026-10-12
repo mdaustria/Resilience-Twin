@@ -121,3 +121,13 @@ $docs | ForEach-Object {
 - Tried and failed: Preflight misread `uv --version` because of its build hash; parsing the version token fixed it. Vite briefly reached the API before Uvicorn started; retry passed.
 - Gotchas: `git remote -v` is empty. Local browser checks need `PLAYWRIGHT_BROWSERS_PATH` from `release/dependencies.md`.
 - Exact next step: Obtain a GitHub repository URL and push authorization. Commit Task 1.4, connect the remote, push, inspect CI, fix failures, then check off the task.
+
+## 2026-10-12: Task 1.4 hosted CI verified
+
+- Status: Done. Task 1.4 code was committed as `5b9b90951d096aecf3c2581c56ea03e42e026379` and pushed to `main` at `https://github.com/mdaustria/Resilience-Twin`.
+- What changed: Connected the GitHub remote and enabled the approved workflow. The previously prepared `pnpm check` now runs in GitHub Actions after frozen Python and web installs and Chromium setup. Marked Task 1.4 complete and updated the guide and dependency record to reflect hosted verification.
+- Checks: The [hosted `check` run](https://github.com/mdaustria/Resilience-Twin/actions/runs/38223437566) completed successfully on the Task 1.4 commit. Prior clean-source verification passed `uv sync --frozen`, `pnpm install --frozen-lockfile`, and `pnpm check` (18 Python, 2 Node, 1 browser test). A disposable Python schema change caused generated-client drift to fail `pnpm check` as required.
+- Decisions: Keep the approved exact CI action/runtime versions and `ubuntu-24.04` runner. Proceed to Phase 2 only after this hosted gate.
+- Tried and failed: Earlier hosted verification could not run because the repository had no remote; adding `origin` and pushing resolved it. No runner fix was needed.
+- Gotchas: The older partial entries above describe the state before the remote was connected. Local browser checks need the documented `PLAYWRIGHT_BROWSERS_PATH`.
+- Next: Begin Task 2.1 by arranging independent product/engineering and domain reviewers and permitted synthetic/redacted reference evidence; read its plan scope before editing.

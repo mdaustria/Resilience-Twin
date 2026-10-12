@@ -45,7 +45,7 @@ Day-one integration target: complete 1.1–1.3 as the first vertical slice, subj
   - Depends on: 1.2; approval for any test dependencies not approved in 1.1.
   - **Done when:** `pnpm exec playwright test tests/e2e/walking-skeleton.spec.ts` passes against a real local API and the browser shows the hand-calculated synthetic result without hardcoded response metrics or mocked HTTP.
 
-- [ ] 1.4 Make the integration path repeatable in CI
+- [x] 1.4 Make the integration path repeatable in CI
   - Goal: Add one combined check for lint, types, Python/web tests, generated-contract drift, and the browser smoke flow. Test import boundaries; make missing prerequisites fail with actionable messages. Extend this check as later suites and database prerequisites appear.
   - Files: `scripts/check.py`, `scripts/generate_client.py`, `package.json`, `.github/workflows/check.yml`, `tests/contracts/test_import_boundaries.py`, `tests/contracts/test_generated_client.py`, `AGENTS.md`, `release/dependencies.md`. The dependency record also lists the user-approved exact CI action versions.
   - Depends on: 1.3.

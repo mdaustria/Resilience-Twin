@@ -50,4 +50,4 @@ Task 1.4's GitHub workflow uses these exact setup actions, separately approved b
 | [actions/setup-node](https://github.com/actions/setup-node/releases/tag/v7.1.0) | v7.1.0 | Install Node 24.10.0 |
 | [astral-sh/setup-uv](https://github.com/astral-sh/setup-uv/releases/tag/v10.2.0) | v10.2.0 | Install uv 0.13.0; uv installs Python 3.13.16 |
 
-The repository currently has no Git remote, so a hosted CI run has not been observed. The local combined check covers the same application commands but does not prove the GitHub runner configuration.
+The repository is connected to [GitHub](https://github.com/mdaustria/Resilience-Twin). The [Task 1.4 workflow run](https://github.com/mdaustria/Resilience-Twin/actions/runs/38223437566) passed on commit `5b9b90951d096aecf3c2581c56ea03e42e026379` on `ubuntu-24.04`, validating the frozen install and combined check in the hosted runner.
