@@ -31,6 +31,29 @@ jobs:
         run: |
           uv sync --frozen
           pnpm install --frozen-lockfile
+      - name: Verify approved ClamAV on Linux with fresh signatures
+        shell: bash
+        run: |
+          set -euo pipefail
+          package="$RUNNER_TEMP/clamav-1.5.4.linux.x86_64.deb"
+          curl --fail --location --retry 3 --output "$package" \
+            https://github.com/Cisco-Talos/clamav/releases/download/clamav-1.5.4/clamav-1.5.4.linux.x86_64.deb
+          printf '%s  %s\n' '28d6efc5b4423e7830c3559339552eb53870a9eac51ac4efb37d60530d329886' "$package" | sha256sum --check
+          sudo apt install --yes "$package"
+          scanner="$(command -v clamscan || true)"
+          updater="$(command -v freshclam || true)"
+          if [ -z "$scanner" ]; then scanner=/usr/local/clamav/bin/clamscan; fi
+          if [ -z "$updater" ]; then updater=/usr/local/clamav/bin/freshclam; fi
+          test -x "$scanner"
+          test -x "$updater"
+          database="$RUNNER_TEMP/clamav-db"
+          mkdir -p "$database"
+          config="$RUNNER_TEMP/freshclam.conf"
+          printf 'DatabaseDirectory %s\nDatabaseOwner %s\nDatabaseMirror database.clamav.net\n' \
+            "$database" "$(id -un)" > "$config"
+          "$updater" --config-file "$config"
+          uv run python scripts/probe_document_tools.py --require-scanner \
+            --scanner "$scanner" --database "$database"
       - name: Install matching Chromium
         run: pnpm exec playwright install chromium
       - name: Run the combined check
