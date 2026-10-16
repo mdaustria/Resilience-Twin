@@ -1,0 +1,41 @@
+{
+  "schema_version": "roads.reference-small.v1",
+  "source": "Synthetic directed road graph; all times, lengths, profiles and restrictions are explicit test assumptions",
+  "nodes": ["A", "B", "C", "D", "E", "F", "G"],
+  "edges": [
+    {"id": "a-west", "source": "A", "target": "B", "travel_seconds": 2, "distance_mm": 2000, "profiles": ["car", "emergency"]},
+    {"id": "b-bridge-local", "source": "B", "target": "E", "travel_seconds": 3, "distance_mm": 3000, "profiles": ["car", "emergency"], "asset_id": "bridge-1"},
+    {"id": "b-bridge-priority", "source": "B", "target": "E", "travel_seconds": 1, "distance_mm": 3000, "profiles": ["emergency"], "asset_id": "bridge-1"},
+    {"id": "c-bridge-west", "source": "E", "target": "B", "travel_seconds": 3, "distance_mm": 3000, "profiles": ["car", "emergency"], "asset_id": "bridge-1"},
+    {"id": "d-north", "source": "B", "target": "C", "travel_seconds": 2, "distance_mm": 2000, "profiles": ["car", "emergency"]},
+    {"id": "e-north", "source": "C", "target": "E", "travel_seconds": 2, "distance_mm": 2000, "profiles": ["car", "emergency"]},
+    {"id": "f-south", "source": "B", "target": "D", "travel_seconds": 2, "distance_mm": 2000, "profiles": ["car", "emergency"]},
+    {"id": "g-south", "source": "D", "target": "E", "travel_seconds": 2, "distance_mm": 2000, "profiles": ["car", "emergency"]},
+    {"id": "h-dest", "source": "E", "target": "F", "travel_seconds": 2, "distance_mm": 2000, "profiles": ["car", "emergency"]},
+    {"id": "i-boundary-cut", "source": "B", "target": "F", "travel_seconds": 1, "distance_mm": 1000, "profiles": ["car", "emergency"], "boundary_cut": true}
+  ],
+  "restrictions": {
+    "node_no_north": {"id": "node-no-north", "kind": "no", "from_edge": "a-west", "via_node": "B", "via_edges": [], "to_edge": "d-north", "review_state": "reviewed"},
+    "node_only_north": {"id": "node-only-north", "kind": "only", "from_edge": "a-west", "via_node": "B", "via_edges": [], "to_edge": "d-north", "review_state": "reviewed"},
+    "way_no_north_exit": {"id": "way-no-north-exit", "kind": "no", "from_edge": "a-west", "via_node": null, "via_edges": ["d-north", "e-north"], "to_edge": "h-dest", "review_state": "reviewed"},
+    "way_only_north_exit": {"id": "way-only-north-exit", "kind": "only", "from_edge": "a-west", "via_node": null, "via_edges": ["d-north", "e-north"], "to_edge": "h-dest", "review_state": "reviewed"},
+    "way_ambiguous": {"id": "way-ambiguous", "kind": "unsupported", "from_edge": "a-west", "via_node": null, "via_edges": ["d-north", "e-north"], "to_edge": null, "review_state": "ambiguous"},
+    "node_conditional": {"id": "node-conditional", "kind": "no", "from_edge": "a-west", "via_node": "B", "via_edges": [], "to_edge": "b-bridge-local", "review_state": "conditional"}
+  },
+  "cases": [
+    {"id": "car_fast_bridge", "source": "A", "target": "F", "profile": "car", "status": "found", "edge_ids": ["a-west", "b-bridge-local", "h-dest"], "travel_seconds": 7, "distance_mm": 7000},
+    {"id": "emergency_profile", "source": "A", "target": "F", "profile": "emergency", "status": "found", "edge_ids": ["a-west", "b-bridge-priority", "h-dest"], "travel_seconds": 5, "distance_mm": 7000},
+    {"id": "equal_cost_tie", "source": "A", "target": "F", "profile": "car", "closed_assets": ["bridge-1"], "status": "found", "edge_ids": ["a-west", "d-north", "e-north", "h-dest"], "travel_seconds": 8, "distance_mm": 8000},
+    {"id": "node_via_no", "source": "A", "target": "F", "profile": "car", "closed_assets": ["bridge-1"], "restriction_ids": ["node_no_north"], "status": "found", "edge_ids": ["a-west", "f-south", "g-south", "h-dest"], "travel_seconds": 8, "distance_mm": 8000},
+    {"id": "node_via_only", "source": "A", "target": "F", "profile": "car", "restriction_ids": ["node_only_north"], "status": "found", "edge_ids": ["a-west", "d-north", "e-north", "h-dest"], "travel_seconds": 8, "distance_mm": 8000},
+    {"id": "way_via_no", "source": "A", "target": "F", "profile": "car", "closed_assets": ["bridge-1"], "restriction_ids": ["way_no_north_exit"], "status": "found", "edge_ids": ["a-west", "f-south", "g-south", "h-dest"], "travel_seconds": 8, "distance_mm": 8000},
+    {"id": "way_via_only", "source": "A", "target": "F", "profile": "car", "closed_assets": ["bridge-1"], "restriction_ids": ["way_only_north_exit"], "status": "found", "edge_ids": ["a-west", "d-north", "e-north", "h-dest"], "travel_seconds": 8, "distance_mm": 8000},
+    {"id": "ambiguous_via_exclusion", "source": "A", "target": "F", "profile": "car", "closed_assets": ["bridge-1"], "restriction_ids": ["way_ambiguous"], "status": "found", "edge_ids": ["a-west", "f-south", "g-south", "h-dest"], "travel_seconds": 8, "distance_mm": 8000},
+    {"id": "conditional_node_exclusion", "source": "A", "target": "F", "profile": "car", "restriction_ids": ["node_conditional"], "status": "unreachable", "edge_ids": [], "travel_seconds": null, "distance_mm": null},
+    {"id": "reverse_bridge", "source": "E", "target": "B", "profile": "car", "status": "found", "edge_ids": ["c-bridge-west"], "travel_seconds": 3, "distance_mm": 3000},
+    {"id": "reverse_bridge_closed", "source": "E", "target": "B", "profile": "car", "closed_assets": ["bridge-1"], "status": "unreachable", "edge_ids": [], "travel_seconds": null, "distance_mm": null},
+    {"id": "one_way_no_reverse", "source": "B", "target": "A", "profile": "car", "status": "unreachable", "edge_ids": [], "travel_seconds": null, "distance_mm": null},
+    {"id": "isolated_node", "source": "A", "target": "G", "profile": "car", "status": "unreachable", "edge_ids": [], "travel_seconds": null, "distance_mm": null},
+    {"id": "incomplete_boundary", "source": "A", "target": "F", "profile": "car", "closed_edges": ["b-bridge-local", "b-bridge-priority", "d-north", "f-south"], "status": "boundary_cut", "edge_ids": [], "travel_seconds": null, "distance_mm": null, "boundary_edges": ["i-boundary-cut"]}
+  ]
+}

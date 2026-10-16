@@ -1,0 +1,72 @@
+{
+  "schema_version": "validation.synthetic_cases.v1",
+  "provenance": "Invented, hand-calculated arithmetic cases; no public document or real-world observation",
+  "cases": [
+    {
+      "id": "one_trip_calibration",
+      "split": "calibration",
+      "inputs": {
+        "cohort_people": 10,
+        "vehicle_seats": 6,
+        "shelter_spaces": 8,
+        "travel_time_seconds": 300,
+        "horizon_seconds": 600,
+        "shelter_water_ml": 4000,
+        "arrival_water_need_ml_per_person": 1000
+      },
+      "reference": {
+        "arrival_time_seconds": 300,
+        "evacuated_people": 6,
+        "unserved_people": 4,
+        "water_required_ml": 6000,
+        "water_used_ml": 4000,
+        "water_shortfall_ml": 2000
+      },
+      "derivation": "min(10 people, 6 seats, 8 spaces) = 6 arrivals at 300 s; 6 times 1000 mL = 6000 mL required; 4000 mL available leaves 2000 mL short."
+    },
+    {
+      "id": "unfinished_at_horizon",
+      "split": "reference",
+      "inputs": {
+        "cohort_people": 5,
+        "vehicle_seats": 5,
+        "shelter_spaces": 5,
+        "travel_time_seconds": 300,
+        "horizon_seconds": 299,
+        "shelter_water_ml": 5000,
+        "arrival_water_need_ml_per_person": 1000
+      },
+      "reference": {
+        "arrival_time_seconds": null,
+        "evacuated_people": 0,
+        "unserved_people": 5,
+        "water_required_ml": 0,
+        "water_used_ml": 0,
+        "water_shortfall_ml": 0
+      },
+      "derivation": "Trip completes one second after the 299 s horizon; no arrival or arrival-water demand is counted."
+    },
+    {
+      "id": "shelter_and_water_limit",
+      "split": "reference",
+      "inputs": {
+        "cohort_people": 7,
+        "vehicle_seats": 6,
+        "shelter_spaces": 4,
+        "travel_time_seconds": 120,
+        "horizon_seconds": 300,
+        "shelter_water_ml": 3000,
+        "arrival_water_need_ml_per_person": 1000
+      },
+      "reference": {
+        "arrival_time_seconds": 120,
+        "evacuated_people": 4,
+        "unserved_people": 3,
+        "water_required_ml": 4000,
+        "water_used_ml": 3000,
+        "water_shortfall_ml": 1000
+      },
+      "derivation": "min(7 people, 6 seats, 4 spaces) = 4 arrivals at 120 s; 4000 mL required, 3000 mL used, 1000 mL short."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "sensitivity.tiny.v1",
+  "provenance": "Invented integer-second cases for deterministic policy and factor behavior; not field probabilities",
+  "factors": {
+    "travel_seconds": {"low": 1, "nominal": 3, "high": 5, "provenance": "synthetic one-factor travel sweep"},
+    "loading_seconds": {"low": 1, "nominal": 2, "high": 3, "provenance": "synthetic one-factor loading sweep"},
+    "demand_time_seconds": {"low": 0, "nominal": 1, "high": 2, "provenance": "synthetic one-factor request timing sweep"},
+    "water_ml_per_person_day": {"low": 86400, "nominal": 172800, "high": 259200, "provenance": "synthetic 1/2/3 mL per person-second sweep"}
+  },
+  "adverse_combination": {
+    "travel_seconds": "high",
+    "loading_seconds": "high",
+    "demand_time_seconds": "low",
+    "water_ml_per_person_day": "high"
+  },
+  "two_group_check": {
+    "group_people": 4,
+    "group_1_deadline_seconds": 5,
+    "group_2_deadline_seconds": 8,
+    "baseline_completion": ["travel + loading + 4", "travel + loading"],
+    "variant_completion": ["2 * travel + loading", "2 * travel + loading"],
+    "expected_low_travel_delta_people": 4,
+    "expected_high_travel_delta_people": -4,
+    "derivation": "At nominal request time 1, travel 1/loading 2 gives baseline arrivals 8/4 s and variant 5/5 s: 4 versus 8 people on time. Travel 5/loading 2 gives baseline 12/8 s and variant 13/13 s: 4 versus 0. Request timing adds equally to each paired model."
+  }
+}

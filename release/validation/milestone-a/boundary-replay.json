@@ -1,0 +1,8 @@
+{
+  "schema_version": "milestone-a-boundary-replay.v1",
+  "checked_on": "2026-10-14",
+  "command": "uv run pytest tests/engine/test_event_boundaries.py tests/engine/test_checkpoint_resume.py tests/engine/test_replay.py tests/engine/test_held_out_validation.py tests/engine/test_sensitivity.py tests/engine/test_reference_policy.py -q --basetemp .runtime/tmp/pytest-task39-core",
+  "result": "21 passed in 0.62s",
+  "scope": ["terminal/horizon ordering", "population conservation", "water and reservation accounting", "checkpoint/replay", "frozen arithmetic references", "bounded sensitivity", "reference allocation policy"],
+  "field_validation_claim": false
+}

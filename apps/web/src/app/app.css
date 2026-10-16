@@ -1,7 +1,7 @@
 :root { font-family: Inter, system-ui, sans-serif; color: #182b35; background: #f4f7f5; }
 * { box-sizing: border-box; }
 body { margin: 0; }
-button, input { font: inherit; }
+button, input, select { font: inherit; }
 .shell { max-width: 920px; margin: 0 auto; padding: 40px 24px 80px; }
 .masthead h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); margin: 6px 0 8px; }
 .masthead p:last-child { max-width: 620px; line-height: 1.5; }
@@ -9,13 +9,23 @@ button, input { font: inherit; }
 .stages { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 28px 0; }
 .stages span { background: #e1ebe7; padding: 12px; border-radius: 8px; font-size: .85rem; font-weight: 600; }
 .stages span:nth-child(2), .stages span:nth-child(4) { opacity: .55; }
-.case-picker, .panel, .run-step, .error { background: white; border: 1px solid #d4dfdc; border-radius: 12px; padding: 24px; margin: 16px 0; }
+.case-picker, .panel, .run-step, .error, .session-panel { background: white; border: 1px solid #d4dfdc; border-radius: 12px; padding: 24px; margin: 16px 0; }
+.session-panel { line-height: 1.5; }
+.session-panel h2 { margin-top: 0; }
+.session-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+button.secondary { background: #7d322d; }
 .case-picker h2, .panel h2, .run-step h2 { margin: 0 0 12px; }
 .case-picker form { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 input { min-width: 220px; padding: 10px; border: 1px solid #859d96; border-radius: 6px; }
 button { background: #125e52; color: white; border: 0; border-radius: 6px; padding: 11px 16px; cursor: pointer; font-weight: 700; }
 button:disabled { opacity: .55; cursor: wait; }
 button:focus-visible, input:focus-visible { outline: 3px solid #e3a447; outline-offset: 2px; }
+.review-form { display: grid; gap: 10px; max-width: 580px; margin: 12px 0 24px; }
+.review-form label { display: grid; gap: 4px; }
+.review-form select, .review-form input { padding: 10px; border: 1px solid #859d96; border-radius: 6px; }
+.session-panel form > label { display: block; margin: 12px 0 4px; }
+.citation-preview iframe { display: block; width: 100%; height: 500px; margin-top: 12px; border: 1px solid #d4dfdc; }
+.text-button { background: transparent; color: #125e52; text-decoration: underline; padding: 4px 8px; }
 .details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 .details div { border-top: 1px solid #e4e9e7; padding-top: 10px; }
 dt { color: #526b65; font-size: .85rem; }

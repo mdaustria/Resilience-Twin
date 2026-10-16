@@ -1,0 +1,147 @@
+{
+  "candidates": [
+    {
+      "field_key": "casualties_dead",
+      "entity_key": "typhoon_paeng_national",
+      "source_value": "160",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2022-10-30",
+      "citation": {
+        "physical_page": 81,
+        "region_id": "p81",
+        "excerpt": "160 People reportedly died and 29 remaining missing."
+      }
+    },
+    {
+      "field_key": "casualties_missing",
+      "entity_key": "typhoon_paeng_national",
+      "source_value": "29",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2022-10-30",
+      "citation": {
+        "physical_page": 81,
+        "region_id": "p81",
+        "excerpt": "160 People reportedly died and 29 remaining missing."
+      }
+    },
+    {
+      "field_key": "casualties_dead",
+      "entity_key": "typhoon_karding_national",
+      "source_value": "40",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2022-09-26",
+      "citation": {
+        "physical_page": 81,
+        "region_id": "p81",
+        "excerpt": "40 People reportedly died and 5 remaining missing."
+      }
+    },
+    {
+      "field_key": "casualties_missing",
+      "entity_key": "typhoon_karding_national",
+      "source_value": "5",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2022-09-26",
+      "citation": {
+        "physical_page": 81,
+        "region_id": "p81",
+        "excerpt": "40 People reportedly died and 5 remaining missing."
+      }
+    },
+    {
+      "field_key": "casualties_dead",
+      "entity_key": "typhoon_ulysses_national",
+      "source_value": "102",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2020-11-11",
+      "citation": {
+        "physical_page": 81,
+        "region_id": "p81",
+        "excerpt": "102 People reportedly died and 10 remaining missing."
+      }
+    },
+    {
+      "field_key": "casualties_missing",
+      "entity_key": "typhoon_ulysses_national",
+      "source_value": "10",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2020-11-11",
+      "citation": {
+        "physical_page": 81,
+        "region_id": "p81",
+        "excerpt": "102 People reportedly died and 10 remaining missing."
+      }
+    },
+    {
+      "field_key": "damaged_schools",
+      "entity_key": "typhoon_tisoy_national",
+      "source_value": "2,249",
+      "unit": "COUNT",
+      "statement_type": "historical",
+      "applicable_date": "2019-12-03",
+      "citation": {
+        "physical_page": 81,
+        "region_id": "p81",
+        "excerpt": "2,249 damaged schools and 558,844 damaged houses."
+      }
+    },
+    {
+      "field_key": "damaged_houses",
+      "entity_key": "typhoon_tisoy_national",
+      "source_value": "558,844",
+      "unit": "COUNT",
+      "statement_type": "historical",
+      "applicable_date": "2019-12-03",
+      "citation": {
+        "physical_page": 81,
+        "region_id": "p81",
+        "excerpt": "2,249 damaged schools and 558,844 damaged houses."
+      }
+    },
+    {
+      "field_key": "casualties_dead",
+      "entity_key": "typhoon_tisoy_national",
+      "source_value": "17",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2019-12-03",
+      "citation": {
+        "physical_page": 81,
+        "region_id": "p81",
+        "excerpt": "17 People reportedly died and 318 were injured."
+      }
+    },
+    {
+      "field_key": "casualties_injured",
+      "entity_key": "typhoon_tisoy_national",
+      "source_value": "318",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2019-12-03",
+      "citation": {
+        "physical_page": 81,
+        "region_id": "p81",
+        "excerpt": "17 People reportedly died and 318 were injured."
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p81",
+    "p82",
+    "p83"
+  ],
+  "visually_inspected_regions": [
+    "p81",
+    "p82",
+    "p83"
+  ],
+  "unresolved_regions": [
+    "p83"
+  ]
+}

@@ -1,12 +1,29 @@
 import { useCallback, useEffect, useState } from 'react';
 import { CaseReview } from '../features/community-twin/CaseReview';
+import { PrivateCommunityTwin } from '../features/community-twin/PrivateCommunityTwin';
+import { ScenarioEditor } from '../features/scenario';
+import { LiveSimulation } from '../features/simulation';
+import { FindingsView } from '../features/findings';
 import { RunResult } from '../features/simulation/RunResult';
+import { TemporarySession } from '../components/session';
+import { ReportDownloads } from '../components/reports';
 import { loadCase, runCase, type SkeletonCase, type SkeletonResult } from '../lib/skeletonClient';
 import './app.css';
 
 type FailedAction = 'open' | 'run' | null;
 
 export function App() {
+  return <main className="shell">
+    <header className="masthead">
+      <p className="eyebrow">Local model proof · synthetic data</p>
+      <h1>Resilience Twin</h1>
+      <p>Review a case and run a small, deterministic evacuation and water calculation.</p>
+    </header>
+    <TemporarySession><AnalysisContent /></TemporarySession>
+  </main>;
+}
+
+function AnalysisContent() {
   const [caseId, setCaseId] = useState('one-trip-water');
   const [caseData, setCaseData] = useState<SkeletonCase | null>(null);
   const [result, setResult] = useState<SkeletonResult | null>(null);
@@ -49,15 +66,15 @@ export function App() {
   };
 
   return (
-    <main className="shell">
-      <header className="masthead">
-        <p className="eyebrow">Local model proof · synthetic data</p>
-        <h1>Resilience Twin</h1>
-        <p>Review a case and run a small, deterministic evacuation and water calculation.</p>
-      </header>
+    <>
       <nav aria-label="Analysis stages" className="stages">
         <span>1 · Community Twin</span><span>2 · Scenario</span><span>3 · Live Simulation</span><span>4 · Resilience Findings</span>
       </nav>
+      <PrivateCommunityTwin />
+      <ScenarioEditor />
+      <LiveSimulation />
+      <FindingsView />
+      <ReportDownloads />
       <section aria-labelledby="case-heading" className="case-picker">
         <h2 id="case-heading">Local training case</h2>
         <form onSubmit={(event) => { event.preventDefault(); void open(caseId); }}>
@@ -78,6 +95,6 @@ export function App() {
         </section>
       </>}
       {result && <RunResult result={result} />}
-    </main>
+    </>
   );
 }

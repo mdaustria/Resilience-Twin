@@ -1,0 +1,101 @@
+{
+  "candidates": [
+    {
+      "field_key": "total_population",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "112,889",
+      "unit": "PERSON",
+      "statement_type": "reported_existing",
+      "applicable_date": "2020",
+      "citation": {
+        "physical_page": 38,
+        "region_id": "p38",
+        "excerpt": "As of the latest Census conducted in 2020, Guiguinto has a total of 112,889 inhabitants with average annual growth rate of 2.7 percent"
+      }
+    },
+    {
+      "field_key": "barangay_health_stations_count",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "13",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 39,
+        "region_id": "p39",
+        "excerpt": "In the municipality of Guiguinto, 13 Barangay Health Stations are present in different barangay for the delivery of primary health care services"
+      }
+    },
+    {
+      "field_key": "rural_health_units_count",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "2",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 39,
+        "region_id": "p39",
+        "excerpt": "The RHUs on the other hand, are strategically located one at Barangay Poblacion and the other unit at Barangay Tiaong"
+      }
+    },
+    {
+      "field_key": "diagnostic_clinics_count",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "14",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 39,
+        "region_id": "p39",
+        "excerpt": "There are fourteen (14) diagnostic clinics, two (2) private hospitals, and one (1) public hospital presently operating in the area."
+      }
+    },
+    {
+      "field_key": "private_hospitals_count",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "2",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 39,
+        "region_id": "p39",
+        "excerpt": "two (2) private hospitals, and one (1) public hospital presently operating in the area."
+      }
+    },
+    {
+      "field_key": "public_hospitals_count",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "1",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 39,
+        "region_id": "p39",
+        "excerpt": "and one (1) public hospital presently operating in the area."
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p33",
+    "p34",
+    "p35",
+    "p36",
+    "p37",
+    "p38",
+    "p39",
+    "p40"
+  ],
+  "visually_inspected_regions": [
+    "p33",
+    "p34",
+    "p36",
+    "p37",
+    "p39",
+    "p40"
+  ],
+  "unresolved_regions": []
+}

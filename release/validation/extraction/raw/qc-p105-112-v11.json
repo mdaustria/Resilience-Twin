@@ -1,0 +1,64 @@
+{
+  "candidates": [
+    {
+      "field_key": "evacuation_center_target_districts",
+      "entity_key": "quezon_city_districts",
+      "source_value": "6",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 105,
+        "region_id": "p105",
+        "excerpt": "All six (6) districts in the city has evacuation center for convergence of evacuees from barangays"
+      }
+    },
+    {
+      "field_key": "disaster_resilient_socialized_housing_projects_baseline",
+      "entity_key": "quezon_city",
+      "source_value": "31",
+      "unit": "COUNT",
+      "statement_type": "historical",
+      "applicable_date": "2019",
+      "citation": {
+        "physical_page": 108,
+        "region_id": "p108",
+        "excerpt": "31 Socialized Housing Projects; 5838 units (2019)"
+      }
+    },
+    {
+      "field_key": "disaster_resilient_housing_units_baseline",
+      "entity_key": "quezon_city",
+      "source_value": "5838",
+      "unit": "COUNT",
+      "statement_type": "historical",
+      "applicable_date": "2019",
+      "citation": {
+        "physical_page": 108,
+        "region_id": "p108",
+        "excerpt": "31 Socialized Housing Projects; 5838 units (2019)"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p105",
+    "p106",
+    "p107",
+    "p108",
+    "p109",
+    "p110",
+    "p111",
+    "p112"
+  ],
+  "visually_inspected_regions": [
+    "p105",
+    "p106",
+    "p107",
+    "p108",
+    "p109",
+    "p110",
+    "p111",
+    "p112"
+  ],
+  "unresolved_regions": []
+}

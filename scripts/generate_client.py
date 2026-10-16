@@ -6,14 +6,57 @@ import os
 import subprocess
 import tempfile
 from pathlib import Path
+from typing import Any, cast
 
+from packages.adapters.persistence.firestore import Actor
+from packages.adapters.persistence.runs import FirestoreRuns
+from packages.adapters.persistence.sessions import FirestoreTemporarySessions
+from packages.application.deletion import DeleteWorkspace
+from packages.application.documents import PrivateDocuments
+from packages.application.jobs import JobSubmission
+from packages.application.usage import UsagePolicy
+from packages.application.versions import DurableVersions
+from packages.contracts.run_manifest import RunManifest
 from services.api.main import create_app
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMAS = (
     ("bootstrap", ROOT / "apps/web/src/generated/bootstrap.ts", False),
     ("skeleton", ROOT / "packages/client-generated/skeleton.ts", True),
+    ("operational", ROOT / "packages/client-generated/operational.ts", False),
+    ("private-commands", ROOT / "packages/client-generated/private-commands.ts", False),
 )
+
+
+def operational_openapi() -> dict[str, object]:
+    """Export standalone contracts without advertising an unimplemented API operation."""
+    root = RunManifest.model_json_schema(ref_template="#/components/schemas/{model}")
+    definitions = root.pop("$defs", {})
+    definitions["RunManifest"] = root
+    return {
+        "openapi": "3.1.0",
+        "info": {"title": "Provisional operational contracts", "version": "1.0.0"},
+        "paths": {},
+        "components": {"schemas": definitions},
+    }
+
+
+def private_commands_openapi() -> dict[str, object]:
+    return create_app(
+        local_fixture_mode=False,
+        temporary_sessions=FirestoreTemporarySessions(None),
+        private_documents=PrivateDocuments(cast(Any, None), cast(Any, None),
+                                           cast(Any, None), cast(Any, None),
+                                           secret=b"schema-only-upload-secret-32-bytes"),
+        durable_versions=DurableVersions(None),
+        job_submission=JobSubmission(None),
+        durable_runs=FirestoreRuns(None),
+        workspace_deletion=DeleteWorkspace(None),
+        usage_policy=UsagePolicy(1, 1, 1, 1, 1, 1, 1),
+        private_owner_for=lambda _handle, _workspace: (Actor("temporary", "schema"), None),
+        session_origin="https://schema.invalid",
+        session_csrf_key=b"schema-only-secret-32-bytes-at-least",
+    ).openapi()
 
 
 def generate_clients(*, check: bool, schemas: tuple[tuple[str, Path, bool], ...] = SCHEMAS) -> int:
@@ -23,6 +66,8 @@ def generate_clients(*, check: bool, schemas: tuple[tuple[str, Path, bool], ...]
             result = Path(directory) / f"{name}.ts"
             source.write_text(
                 json.dumps(
+                    operational_openapi() if name == "operational" else
+                    private_commands_openapi() if name == "private-commands" else
                     create_app(local_fixture_mode=local_fixture_mode).openapi(),
                     sort_keys=True,
                 ),

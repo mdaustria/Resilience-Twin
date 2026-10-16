@@ -1,0 +1,296 @@
+{
+  "candidates": [
+    {
+      "field_key": "hazard_index_area_moderate",
+      "entity_key": "cutcut",
+      "source_value": "0.71",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Cutcut 0.00 0.52 0.71 0.00 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_low",
+      "entity_key": "cutcut",
+      "source_value": "0.52",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Cutcut 0.00 0.52 0.71 0.00 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_moderate",
+      "entity_key": "daungan",
+      "source_value": "1.10",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Daungan 0.00 0.21 1.10 0.00 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_high",
+      "entity_key": "ilang_ilang",
+      "source_value": "0.18",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Ilang-Ilang 0.00 0.00 0.42 0.18 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_moderate",
+      "entity_key": "ilang_ilang",
+      "source_value": "0.42",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Ilang-Ilang 0.00 0.00 0.42 0.18 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_high",
+      "entity_key": "malis",
+      "source_value": "0.58",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Malis 0.00 0.19 1.50 0.58 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_moderate",
+      "entity_key": "malis",
+      "source_value": "1.50",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Malis 0.00 0.19 1.50 0.58 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_high",
+      "entity_key": "panginay",
+      "source_value": "0.53",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Panginay 0.00 0.00 0.00 0.53 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_high",
+      "entity_key": "poblacion",
+      "source_value": "0.82",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Poblacion 0.00 0.00 0.03 0.82 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_low",
+      "entity_key": "pritil",
+      "source_value": "0.93",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Pritil 0.00 0.93 0.00 0.00 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_low",
+      "entity_key": "pulong_gubat",
+      "source_value": "0.65",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Pulong Gubat 0.00 0.65 0.52 0.00 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_moderate",
+      "entity_key": "pulong_gubat",
+      "source_value": "0.52",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Pulong Gubat 0.00 0.65 0.52 0.00 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_moderate",
+      "entity_key": "sta_cruz",
+      "source_value": "1.30",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Sta. Cruz 0.00 0.60 1.30 0.25 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_high",
+      "entity_key": "sta_cruz",
+      "source_value": "0.25",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Sta. Cruz 0.00 0.60 1.30 0.25 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_low",
+      "entity_key": "sta_rita",
+      "source_value": "1.90",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Sta. Rita 0.00 1.90 0.77 0.02 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_moderate",
+      "entity_key": "tabang",
+      "source_value": "1.50",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Tabang 0.00 0.00 1.50 0.25 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_high",
+      "entity_key": "tabang",
+      "source_value": "0.25",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Tabang 0.00 0.00 1.50 0.25 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_high",
+      "entity_key": "tabe",
+      "source_value": "0.51",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Tabe 0.00 0.31 0.26 0.51 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_low",
+      "entity_key": "tiaong",
+      "source_value": "1.50",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Tiaong 0.00 1.50 1.10 0.20 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_moderate",
+      "entity_key": "tiaong",
+      "source_value": "1.10",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Tiaong 0.00 1.50 1.10 0.20 0.00"
+      }
+    },
+    {
+      "field_key": "hazard_index_area_high",
+      "entity_key": "tuktukan",
+      "source_value": "1.60",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Tuktukan 0.00 0.00 0.00 1.60 0.00"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p101",
+    "p102",
+    "p103",
+    "p104",
+    "p105",
+    "p106",
+    "p107",
+    "p108"
+  ],
+  "visually_inspected_regions": [
+    "p101",
+    "p103",
+    "p104",
+    "p105",
+    "p106",
+    "p107"
+  ],
+  "unresolved_regions": []
+}

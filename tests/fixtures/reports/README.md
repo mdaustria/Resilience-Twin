@@ -1,6 +1,4 @@
-<!--
-Purpose: Reserve the reports module or artifact location for: Render gap-only and evaluated proof reports.
-Task: docs/plan.md 3.8, 5.6.
-Uses: docs/architecture.md, docs/plan.md.
-TODO(agent): implement
--->
+The Task 5.6 browser fixture creates a one-page fictional PDF in the emulator-backed
+guest workspace. `inspect_pdf.py` extracts text from downloaded PDF bytes with the
+approved `pypdf` runtime so the test can verify labels, source hash and outcome claims.
+The full public source PDFs are separate Task 5.7 cases.

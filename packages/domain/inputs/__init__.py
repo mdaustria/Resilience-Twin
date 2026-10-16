@@ -1,6 +1,14 @@
-# Purpose: Reserve the inputs module or artifact location for: Define complete operational inputs and canonical run manifests.
-# Task: docs/plan.md 2.2.
-# Uses: packages/contracts/__init__.py.
-# TODO(agent): implement
+"""Pure operational-input validation and deterministic manifest construction."""
 
-__all__ = ()
+from packages.domain.inputs.manifest import build_run_manifest, verify_run_manifest
+from packages.domain.inputs.validation import (
+    parse_operational_inputs,
+    validate_operational_inputs,
+)
+
+__all__ = (
+    "build_run_manifest",
+    "parse_operational_inputs",
+    "validate_operational_inputs",
+    "verify_run_manifest",
+)

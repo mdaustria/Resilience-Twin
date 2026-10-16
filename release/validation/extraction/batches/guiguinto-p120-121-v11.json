@@ -1,0 +1,56 @@
+{
+  "source": "guiguinto",
+  "document_sha256": "b355207cefdee01f3a67876b1f11b442b90c1acb7b7c6b49ad48433c29aafb95",
+  "group_pages": [
+    120,
+    121
+  ],
+  "extractor_version": "gemini-3.8-flash-v1.1-20261014",
+  "mode": "replay",
+  "raw_sha256": "64f2dc72faae9a10321eef3bbc6321992be757f75c263fe0c252688da95bc7b8",
+  "candidate_count": 41,
+  "coverage": [
+    {
+      "physical_page": 120,
+      "region_id": "p120_split_table",
+      "status": "processed",
+      "method": "visual",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 120,
+      "region_id": "p120_graphic_marks",
+      "status": "processed",
+      "method": "visual",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 121,
+      "region_id": "p121_split_table",
+      "status": "processed",
+      "method": "visual",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 121,
+      "region_id": "p121_graphic_marks",
+      "status": "processed",
+      "method": "visual",
+      "recovery_reason": null
+    }
+  ],
+  "issues": [
+    {
+      "code": "relative_page_normalized",
+      "physical_page": 121,
+      "region_id": "p121_split_table",
+      "detail": "Provider cited the slice page; mapped to original physical page"
+    }
+  ],
+  "usage": {
+    "input_tokens": 1511,
+    "output_tokens": 5354,
+    "total_tokens": 6865
+  },
+  "response_id": "JiTParzuOOThvr0Pn8H22Ac"
+}

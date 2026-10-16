@@ -1,8 +1,116 @@
 {
   "_comment": [
-    "Purpose: Provide providers support for: Resolve document-processing and remaining dependency choices.",
-    "Task: docs/plan.md 3.1, 4.3, 6.7.",
-    "Uses: docs/architecture.md, docs/plan.md.",
-    "TODO(agent): implement"
-  ]
+    "Task 3.1 candidate configuration. No secret values belong in this file.",
+    "The user confirmed the two pilot PDFs are public and authorized project use on 2026-10-14. Owner-reported Gemini controls and hosted Linux scanner evidence are recorded below. Only hash-pinned local pilot processing is enabled in Task 3.3; the general public-upload provider route remains disabled until ownership and ingestion safeguards are implemented."
+  ],
+  "guest_access": {
+    "mode": "temporary_session_only",
+    "end_user_firebase_auth_required": false,
+    "account_recovery_supported": false,
+    "server_sdk": "firebase-admin==7.7.0",
+    "server_sdk_purpose": "Firestore_and_Storage_service_identity"
+  },
+  "private_storage": {
+    "bucket": "ai-projects-250716-resilliencetwin",
+    "scope": "isolated_nonproduction",
+    "location": "US-EAST1",
+    "object_prefix": "resilience-twin/",
+    "cloud_smoke_evidence": "release/validation/storage/cloud-smoke.json",
+    "versioning_enabled": false,
+    "soft_delete_seconds": 604800,
+    "retention_period_seconds": null,
+    "uniform_bucket_level_access": false,
+    "public_access_prevention": "inherited",
+    "test_identity_bucket_level_roles": [],
+    "backend_iam_scope_verified": false,
+    "public_enabled": false
+  },
+  "gemini": {
+    "api": "gemini_developer_api",
+    "api_version": "v1",
+    "endpoint": "generativelanguage.googleapis.com",
+    "sdk": "google-genai==2.29.0",
+    "model_id": "gemini-3.8-flash",
+    "credential_env": "GEMINI_API_KEY",
+    "enabled": false,
+    "live_probe_status": "synthetic_pdf_verified",
+    "model_lookup_verified_at": "2026-10-13T07:34:38.733687+00:00",
+    "live_probe_verified_at": "2026-10-13T07:36:30.994002+00:00",
+    "live_probe_response_id": "297NavGZM9Xn1e8P5tOKwAU",
+    "returned_model_version": "gemini-3.8-flash",
+    "live_probe_usage": {
+      "input_tokens": 538,
+      "output_tokens": 1,
+      "thinking_tokens": 24,
+      "total_tokens": 563,
+      "max_output_tokens": 64,
+      "synthetic_pdf_bytes": 431
+    },
+    "estimated_paid_standard_cost_usd": 0.00049725,
+    "cost_estimate_basis": "2026-10-13 introductory paid standard rates; free-tier cost would be zero",
+    "project_name": "AI Projects",
+    "project_id": "ai-projects-250716",
+    "billing_account_display_name": "WTI Offline Billing Account",
+    "billing_model": "postpay",
+    "billing_tier": "tier_3",
+    "billing_evidence_date": "2026-10-14",
+    "key_restrictions": "gemini_only_owner_confirmed",
+    "required_key_api_restriction": "Generative Language API",
+    "project_spend_cap_usd": 50,
+    "requested_controls": {
+      "status": "superseded_by_owner_confirmation_2026-10-14",
+      "key_api_restriction": "Generative Language API",
+      "project_monthly_spend_cap_usd": 5,
+      "project_log_retention_days": 7,
+      "data_sharing_enabled": false
+    },
+    "owner_reported_controls": {
+      "reported_at": "2026-10-14",
+      "project_id": "ai-projects-250716",
+      "key_scope": "Gemini only",
+      "project_monthly_spend_cap_usd": 50,
+      "project_log_retention_days": 7,
+      "data_sharing_enabled": false,
+      "saved_settings_independently_inspected": false,
+      "key_type": "authorization",
+      "active_interactive_limits": {
+        "rpm": { "displayed_usage": 1, "displayed_limit": 20000 },
+        "tpm": { "displayed_usage": 538, "displayed_limit": 20000000 },
+        "rpd": { "displayed_usage": 1, "displayed_limit": "unlimited" }
+      }
+    },
+    "synthetic_probe_cost_cap_usd": 0.01,
+    "quota": {
+      "scope": "per_project",
+      "spend_rate_limit_usd_per_10_minutes": 200,
+      "billing_tier_cap_usd": "20000-100000+",
+      "gemini_3_8_flash_batch_enqueued_tokens": 1000000000,
+      "active_interactive_limits_source": "owner_reported_ai_studio_display_2026-10-14"
+    },
+    "processing_region": "not_region_pinned; may be processed in any country where Google or its agents maintain facilities",
+    "provider_retention": {
+      "paid_content_used_for_product_improvement": false,
+      "abuse_monitoring_days": 55,
+      "default_project_log_retention_days": 55,
+      "configured_project_log_retention_days": 7,
+      "data_sharing_enabled": false,
+      "zero_data_retention_approved": false,
+      "file_api_used": false,
+      "grounding_storage_used": false
+    },
+    "source_document_upload_allowed": false,
+    "pilot_source_document_upload_allowed": true,
+    "allow_global_fallback": false,
+    "search_grounding_enabled": false
+  },
+  "pdf_validation": {
+    "parser": "pypdf==6.20.1",
+    "scanner": "ClamAV==1.5.4",
+    "local_scanner_probe_verified": true,
+    "linux_ci_scanner_verified": true,
+    "linux_ci_scanner_run": "https://github.com/mdaustria/Resilience-Twin/actions/runs/38518985622",
+    "linux_ci_scanner_commit": "88ac5431f7da3bd252c343593dd63d487fd8a5a7",
+    "scanner_runtime_verified": false,
+    "production_intake_enabled": false
+  }
 }

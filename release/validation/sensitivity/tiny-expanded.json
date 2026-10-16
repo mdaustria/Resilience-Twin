@@ -1,0 +1,650 @@
+{
+  "schema_version": "sensitivity.tiny_expanded.v1",
+  "fixture_sha256": "ad46b986fbcfa4557870960c51a0f9e22915cce5c46b05831f53ede5fd6ed94d",
+  "scope_label": "bounded_sensitivity_not_probability",
+  "configurations": [
+    {
+      "id": "nominal",
+      "values": {
+        "travel_seconds": 3,
+        "loading_seconds": 2,
+        "demand_time_seconds": 1,
+        "water_ml_per_person_day": 172800
+      },
+      "exogenous_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "range_provenance": {
+        "travel_seconds": "synthetic one-factor travel sweep",
+        "loading_seconds": "synthetic one-factor loading sweep",
+        "demand_time_seconds": "synthetic one-factor request timing sweep",
+        "water_ml_per_person_day": "synthetic 1/2/3 mL per person-second sweep"
+      }
+    },
+    {
+      "id": "travel_seconds:low",
+      "values": {
+        "travel_seconds": 1,
+        "loading_seconds": 2,
+        "demand_time_seconds": 1,
+        "water_ml_per_person_day": 172800
+      },
+      "exogenous_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "range_provenance": {
+        "travel_seconds": "synthetic one-factor travel sweep",
+        "loading_seconds": "synthetic one-factor loading sweep",
+        "demand_time_seconds": "synthetic one-factor request timing sweep",
+        "water_ml_per_person_day": "synthetic 1/2/3 mL per person-second sweep"
+      }
+    },
+    {
+      "id": "travel_seconds:high",
+      "values": {
+        "travel_seconds": 5,
+        "loading_seconds": 2,
+        "demand_time_seconds": 1,
+        "water_ml_per_person_day": 172800
+      },
+      "exogenous_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "range_provenance": {
+        "travel_seconds": "synthetic one-factor travel sweep",
+        "loading_seconds": "synthetic one-factor loading sweep",
+        "demand_time_seconds": "synthetic one-factor request timing sweep",
+        "water_ml_per_person_day": "synthetic 1/2/3 mL per person-second sweep"
+      }
+    },
+    {
+      "id": "loading_seconds:low",
+      "values": {
+        "travel_seconds": 3,
+        "loading_seconds": 1,
+        "demand_time_seconds": 1,
+        "water_ml_per_person_day": 172800
+      },
+      "exogenous_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "range_provenance": {
+        "travel_seconds": "synthetic one-factor travel sweep",
+        "loading_seconds": "synthetic one-factor loading sweep",
+        "demand_time_seconds": "synthetic one-factor request timing sweep",
+        "water_ml_per_person_day": "synthetic 1/2/3 mL per person-second sweep"
+      }
+    },
+    {
+      "id": "loading_seconds:high",
+      "values": {
+        "travel_seconds": 3,
+        "loading_seconds": 3,
+        "demand_time_seconds": 1,
+        "water_ml_per_person_day": 172800
+      },
+      "exogenous_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "range_provenance": {
+        "travel_seconds": "synthetic one-factor travel sweep",
+        "loading_seconds": "synthetic one-factor loading sweep",
+        "demand_time_seconds": "synthetic one-factor request timing sweep",
+        "water_ml_per_person_day": "synthetic 1/2/3 mL per person-second sweep"
+      }
+    },
+    {
+      "id": "demand_time_seconds:low",
+      "values": {
+        "travel_seconds": 3,
+        "loading_seconds": 2,
+        "demand_time_seconds": 0,
+        "water_ml_per_person_day": 172800
+      },
+      "exogenous_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "range_provenance": {
+        "travel_seconds": "synthetic one-factor travel sweep",
+        "loading_seconds": "synthetic one-factor loading sweep",
+        "demand_time_seconds": "synthetic one-factor request timing sweep",
+        "water_ml_per_person_day": "synthetic 1/2/3 mL per person-second sweep"
+      }
+    },
+    {
+      "id": "demand_time_seconds:high",
+      "values": {
+        "travel_seconds": 3,
+        "loading_seconds": 2,
+        "demand_time_seconds": 2,
+        "water_ml_per_person_day": 172800
+      },
+      "exogenous_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "range_provenance": {
+        "travel_seconds": "synthetic one-factor travel sweep",
+        "loading_seconds": "synthetic one-factor loading sweep",
+        "demand_time_seconds": "synthetic one-factor request timing sweep",
+        "water_ml_per_person_day": "synthetic 1/2/3 mL per person-second sweep"
+      }
+    },
+    {
+      "id": "water_ml_per_person_day:low",
+      "values": {
+        "travel_seconds": 3,
+        "loading_seconds": 2,
+        "demand_time_seconds": 1,
+        "water_ml_per_person_day": 86400
+      },
+      "exogenous_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "range_provenance": {
+        "travel_seconds": "synthetic one-factor travel sweep",
+        "loading_seconds": "synthetic one-factor loading sweep",
+        "demand_time_seconds": "synthetic one-factor request timing sweep",
+        "water_ml_per_person_day": "synthetic 1/2/3 mL per person-second sweep"
+      }
+    },
+    {
+      "id": "water_ml_per_person_day:high",
+      "values": {
+        "travel_seconds": 3,
+        "loading_seconds": 2,
+        "demand_time_seconds": 1,
+        "water_ml_per_person_day": 259200
+      },
+      "exogenous_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "range_provenance": {
+        "travel_seconds": "synthetic one-factor travel sweep",
+        "loading_seconds": "synthetic one-factor loading sweep",
+        "demand_time_seconds": "synthetic one-factor request timing sweep",
+        "water_ml_per_person_day": "synthetic 1/2/3 mL per person-second sweep"
+      }
+    },
+    {
+      "id": "adverse_declared",
+      "values": {
+        "travel_seconds": 5,
+        "loading_seconds": 3,
+        "demand_time_seconds": 0,
+        "water_ml_per_person_day": 259200
+      },
+      "exogenous_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "range_provenance": {
+        "travel_seconds": "synthetic one-factor travel sweep",
+        "loading_seconds": "synthetic one-factor loading sweep",
+        "demand_time_seconds": "synthetic one-factor request timing sweep",
+        "water_ml_per_person_day": "synthetic 1/2/3 mL per person-second sweep"
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "configuration_id": "nominal",
+      "policy_version": "deadline_greedy_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 12,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "nominal",
+      "policy_version": "earliest_deadline_reference_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 20,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "travel_seconds:low",
+      "policy_version": "deadline_greedy_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 44,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 8,
+        "vulnerable_on_time_people": 4,
+        "water_unmet_ml": 60,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": 4
+    },
+    {
+      "configuration_id": "travel_seconds:low",
+      "policy_version": "earliest_deadline_reference_v1",
+      "baseline": {
+        "on_time_people": 8,
+        "vulnerable_on_time_people": 4,
+        "water_unmet_ml": 68,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 8,
+        "vulnerable_on_time_people": 4,
+        "water_unmet_ml": 60,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": 0
+    },
+    {
+      "configuration_id": "travel_seconds:high",
+      "policy_version": "deadline_greedy_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "travel_seconds:high",
+      "policy_version": "earliest_deadline_reference_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "loading_seconds:low",
+      "policy_version": "deadline_greedy_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 28,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 12,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": 0
+    },
+    {
+      "configuration_id": "loading_seconds:low",
+      "policy_version": "earliest_deadline_reference_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 36,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 12,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": 0
+    },
+    {
+      "configuration_id": "loading_seconds:high",
+      "policy_version": "deadline_greedy_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 4,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "loading_seconds:high",
+      "policy_version": "earliest_deadline_reference_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 4,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "demand_time_seconds:low",
+      "policy_version": "deadline_greedy_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 28,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 12,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": 0
+    },
+    {
+      "configuration_id": "demand_time_seconds:low",
+      "policy_version": "earliest_deadline_reference_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 36,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 12,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": 0
+    },
+    {
+      "configuration_id": "demand_time_seconds:high",
+      "policy_version": "deadline_greedy_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 4,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "demand_time_seconds:high",
+      "policy_version": "earliest_deadline_reference_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 4,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "water_ml_per_person_day:low",
+      "policy_version": "deadline_greedy_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "water_ml_per_person_day:low",
+      "policy_version": "earliest_deadline_reference_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "water_ml_per_person_day:high",
+      "policy_version": "deadline_greedy_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 28,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 4,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "water_ml_per_person_day:high",
+      "policy_version": "earliest_deadline_reference_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 40,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 4,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "adverse_declared",
+      "policy_version": "deadline_greedy_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 4,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    },
+    {
+      "configuration_id": "adverse_declared",
+      "policy_version": "earliest_deadline_reference_v1",
+      "baseline": {
+        "on_time_people": 4,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 4,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "variant": {
+        "on_time_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0,
+        "stranded_people": 0,
+        "evidence_event_ids": [
+          "synthetic-fixed-exogenous-event"
+        ]
+      },
+      "on_time_delta": -4
+    }
+  ],
+  "on_time_range": [
+    0,
+    8
+  ],
+  "water_unmet_range_ml": [
+    0,
+    68
+  ],
+  "rank_reversal_case_ids": [
+    "nominal",
+    "travel_seconds:low",
+    "travel_seconds:high",
+    "loading_seconds:high",
+    "demand_time_seconds:high",
+    "water_ml_per_person_day:low",
+    "water_ml_per_person_day:high",
+    "adverse_declared"
+  ],
+  "policy_dependent_case_ids": [
+    "travel_seconds:low"
+  ]
+}

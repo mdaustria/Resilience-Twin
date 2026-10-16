@@ -1,0 +1,18 @@
+{
+  "case": "guiguinto",
+  "gap_fields": [
+    "evacuee_people",
+    "shelter_capacity_people",
+    "vehicle_seats",
+    "opening_water_ml"
+  ],
+  "html_path": "release/validation/reports/guiguinto-gap_only.html",
+  "html_sha256": "afec69964b60984531ee6a648617d540891ec50602660b3e44ac72017aeae430",
+  "metric_count": 0,
+  "pdf_path": "release/validation/reports/guiguinto-gap_only.pdf",
+  "pdf_sha256": "0ec7c26428483111a415d4462c822550f90756b40778f603a961b8c83884b251",
+  "readiness": "source_only_document_review; simulation_not_performed",
+  "schema_version": "milestone-a-source-only-gaps.v1",
+  "source_only": true,
+  "source_sha256": "b355207cefdee01f3a67876b1f11b442b90c1acb7b7c6b49ad48433c29aafb95"
+}

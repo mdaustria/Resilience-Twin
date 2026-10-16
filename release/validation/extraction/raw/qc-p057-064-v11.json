@@ -1,0 +1,51 @@
+{
+  "candidates": [
+    {
+      "field_key": "evacuation_objective_ppas",
+      "entity_key": "pre_emptive_evacuation",
+      "source_value": "2",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 58,
+        "region_id": "p58",
+        "excerpt": "2 Pre-emptively evacuate communities in identified hazard prone areas | Communities are evacuated safely, pre-emptively, and immediately | 2"
+      }
+    },
+    {
+      "field_key": "evacuation_center_needs_ppas",
+      "entity_key": "temporary_shelter_or_evacuation_centers",
+      "source_value": "3",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 58,
+        "region_id": "p58",
+        "excerpt": "6 Immediately provide basic social services, necessities, and address psychosocial needs | Basic necessities, social services, including psychosocial needs are provided to the population (whether inside or outside evacuation centers) | 3"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p57",
+    "p58",
+    "p59",
+    "p60",
+    "p61",
+    "p62",
+    "p63",
+    "p64"
+  ],
+  "visually_inspected_regions": [
+    "p57",
+    "p58",
+    "p59",
+    "p60",
+    "p61",
+    "p62",
+    "p63",
+    "p64"
+  ],
+  "unresolved_regions": []
+}

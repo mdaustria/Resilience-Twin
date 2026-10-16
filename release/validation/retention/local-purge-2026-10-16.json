@@ -1,0 +1,20 @@
+{
+  "schema_version": "local-purge-evidence.v1",
+  "date": "2026-10-16",
+  "command": "uv run pytest tests/integration/test_purge.py -q --tb=short -s",
+  "result": "2 passed in 9.67s",
+  "rehearsal": {
+    "firestore": "pinned local emulator",
+    "objects": "synthetic versioned object store",
+    "cycle_elapsed_seconds": 1.173,
+    "workspaces_scanned": 2,
+    "object_generations_deleted": 123,
+    "content_documents_deleted": 121,
+    "bounded_pages": 5,
+    "backlog": 0,
+    "measured_content_items_per_second": 208.01,
+    "late_object_deleted_in_next_hourly_cycle": true,
+    "other_guest_unchanged": true
+  },
+  "interpretation": "The measured local sample of 244 content items completed well inside 24 hours and demonstrates repeatable bounded-page throughput. It does not establish a maximum permitted workspace volume, deployed scheduler delivery, Cloud Storage soft-delete behavior, or production Firestore/Storage throughput. Those remain Phase 6 infrastructure and retention gates."
+}

@@ -1,0 +1,77 @@
+{
+  "candidates": [
+    {
+      "field_key": "population_at_risk_infectious_diseases",
+      "entity_key": "quezon_city",
+      "source_value": "3.2",
+      "unit": "PERSON",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 42,
+        "region_id": "p42",
+        "excerpt": "Unprecedented infectious diseases possibly to give impact to 3.2 population of QC"
+      }
+    },
+    {
+      "field_key": "contingency_plans_count",
+      "entity_key": "quezon_city",
+      "source_value": "3",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 45,
+        "region_id": "p45",
+        "excerpt": "Currently, QC have three (3) Contingency Plans"
+      }
+    },
+    {
+      "field_key": "responding_vehicle_per_barangay",
+      "entity_key": "barangay_responding_vehicles",
+      "source_value": "1",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 47,
+        "region_id": "p47",
+        "excerpt": "Every barangay has a responding vehicle"
+      }
+    },
+    {
+      "field_key": "regional_evacuation_center_count",
+      "entity_key": "fairview_evacuation_center",
+      "source_value": "1",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 48,
+        "region_id": "p48",
+        "excerpt": "Regional Evacuation Center in Fairview was established thru Cong. Vargas' initiative"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p41",
+    "p42",
+    "p43",
+    "p44",
+    "p45",
+    "p46",
+    "p47",
+    "p48"
+  ],
+  "visually_inspected_regions": [
+    "p41",
+    "p42",
+    "p43",
+    "p44",
+    "p45",
+    "p46",
+    "p47",
+    "p48"
+  ],
+  "unresolved_regions": []
+}

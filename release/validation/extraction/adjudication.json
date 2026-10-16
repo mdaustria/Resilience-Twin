@@ -1,0 +1,151 @@
+{
+  "schema_version": "source-critical-review.v1",
+  "review_date": "2026-10-14",
+  "review_basis": "Local engineering inspection of the complete admitted public PDFs, selected physical-page text and rendered pages; no field or independent-domain claim.",
+  "candidate_policy": "Provider statements are unreviewed candidates. Accepted documentary facts are not operational inventory, demand, locations, or water stocks without separate readiness review.",
+  "sources": {
+    "qc": {
+      "document_sha256": "95b5c5e1177946c45f71412599df914de365feb6f6694c684d9fabaefde4990b",
+      "physical_pages": 112,
+      "provider_groups": 14,
+      "critical_items_total": 6,
+      "critical_items_reviewed": 6,
+      "provider_supported": 2,
+      "manual_recovered": 4,
+      "items": [
+        {
+          "id": "qc_population_context",
+          "physical_pages": [36],
+          "disposition": "provider_supported",
+          "source_fact": "The plan estimates a city population of 2.86 million in a section citing the 2010 census; this is historical city context, not selected-area evacuation demand.",
+          "raw_group": "raw/qc-p033-040-v11.json"
+        },
+        {
+          "id": "qc_flood_priority",
+          "physical_pages": [39],
+          "disposition": "manual_recovered",
+          "source_fact": "Talayan, Damayang Lagi, Roxas, St. Peter and Dona Imelda are listed as the top flood-impact priority barangays. This ranking does not define pickup demand or road closures.",
+          "raw_group": "raw/qc-p033-040-v11.json"
+        },
+        {
+          "id": "qc_district_shelter_target",
+          "physical_pages": [82],
+          "disposition": "provider_supported",
+          "source_fact": "One permanent evacuation area per each of six districts is a 2021-2027 project output, not six verified current shelters or capacities.",
+          "raw_group": "raw/qc-p081-088-v11.json"
+        },
+        {
+          "id": "qc_portable_water_target",
+          "physical_pages": [84],
+          "disposition": "manual_recovered",
+          "source_fact": "Portable drinking-water stations are mentioned with a purchase activity; no usable initial shelter water volume is stated.",
+          "raw_group": "raw/qc-p081-088-v11.json"
+        },
+        {
+          "id": "qc_water_stock_gap",
+          "physical_pages": [87],
+          "disposition": "manual_recovered",
+          "source_fact": "Water purification tablets and safe-drinking-water objectives are listed; initial per-shelter potable stock and delivery rate remain unknown.",
+          "raw_group": "raw/qc-p081-088-v11.json"
+        },
+        {
+          "id": "qc_annex_gap",
+          "physical_pages": [111, 112],
+          "disposition": "manual_recovered",
+          "source_fact": "Page 111 lists Annexes A-D, while the supplied volume ends with a blank page 112; the substantive annex contents are not present in this source.",
+          "raw_group": "raw/qc-p105-112-v11.json"
+        }
+      ],
+      "review_warnings": [
+        "A provider value of 100% with COUNT unit was rejected during replay; percentages cannot be counted as facilities.",
+        "No city-wide quantity is promoted to the selected study-area population or shelter inventory."
+      ]
+    },
+    "guiguinto": {
+      "document_sha256": "b355207cefdee01f3a67876b1f11b442b90c1acb7b7c6b49ad48433c29aafb95",
+      "physical_pages": 191,
+      "provider_groups": 27,
+      "critical_items_total": 10,
+      "critical_items_reviewed": 10,
+      "provider_supported": 5,
+      "manual_recovered": 5,
+      "items": [
+        {
+          "id": "guiguinto_population",
+          "physical_pages": [38],
+          "disposition": "provider_supported",
+          "source_fact": "The 2020 census population is 112,889 across 14 barangays. It is not the same as flood exposure or scenario evacuation demand.",
+          "raw_group": "raw/guiguinto-p033-040-v11.json"
+        },
+        {
+          "id": "guiguinto_water_context",
+          "physical_pages": [46],
+          "disposition": "provider_supported",
+          "source_fact": "In June 2014, 11,861 of 20,194 households were reported with Level 3 water connections; the plan separately mentions 23 pumping stations. Neither is a measured initial shelter water stock.",
+          "raw_group": "raw/guiguinto-p041-048-v11.json"
+        },
+        {
+          "id": "guiguinto_flood_exposure",
+          "physical_pages": [80],
+          "disposition": "provider_supported",
+          "source_fact": "The flood section lists 56,516 affected people and 11,300 affected households. These overlap the municipality population and are not added to it.",
+          "raw_group": "raw/guiguinto-p073-080-v11.json"
+        },
+        {
+          "id": "guiguinto_visual_area",
+          "physical_pages": [84],
+          "disposition": "provider_supported",
+          "source_fact": "The visually inspected table prints 11.43 square kilometres under high flood susceptibility and 10.01 under low-to-moderate susceptibility; these are areas, not people or evacuation demand.",
+          "raw_group": "raw/guiguinto-p084-084-v11.json"
+        },
+        {
+          "id": "guiguinto_shelter_units_range",
+          "physical_pages": [120, 121],
+          "disposition": "provider_supported",
+          "source_fact": "The split table labels school, day-care and covered-court capacities in FAMILY units. Day-care entries use the 5-6 range; no family-to-person factor is supplied by this table.",
+          "raw_group": "raw/guiguinto-p120-121-v11.json"
+        },
+        {
+          "id": "guiguinto_capacity_discrepancy",
+          "physical_pages": [121],
+          "disposition": "manual_recovered",
+          "source_fact": "Printed capacity subtotals 2,753 + 84 + 400 + 500 + 50 + 200 sum to 3,987 FAMILY, while the printed grand total is 4,087 FAMILY. Both values are retained as a critical conflict.",
+          "raw_group": "raw/guiguinto-p120-121-v11.json"
+        },
+        {
+          "id": "guiguinto_shared_facilities_and_marks",
+          "physical_pages": [120, 121],
+          "disposition": "manual_recovered",
+          "source_fact": "Page 121 uses graphic checks/crosses for facility presence and prints GMACC, Kanlungan and Municipal Hall capacities in shared columns. Provider assignments of those shared capacities to Cutcut are rejected pending location/capacity review; blank cells are unknown, not zero.",
+          "raw_group": "raw/guiguinto-p120-121-v11.json"
+        },
+        {
+          "id": "guiguinto_pickups_modes",
+          "physical_pages": [122],
+          "disposition": "manual_recovered",
+          "source_fact": "Barangay halls are stated pickup points, with barangay/municipal service vehicles and walking or small/medium vehicle access described. Seats, exact schedules and road times are not established.",
+          "raw_group": "raw/guiguinto-p122-129-v11.json"
+        },
+        {
+          "id": "guiguinto_proposed_resources",
+          "physical_pages": [136],
+          "disposition": "manual_recovered",
+          "source_fact": "The table is headed Proposed/Programs/Projects/Activities and includes rescue vehicle/boat procurement costs. The provider mislabeled currency values as COUNT; those candidates are rejected and cannot become fleet inventory.",
+          "raw_group": "raw/guiguinto-p130-137-v11.json"
+        },
+        {
+          "id": "guiguinto_gmacc_role",
+          "physical_pages": [164],
+          "disposition": "manual_recovered",
+          "source_fact": "The plan calls GMACC the primary evacuation center. Its exact coordinate, access connector and reconciled capacity are not supplied by that sentence.",
+          "raw_group": "raw/guiguinto-p162-169-v11.json"
+        }
+      ],
+      "review_warnings": [
+        "The 2023-2025 plan period is historical for a later scenario; applicability must be acknowledged.",
+        "A 7.6 water-use candidate on page 126 has a per-person dimension requiring source and model-unit review before promotion.",
+        "Provider slice-relative citations on the split table were normalized only where region ID and group page position agreed; the raw response remains unchanged."
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "source": "guiguinto",
+  "document_sha256": "b355207cefdee01f3a67876b1f11b442b90c1acb7b7c6b49ad48433c29aafb95",
+  "group_pages": [
+    81,
+    82,
+    83
+  ],
+  "extractor_version": "gemini-3.8-flash-v1.1-20261014",
+  "mode": "replay",
+  "raw_sha256": "f3e286cca14996dc2ef3979ec6eb7070a10789f81ce87120c71504822de619a7",
+  "candidate_count": 10,
+  "coverage": [
+    {
+      "physical_page": 81,
+      "region_id": "p81",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 82,
+      "region_id": "p82",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 83,
+      "region_id": "p83",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    }
+  ],
+  "issues": [],
+  "usage": {
+    "input_tokens": 1989,
+    "output_tokens": 1459,
+    "total_tokens": 3448
+  },
+  "response_id": "oiXPasySJJ6V1e8PpPH1kQo"
+}

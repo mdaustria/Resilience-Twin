@@ -1,8 +1,38 @@
 {
-  "_comment": [
-    "Purpose: Provide protocol support for: Freeze the independent validation protocol.",
-    "Task: docs/plan.md 2.1.",
-    "Uses: docs/architecture.md, docs/plan.md.",
-    "TODO(agent): implement"
-  ]
+  "schema_version": "validation.protocol.v2",
+  "protocol_version": "0.2.0",
+  "freeze_status": "frozen",
+  "frozen_on": "2026-10-14",
+  "scope_decision": "User-requested PDF + textual location/OSM engineering verification; ADR-030",
+  "required_external_inputs": [
+    "pdf",
+    "textual_location_for_osm"
+  ],
+  "claim_scope": "Exploratory input-based results; no empirical predictive-validity claim",
+  "benchmark_classes": [
+    {
+      "id": "synthetic_exact",
+      "purpose": "Hand-calculated accounting and boundary regression references",
+      "fixture_path": "tests/fixtures/validation/cases.json",
+      "fixture_sha256": "153198c459799663792a813d2f53ab5430d9860ea654c8bf499e8b09756c6890",
+      "calibration_case_ids": [
+        "one_trip_calibration"
+      ],
+      "reference_case_ids": [
+        "unfinished_at_horizon",
+        "shelter_and_water_limit"
+      ],
+      "tolerances": {
+        "arrival_time_seconds": 0,
+        "evacuated_people": 0,
+        "water_shortfall_ml": 0
+      },
+      "tolerance_status": "exact_synthetic_arithmetic"
+    }
+  ],
+  "reference_scoring": "not_started",
+  "missing_results": "unscored_not_passed",
+  "assumption_policy": "Unknown stays unknown unless replaced by a visible versioned user-accepted modeling assumption; no silent zeros or factual promotion",
+  "change_control": "Version changes with dated rationale; retain prior scores and rerun original and changed thresholds; no external signoff required",
+  "content_sha256": "fa14318457dda7f15fa105973c7cc5bd380c7fa8e23949f9726d7f8be972d227"
 }

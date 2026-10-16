@@ -1,0 +1,38 @@
+{
+  "discrepancies": [],
+  "fixture_sha256": "153198c459799663792a813d2f53ab5430d9860ea654c8bf499e8b09756c6890",
+  "method": "ResourceLedger feasibility/dispatch, PopulationLedger terminal accounting and WaterLedger one-day arrival quota; no field calibration",
+  "schema_version": "arithmetic-reference-scores.v1",
+  "scored_on": "2026-10-14",
+  "scores": {
+    "one_trip_calibration": {
+      "arrival_time_seconds": 300,
+      "evacuated_people": 6,
+      "unserved_people": 4,
+      "water_required_ml": 6000,
+      "water_shortfall_ml": 2000,
+      "water_used_ml": 4000
+    },
+    "shelter_and_water_limit": {
+      "arrival_time_seconds": 120,
+      "evacuated_people": 4,
+      "unserved_people": 3,
+      "water_required_ml": 4000,
+      "water_shortfall_ml": 1000,
+      "water_used_ml": 3000
+    },
+    "unfinished_at_horizon": {
+      "arrival_time_seconds": null,
+      "evacuated_people": 0,
+      "unserved_people": 5,
+      "water_required_ml": 0,
+      "water_shortfall_ml": 0,
+      "water_used_ml": 0
+    }
+  },
+  "tolerances": {
+    "arrival_time_seconds": 0,
+    "evacuated_people": 0,
+    "water_shortfall_ml": 0
+  }
+}

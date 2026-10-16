@@ -1,8 +1,14 @@
 {
-  "_comment": [
-    "Purpose: Provide limits support for: Enforce session, account, network, and global budgets.",
-    "Task: docs/plan.md 4.9, 6.5.",
-    "Uses: docs/architecture.md, docs/plan.md.",
-    "TODO(agent): implement"
-  ]
+  "_comment": "Locally enforced engineering caps. Full-file extraction used 14 QC and 27 Guiguinto groups of at most eight pages. One guest can complete 27 extraction groups plus graph/simulation/report work at the server-owned stage costs below. Task 6.5 must remeasure provider cost and load before public release.",
+  "status": "provisional-local",
+  "units": "estimated compute units",
+  "guest_daily_units": 64,
+  "network_daily_units": 128,
+  "global_daily_units": 500,
+  "global_active_jobs": 4,
+  "challenge_after_network_units": 64,
+  "network_daily_sessions": 4,
+  "global_daily_sessions": 50,
+  "stage_units": {"extraction": 1, "graph": 2, "simulation": 3, "report": 1},
+  "full_file_minimum": {"pdf_bytes": 9418109, "pdf_pages": 191, "max_extraction_groups_observed": 27}
 }

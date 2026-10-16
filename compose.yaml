@@ -1,4 +1,3 @@
-# Purpose: Configure local PostGIS and service containers.
-# Task: docs/plan.md 4.1.
-# Uses: docs/architecture.md, docs/plan.md.
-# TODO(agent): implement
+# Firestore emulator runs through the pinned firebase-tools CLI.
+# No SQL or second database service is used by Task 4.1.
+services: {}

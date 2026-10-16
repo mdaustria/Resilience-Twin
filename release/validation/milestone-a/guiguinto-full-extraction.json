@@ -1,0 +1,117 @@
+{
+  "adjudication_path": "release/validation/extraction/adjudication.json",
+  "case": "guiguinto",
+  "critical_items": [
+    {
+      "disposition": "provider_supported",
+      "id": "guiguinto_population",
+      "physical_pages": [
+        38
+      ],
+      "raw_group": "raw/guiguinto-p033-040-v11.json",
+      "source_fact": "The 2020 census population is 112,889 across 14 barangays. It is not the same as flood exposure or scenario evacuation demand."
+    },
+    {
+      "disposition": "provider_supported",
+      "id": "guiguinto_water_context",
+      "physical_pages": [
+        46
+      ],
+      "raw_group": "raw/guiguinto-p041-048-v11.json",
+      "source_fact": "In June 2014, 11,861 of 20,194 households were reported with Level 3 water connections; the plan separately mentions 23 pumping stations. Neither is a measured initial shelter water stock."
+    },
+    {
+      "disposition": "provider_supported",
+      "id": "guiguinto_flood_exposure",
+      "physical_pages": [
+        80
+      ],
+      "raw_group": "raw/guiguinto-p073-080-v11.json",
+      "source_fact": "The flood section lists 56,516 affected people and 11,300 affected households. These overlap the municipality population and are not added to it."
+    },
+    {
+      "disposition": "provider_supported",
+      "id": "guiguinto_visual_area",
+      "physical_pages": [
+        84
+      ],
+      "raw_group": "raw/guiguinto-p084-084-v11.json",
+      "source_fact": "The visually inspected table prints 11.43 square kilometres under high flood susceptibility and 10.01 under low-to-moderate susceptibility; these are areas, not people or evacuation demand."
+    },
+    {
+      "disposition": "provider_supported",
+      "id": "guiguinto_shelter_units_range",
+      "physical_pages": [
+        120,
+        121
+      ],
+      "raw_group": "raw/guiguinto-p120-121-v11.json",
+      "source_fact": "The split table labels school, day-care and covered-court capacities in FAMILY units. Day-care entries use the 5-6 range; no family-to-person factor is supplied by this table."
+    },
+    {
+      "disposition": "manual_recovered",
+      "id": "guiguinto_capacity_discrepancy",
+      "physical_pages": [
+        121
+      ],
+      "raw_group": "raw/guiguinto-p120-121-v11.json",
+      "source_fact": "Printed capacity subtotals 2,753 + 84 + 400 + 500 + 50 + 200 sum to 3,987 FAMILY, while the printed grand total is 4,087 FAMILY. Both values are retained as a critical conflict."
+    },
+    {
+      "disposition": "manual_recovered",
+      "id": "guiguinto_shared_facilities_and_marks",
+      "physical_pages": [
+        120,
+        121
+      ],
+      "raw_group": "raw/guiguinto-p120-121-v11.json",
+      "source_fact": "Page 121 uses graphic checks/crosses for facility presence and prints GMACC, Kanlungan and Municipal Hall capacities in shared columns. Provider assignments of those shared capacities to Cutcut are rejected pending location/capacity review; blank cells are unknown, not zero."
+    },
+    {
+      "disposition": "manual_recovered",
+      "id": "guiguinto_pickups_modes",
+      "physical_pages": [
+        122
+      ],
+      "raw_group": "raw/guiguinto-p122-129-v11.json",
+      "source_fact": "Barangay halls are stated pickup points, with barangay/municipal service vehicles and walking or small/medium vehicle access described. Seats, exact schedules and road times are not established."
+    },
+    {
+      "disposition": "manual_recovered",
+      "id": "guiguinto_proposed_resources",
+      "physical_pages": [
+        136
+      ],
+      "raw_group": "raw/guiguinto-p130-137-v11.json",
+      "source_fact": "The table is headed Proposed/Programs/Projects/Activities and includes rescue vehicle/boat procurement costs. The provider mislabeled currency values as COUNT; those candidates are rejected and cannot become fleet inventory."
+    },
+    {
+      "disposition": "manual_recovered",
+      "id": "guiguinto_gmacc_role",
+      "physical_pages": [
+        164
+      ],
+      "raw_group": "raw/guiguinto-p162-169-v11.json",
+      "source_fact": "The plan calls GMACC the primary evacuation center. Its exact coordinate, access connector and reconciled capacity are not supplied by that sentence."
+    }
+  ],
+  "critical_items_reviewed": 10,
+  "failed_regions": 0,
+  "intake_mode": "saved",
+  "intake_path": "release/validation/document-intake/full-source-intake.json",
+  "original_bytes_preserved": true,
+  "physical_pages": 191,
+  "physical_pages_covered": 191,
+  "provider_groups": 27,
+  "region_coverage_records": 193,
+  "review_warnings": [
+    "The 2023-2025 plan period is historical for a later scenario; applicability must be acknowledged.",
+    "A 7.6 water-use candidate on page 126 has a per-person dimension requiring source and model-unit review before promotion.",
+    "Provider slice-relative citations on the split table were normalized only where region ID and group page position agreed; the raw response remains unchanged."
+  ],
+  "schema_version": "milestone-a-full-extraction.v1",
+  "source_byte_size": 9418109,
+  "source_sha256": "b355207cefdee01f3a67876b1f11b442b90c1acb7b7c6b49ad48433c29aafb95",
+  "unresolved_regions": 0,
+  "verification_path": "release/validation/extraction/verification.json"
+}

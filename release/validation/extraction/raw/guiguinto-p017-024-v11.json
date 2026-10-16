@@ -1,0 +1,60 @@
+{
+  "candidates": [
+    {
+      "field_key": "total_population",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "4,000",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "1915-01-01",
+      "citation": {
+        "physical_page": 23,
+        "region_id": "p23",
+        "excerpt": "The Executive Order 126 gave Guiguinto as officially recognized independent municipality on January 1, 1915, with Antonio Figueroa as its first \"municipal president\". The town's population was then about 4,000."
+      }
+    },
+    {
+      "field_key": "total_population",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "10,629",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "1960",
+      "citation": {
+        "physical_page": 23,
+        "region_id": "p23",
+        "excerpt": "The 1960 census placed Guiguinto's population at 10,629."
+      }
+    },
+    {
+      "field_key": "total_population",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "112,889",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2020",
+      "citation": {
+        "physical_page": 23,
+        "region_id": "p23",
+        "excerpt": "The latest census conducted by PSA on 2020, Guiguinto has a total population of 112,889."
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p17",
+    "p18",
+    "p19",
+    "p20",
+    "p21",
+    "p22",
+    "p23",
+    "p24"
+  ],
+  "visually_inspected_regions": [
+    "p21",
+    "p22",
+    "p23",
+    "p24"
+  ],
+  "unresolved_regions": []
+}

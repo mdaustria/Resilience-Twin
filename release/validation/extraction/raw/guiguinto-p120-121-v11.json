@@ -1,0 +1,550 @@
+{
+  "candidates": [
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Cut cut",
+      "source_value": "95",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "1 Cut cut 95"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Cut cut",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "1 Cut cut ... 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_covered_court",
+      "entity_key": "Cut cut",
+      "source_value": "100",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "1 Cut cut ... 100"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_gmacc",
+      "entity_key": "Cut cut",
+      "source_value": "500",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "1 Cut cut ... 500"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_kanlungan_at_kusina_ng_bayan",
+      "entity_key": "Cut cut",
+      "source_value": "50",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "1 Cut cut ... 50"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_municipal_hall",
+      "entity_key": "Cut cut",
+      "source_value": "200",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "1 Cut cut ... 200"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Daungan",
+      "source_value": "54",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "2 Daungan 54"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Daungan",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "2 Daungan ... 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Ilang- Ilang",
+      "source_value": "106",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "3 Ilang- Ilang 106"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Ilang- Ilang",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "3 Ilang- Ilang ... 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_covered_court",
+      "entity_key": "Ilang- Ilang",
+      "source_value": "100",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "3 Ilang- Ilang ... 100"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Malis",
+      "source_value": "540",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "4 Malis 540"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Malis",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "4 Malis ... 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Panginay",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "5 Panginay 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Poblacion",
+      "source_value": "437",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "6 Poblacion 437"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Poblacion",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "6 Poblacion ... 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Pritil",
+      "source_value": "132",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "7 Pritil 132"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Pritil",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "7 Pritil ... 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Pulong Gubat",
+      "source_value": "51",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "8 Pulong Gubat 51"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Pulong Gubat",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "8 Pulong Gubat ... 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Sta. Cruz",
+      "source_value": "236",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "9 Sta. Cruz 236"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Sta. Cruz",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "9 Sta. Cruz ... 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_covered_court",
+      "entity_key": "Sta. Cruz",
+      "source_value": "100",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "9 Sta. Cruz ... 100"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Sta. Rita",
+      "source_value": "355",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "10 Sta. Rita 355"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Sta. Rita",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "10 Sta. Rita ... 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Tabang",
+      "source_value": "196",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "11 Tabang 196"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Tabang",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "11 Tabang ... 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Tabe",
+      "source_value": "142",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "12 Tabe 142"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Tabe",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "12 Tabe ... 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_covered_court",
+      "entity_key": "Tabe",
+      "source_value": "100",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "12 Tabe ... 100"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Tiaong",
+      "source_value": "210",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "13 Tiaong 210"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Tiaong",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "13 Tiaong ... 5-6"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_schools",
+      "entity_key": "Tuktukan",
+      "source_value": "299",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "14 Tuktukan 299"
+      }
+    },
+    {
+      "field_key": "evacuation_capacity_day_care_centers",
+      "entity_key": "Tuktukan",
+      "source_value": "5-6",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "14 Tuktukan ... 5-6"
+      }
+    },
+    {
+      "field_key": "total_evacuation_capacity_schools",
+      "entity_key": "Guiguinto",
+      "source_value": "2753",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "2753"
+      }
+    },
+    {
+      "field_key": "total_evacuation_capacity_day_care_centers",
+      "entity_key": "Guiguinto",
+      "source_value": "84",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "84"
+      }
+    },
+    {
+      "field_key": "total_evacuation_capacity_covered_courts",
+      "entity_key": "Guiguinto",
+      "source_value": "400",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "400"
+      }
+    },
+    {
+      "field_key": "total_evacuation_capacity_gmacc",
+      "entity_key": "Guiguinto",
+      "source_value": "500",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "500"
+      }
+    },
+    {
+      "field_key": "total_evacuation_capacity_kanlungan_at_kusina_ng_bayan",
+      "entity_key": "Guiguinto",
+      "source_value": "50",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "50"
+      }
+    },
+    {
+      "field_key": "total_evacuation_capacity_municipal_hall",
+      "entity_key": "Guiguinto",
+      "source_value": "200",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "200"
+      }
+    },
+    {
+      "field_key": "grand_total_evacuation_capacity",
+      "entity_key": "Guiguinto",
+      "source_value": "4,087",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 2,
+        "region_id": "p121_split_table",
+        "excerpt": "TOTAL 4,087"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p120_split_table",
+    "p120_graphic_marks",
+    "p121_split_table",
+    "p121_graphic_marks"
+  ],
+  "visually_inspected_regions": [
+    "p120_split_table",
+    "p120_graphic_marks",
+    "p121_split_table",
+    "p121_graphic_marks"
+  ],
+  "unresolved_regions": []
+}

@@ -1,0 +1,190 @@
+{
+  "cases": {
+    "guiguinto": {
+      "area": {
+        "boundary_lon_lat": [
+          [
+            120.874,
+            14.823
+          ],
+          [
+            120.884,
+            14.823
+          ],
+          [
+            120.884,
+            14.832
+          ],
+          [
+            120.874,
+            14.832
+          ],
+          [
+            120.874,
+            14.823
+          ]
+        ],
+        "connectors": [
+          {
+            "accessible": true,
+            "distance_m": 24,
+            "id": "guiguinto-poblacion-pilot-cell-pickup",
+            "latitude": 14.829,
+            "longitude": 120.876,
+            "point_id": "Poblacion representative pickup anchor",
+            "reviewed": true,
+            "road_node_id": "5733371091",
+            "source": "Manual exploratory coordinate and pinned OSM road proximity; physical access assumed"
+          },
+          {
+            "accessible": true,
+            "distance_m": 25,
+            "id": "guiguinto-poblacion-pilot-cell-facility",
+            "latitude": 14.82683,
+            "longitude": 120.87889,
+            "point_id": "Approximate GMACC anchor",
+            "reviewed": true,
+            "road_node_id": "9357839617",
+            "source": "Manual exploratory coordinate and pinned OSM road proximity; physical access assumed"
+          }
+        ],
+        "cross_boundary_assumptions": [
+          "Only the named 100-person hypothetical cohort is modeled; no plan-wide population is allocated",
+          "Neighboring facilities and populations are excluded; their availability and permission are unknown",
+          "The rectangle is a modeling cell, not an administrative barangay boundary",
+          "Road-node proximity is checked; physical connector access and shelter operability are assumptions"
+        ],
+        "id": "guiguinto-poblacion-pilot-cell",
+        "label": "Poblacion-centered Guiguinto pilot cell",
+        "members": [
+          {
+            "id": "poblacion-pilot-cohort",
+            "included": true,
+            "label": "Poblacion-centered scenario cohort",
+            "population": 100,
+            "reason": "Illustrative 100-person assumption; no municipal or barangay total is allocated"
+          },
+          {
+            "id": "rest-of-guiguinto",
+            "included": false,
+            "label": "Rest of Guiguinto",
+            "population": null,
+            "reason": "Outside this bounded pilot cell and cohort"
+          }
+        ],
+        "reviewer": "local-operator-source-and-route-review-2026-10-14",
+        "revision": 1,
+        "routing_buffer_m": 250,
+        "source": "manual"
+      },
+      "blockers": [],
+      "case": "guiguinto",
+      "coordinate_basis": [
+        "Poblacion representative pickup anchor is an explicit modeling assumption; not a verified barangay hall",
+        "https://philippines.worldplaces.me/places-in-guiguinto/29325383-guiguinto-municipal-athletic-and-cultural-center.html (approximate GMACC point; plan physical page 164 identifies its primary evacuation role)"
+      ],
+      "graph_edge_count": 2231,
+      "graph_sha256": "ef85554a12909a7d0728ee1ca390718714b2c721cf73cec04e222435fd0f9500",
+      "route_distance_mm": 569296,
+      "route_seconds": 64,
+      "route_status": "found",
+      "scope_digest": "08551344a8608e28801066a75338f009fb0942e1c841af571968b98c9bcc011d",
+      "scope_id": "guiguinto-poblacion-pilot-cell:08551344a8608e28",
+      "source_sha256": "4b4ceb0440f06b92ae4edcaf33ca970e8a685c13cc61281d929ecda5d086ae75"
+    },
+    "qc": {
+      "area": {
+        "boundary_lon_lat": [
+          [
+            121.005,
+            14.629
+          ],
+          [
+            121.018,
+            14.629
+          ],
+          [
+            121.018,
+            14.638
+          ],
+          [
+            121.005,
+            14.638
+          ],
+          [
+            121.005,
+            14.629
+          ]
+        ],
+        "connectors": [
+          {
+            "accessible": true,
+            "distance_m": 219,
+            "id": "qc-talayan-pilot-cell-pickup",
+            "latitude": 14.634,
+            "longitude": 121.0113,
+            "point_id": "Talayan representative pickup anchor",
+            "reviewed": true,
+            "road_node_id": "13137612581",
+            "source": "Manual exploratory coordinate and pinned OSM road proximity; physical access assumed"
+          },
+          {
+            "accessible": true,
+            "distance_m": 11,
+            "id": "qc-talayan-pilot-cell-facility",
+            "latitude": 14.636,
+            "longitude": 121.014,
+            "point_id": "Illustrative Talayan shelter anchor",
+            "reviewed": true,
+            "road_node_id": "39649824",
+            "source": "Manual exploratory coordinate and pinned OSM road proximity; physical access assumed"
+          }
+        ],
+        "cross_boundary_assumptions": [
+          "Only the named 100-person hypothetical cohort is modeled; no plan-wide population is allocated",
+          "Neighboring facilities and populations are excluded; their availability and permission are unknown",
+          "The rectangle is a modeling cell, not an administrative barangay boundary",
+          "Road-node proximity is checked; physical connector access and shelter operability are assumptions"
+        ],
+        "id": "qc-talayan-pilot-cell",
+        "label": "Talayan-centered QC pilot cell",
+        "members": [
+          {
+            "id": "talayan-pilot-cohort",
+            "included": true,
+            "label": "Talayan-centered scenario cohort",
+            "population": 100,
+            "reason": "Illustrative 100-person assumption; no city or barangay total is allocated"
+          },
+          {
+            "id": "rest-of-qc",
+            "included": false,
+            "label": "Rest of Quezon City",
+            "population": null,
+            "reason": "Outside this bounded pilot cell and cohort"
+          }
+        ],
+        "reviewer": "local-operator-source-and-route-review-2026-10-14",
+        "revision": 1,
+        "routing_buffer_m": 250,
+        "source": "manual"
+      },
+      "blockers": [],
+      "case": "qc",
+      "coordinate_basis": [
+        "https://www.philatlas.com/luzon/ncr/quezon-city/talayan.html (representative Talayan point; not an administrative boundary)",
+        "Illustrative shelter anchor manually selected within the pinned OSM extent"
+      ],
+      "graph_edge_count": 3272,
+      "graph_sha256": "d03bc52f0d1337281020eeb100c7d1de289798eb52393651f14ecd70e4f8845d",
+      "route_distance_mm": 2053257,
+      "route_seconds": 211,
+      "route_status": "found",
+      "scope_digest": "26df37e5b0afb2e83a6d112a38a9f89643a6af27b9ff6512403c957cf98058d5",
+      "scope_id": "qc-talayan-pilot-cell:26df37e5b0afb2e8",
+      "source_sha256": "fbea4907750e0a10be7be6a7b9188ec91d5c74c9790ab600ea02265434f73ae6"
+    }
+  },
+  "review_date": "2026-10-14",
+  "schema_version": "pilot-geography-review.v1"
+}

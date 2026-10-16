@@ -1,0 +1,15 @@
+{
+  "schema_version": "milestone-a-engineering-discrepancies.v1",
+  "scope": "input_based_engineering",
+  "checked_on": "2026-10-14",
+  "unresolved_critical": [],
+  "resolved": [
+    {"id": "utrecht-car-reverse", "resolution": "Excluded OSM access=no;psv=yes way from car routing; corrected reviewed route is 135 seconds", "evidence": "release/validation/geography/utrecht-compiled-review.json"},
+    {"id": "api-import-boundary", "resolution": "Moved local geography route exposure behind the geo adapter; 266 Python tests passed in combined check before final import-order lint fix", "evidence": "tests/contracts/test_import_boundaries.py"}
+  ],
+  "open_noncritical": [
+    {"id": "guiguinto-family-total", "handling": "3,987 FAMILY subtotals versus printed 4,087 FAMILY remains a documentary conflict; not converted to people or used as capacity. Hypothetical 150-person capacity is separately labeled."},
+    {"id": "map-and-field-access", "handling": "Connector accessibility, live shelter status and current road conditions are unverified assumptions; reports remain exploratory."},
+    {"id": "full-jurisdiction-coverage", "handling": "Both proofs use bounded model cells and explicitly exclude the remaining jurisdictions."}
+  ]
+}

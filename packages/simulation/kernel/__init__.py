@@ -1,6 +1,10 @@
-# Purpose: Reserve the kernel module or artifact location for: Implement population states, event ordering, and horizon accounting.
-# Task: docs/plan.md 2.5.
-# Uses: packages/contracts/__init__.py.
-# TODO(agent): implement
+"""Deterministic event timing and exclusive population accounting."""
 
-__all__ = ()
+from packages.simulation.kernel.events import Event, EventQueue, Phase
+from packages.simulation.kernel.population import (
+    PopulationLedger,
+    PopulationSlice,
+    PopulationState,
+)
+
+__all__ = ("Event", "EventQueue", "Phase", "PopulationLedger", "PopulationSlice", "PopulationState")

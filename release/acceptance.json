@@ -1,8 +1,66 @@
 {
-  "_comment": [
-    "Purpose: Provide acceptance support for: Demonstrate and accept milestone A.",
-    "Task: docs/plan.md 3.9, 5.7, 6.6, 6.8.",
-    "Uses: docs/architecture.md, docs/plan.md.",
-    "TODO(agent): implement"
-  ]
+  "milestone_a": {
+    "accepted_on": "2026-10-14",
+    "claim_scope": "input_based_engineering_only",
+    "evidence": {
+      "boundary_replay": {
+        "path": "release/validation/milestone-a/boundary-replay.json",
+        "sha256": "6c6db8276d70a8b2fe3cad1ff9f87d40479ada089bafee641c5f38b23d6ee464"
+      },
+      "dependency_review": {
+        "path": "release/dependencies.md",
+        "sha256": "5107c603c827d88470c436caf236036316c2b7ae1e776c3384ab62ca028400c5"
+      },
+      "engineering_discrepancies": {
+        "path": "release/validation/milestone-a/engineering-discrepancies.json",
+        "sha256": "49a11960817c59ff0d3a30138983408ecfc5c9c880bcdaad118b5ac95f6d07a5"
+      },
+      "frozen_protocol": {
+        "path": "release/validation/protocol.json",
+        "sha256": "f6fe0ebbc511c2b02ae4d12f4bcec68141d484d39294716b48e3ce57e930ee73"
+      },
+      "geography_review": {
+        "path": "release/validation/geography/pilot-areas.json",
+        "sha256": "1cfb5137c3a1228940ceebf69e1909df1b344f6603562c726cc841387566e7e7"
+      },
+      "guiguinto_full_extraction": {
+        "path": "release/validation/milestone-a/guiguinto-full-extraction.json",
+        "sha256": "48e84e98ab9e20f9a36e3fe73ffbfa22e7bb361c5ac083fd5dce713c2f935ab4"
+      },
+      "guiguinto_source_only_gaps": {
+        "path": "release/validation/milestone-a/guiguinto-source-only-gaps.json",
+        "sha256": "7a9e2c53ec074f57a4e0f91e46c89d63cffb01d803c48e9c5351d58003473b4d"
+      },
+      "guiguinto_supplemented_run": {
+        "path": "release/validation/reports/guiguinto-pilot-proof.json",
+        "sha256": "6418f18dcd8c44d0c94d7755594634cc80646e5bd1a93694c8873d614bd47882"
+      },
+      "qc_full_extraction": {
+        "path": "release/validation/milestone-a/qc-full-extraction.json",
+        "sha256": "0889c326d0762c7c7afd252120d6bab5a91f5e0778e2166eb3bbb330dd6bd985"
+      },
+      "qc_source_only_gaps": {
+        "path": "release/validation/milestone-a/qc-source-only-gaps.json",
+        "sha256": "f8afb5d962d90b07fa28f44087c7fed9b5b7878d2d6528220ac4817ceaccebd6"
+      },
+      "qc_supplemented_run": {
+        "path": "release/validation/reports/qc-pilot-proof.json",
+        "sha256": "54563bb9ba113fecceed2c8a2061c16f497a8be13a37d4148029a580d40b3cc7"
+      },
+      "reference_scores": {
+        "path": "release/validation/milestone-a/reference-scores.json",
+        "sha256": "1518a8e7660822b5161c3124def8b85a2f6545bcd0c88df1a0eb884d3ee8835a"
+      },
+      "routing_review": {
+        "path": "release/validation/milestone-a/routing-review.json",
+        "sha256": "71656e4e203c47657fcfed01319269281de16f19915c7e13bf75b0ec0ea64117"
+      },
+      "sensitivity": {
+        "path": "release/validation/sensitivity/tiny-expanded.json",
+        "sha256": "174ee3232002db395dec61a209bb5dba899349878644b089395021f1a5c4829b"
+      }
+    },
+    "status": "accepted"
+  },
+  "schema_version": "acceptance.v2"
 }

@@ -1,6 +1,13 @@
-# Purpose: Reserve the tasks module or artifact location for: Dispatch and claim work with leases and fencing.
-# Task: docs/plan.md 4.7.
-# Uses: packages/application/__init__.py, packages/contracts/__init__.py.
-# TODO(agent): implement
+"""Cloud Tasks boundary with deterministic task naming."""
 
-__all__ = ()
+from typing import Protocol
+
+from packages.adapters.tasks.cloud import CloudTasksQueue
+
+
+class TaskQueue(Protocol):
+    def enqueue(self, *, task_name: str, workspace_id: str, job_id: str,
+                stage: str, attempt: int) -> None: ...
+
+
+__all__ = ["CloudTasksQueue", "TaskQueue"]

@@ -1,0 +1,81 @@
+{
+  "schema_version": "extraction-verification.v1",
+  "sources": {
+    "guiguinto": {
+      "critical_items_reviewed": 10,
+      "document_sha256": "b355207cefdee01f3a67876b1f11b442b90c1acb7b7c6b49ad48433c29aafb95",
+      "estimated_paid_usage_usd": 0.183221,
+      "failed_regions": 0,
+      "issue_codes": {
+        "invalid_unit": 5,
+        "relative_page_normalized": 1
+      },
+      "manual_recovered_critical_items": 5,
+      "physical_pages_covered": 191,
+      "provider_supported_critical_items": 5,
+      "raw_response_sha256": {
+        "guiguinto-p001-008-v11": "597995283515f9dd22797d015b839bb8c2cb900f77a732c41acc66a0f938a5eb",
+        "guiguinto-p009-016-v11": "e37c498f3ac0335a2f06861812264997936c61097d8b0ecd6919470db2bc7a11",
+        "guiguinto-p017-024-v11": "c63d40ea6a013a28abd62608c75a2895cdb3800efd5db8dbbc01375bb077dbe3",
+        "guiguinto-p025-032-v11": "3b0d57ba2afe19fc680c4eed2bd2d193e47ae0c55d5a6eafb3eed2db0a0be08d",
+        "guiguinto-p033-040-v11": "1187cec314f8348253c8c4541ccf899ff5af7af53be0739b445e64bbdda8a813",
+        "guiguinto-p041-048-v11": "44452999175ac11e654112b0f92acacf7e0e5d4f10e137e8c37410d65284954f",
+        "guiguinto-p049-056-v11": "01ddbe80ea01110c01df70a306515e37d5a42aaf78959ae1ef81af25fac5ccd0",
+        "guiguinto-p057-064-v11": "ae7f2f3492509576221fc9d28e402290ff7422397c83b1733ce09b6aafe9400b",
+        "guiguinto-p065-072-v11": "864168abfd3f294e4f979856bb36888e40ed6e7d229d931801332b3ba8d9fa22",
+        "guiguinto-p073-080-v11": "c4be933a8e9ee7059a5375e82755419a306941997b47fd09a7fe608d5d76da4e",
+        "guiguinto-p081-083-v11": "f3e286cca14996dc2ef3979ec6eb7070a10789f81ce87120c71504822de619a7",
+        "guiguinto-p084-084-v11": "6dfda5ef072086f50fb827de58fb93ddbaf5fa6a625f2a6e0ad45219c329f1b5",
+        "guiguinto-p085-092-v11": "94900d22ee520e2fc80c497e3030bdad8d14e156356f8cced80b6f28b1db5d9b",
+        "guiguinto-p093-100-v11": "2ecb564a9419ccba29b892a129e637c369652316dd010896c06d67b8e97f0102",
+        "guiguinto-p101-108-v11": "34a802fade77391f18769b21cbc115928bff343461d490389272397dca1a81ac",
+        "guiguinto-p109-116-v11": "12ef2d7b30662260d43c47f4a9d353fcdfcd042b2460bb284386299a5cf6861a",
+        "guiguinto-p117-119-v11": "873250b9e3f4f959da0f0c44071357883abfe16d0fb1087367fc4fd2832d7e06",
+        "guiguinto-p120-121-v11": "64f2dc72faae9a10321eef3bbc6321992be757f75c263fe0c252688da95bc7b8",
+        "guiguinto-p122-129-v11": "3b400f2f12f194446f5cb91370aa11001f3a478ead97f85d8ab4e2fc780b51da",
+        "guiguinto-p130-137-v11": "5244ce26d025a3794a6676c8a4bb3502701317cf801f7b3097a5d2b3af988c86",
+        "guiguinto-p138-145-v11": "eaef9bbc4efdb4a0312ed12b1965924c9e84d6271263e32c11c981a5992e4747",
+        "guiguinto-p146-153-v11": "b35bd7deb89f509d3ae5cbf4d10feff87859f8fff926f96d5388761bde2fe201",
+        "guiguinto-p154-161-v11": "67a86442bb2c771222ad82836f8b46d398ff5321b09cc90e0f433e3eef4f0f04",
+        "guiguinto-p162-169-v11": "4164364b97ebd7616a72d1777eb1ed7e43ff23977c793dc7f8be85aeb0d8ea4a",
+        "guiguinto-p170-177-v11": "d93b1e0555ab7fa856c5e0e6ef584f2d2fcd8716fd64407e47c038fb01322800",
+        "guiguinto-p178-185-v11": "56444edab053240bf8b34a2279989a06f2fe544d61a7806fcedd84370a8b0f2b",
+        "guiguinto-p186-191-v11": "12d3b35dcc411b7a3401b0bf7760f71e788ac43b06204462db4a6904ced6f0f2"
+      },
+      "region_coverage_records": 193,
+      "unresolved_regions": 0,
+      "validated_candidates": 151
+    },
+    "qc": {
+      "critical_items_reviewed": 6,
+      "document_sha256": "95b5c5e1177946c45f71412599df914de365feb6f6694c684d9fabaefde4990b",
+      "estimated_paid_usage_usd": 0.070033,
+      "failed_regions": 0,
+      "issue_codes": {
+        "invalid_unit": 1
+      },
+      "manual_recovered_critical_items": 4,
+      "physical_pages_covered": 112,
+      "provider_supported_critical_items": 2,
+      "raw_response_sha256": {
+        "qc-p001-008-v11": "401273681d720b919e568a106ee3702d4a514dcf0d73e4523ce294c94329a451",
+        "qc-p009-016-v11": "e37c498f3ac0335a2f06861812264997936c61097d8b0ecd6919470db2bc7a11",
+        "qc-p017-024-v11": "3cd106f16aa547f1b2e7a05f246e895fe500c202f21a676afe83a9ce0645a0db",
+        "qc-p025-032-v11": "f7c14bca2ad124f8651e6978520cc4f257697d2953514948b4a6d3e803808836",
+        "qc-p033-040-v11": "eb6134a5d6b1a6b1fe0eb101681bdaf7736e0e996072ec6bc6d2e5578b9fa9f9",
+        "qc-p041-048-v11": "c9ba78a6bc2f44affab8477870295ec78fadc2200c550b3392a758473ec4dca8",
+        "qc-p049-056-v11": "5f043780ef27656ec7a6ec11106010c1cee9a113cc3910da8893376c721a95a7",
+        "qc-p057-064-v11": "3f504a572ae7d57748c9a45579df16d41b2c03148fa900360b86587794fec9ef",
+        "qc-p065-072-v11": "c755cc543e385c676bad4e3b5b229eb6a0da5ef8b8700ccb74003b0f5891a7a8",
+        "qc-p073-080-v11": "2b48b92899d79a018272466bf2ddf7a79777defbaf6eed30aabc2d25bc5310b3",
+        "qc-p081-088-v11": "d9f37f8c6173182668bb6892fe5db525f45e5d7a7bd5c333223fa0bea9953404",
+        "qc-p089-096-v11": "fcc6e6c84dd10e6d2a1234b8092b14eb5b05e4437a9df9d693143bf6c24af560",
+        "qc-p097-104-v11": "a0a50130d95da5b9724a5b03faa3fcf848edc57f8e405831b4e901154c34face",
+        "qc-p105-112-v11": "cbd436965ddc5e3140fd3f38737579cfae704dad80a725bc0669b353efe77483"
+      },
+      "region_coverage_records": 112,
+      "unresolved_regions": 0,
+      "validated_candidates": 21
+    }
+  }
+}

@@ -1,6 +1,6 @@
-# Purpose: Reserve the documents module or artifact location for: Validate and preserve a local PDF artifact.
-# Task: docs/plan.md 3.2.
-# Uses: packages/application/__init__.py, packages/contracts/__init__.py.
-# TODO(agent): implement
+"""Local PDF scanner and validator adapters."""
 
-__all__ = ()
+from .pdf import PypdfValidator
+from .scanner import ClamAvScanner
+
+__all__ = ["ClamAvScanner", "PypdfValidator"]

@@ -55,10 +55,182 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/local/geography/{case}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Read Geography */
+        get: operations["read_geography_api_v1_local_geography__case__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/local/geography/{case}/review": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Review Geography */
+        post: operations["review_geography_api_v1_local_geography__case__review_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/local/geography/{case}/suggestions": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Suggestions */
+        get: operations["suggestions_api_v1_local_geography__case__suggestions_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/local/review": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Read Review */
+        get: operations["read_review_api_v1_local_review_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/local/review/acknowledge": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Acknowledge Review */
+        post: operations["acknowledge_review_api_v1_local_review_acknowledge_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/local/review/assumption": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Add Assumption */
+        post: operations["add_assumption_api_v1_local_review_assumption_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/local/review/assumptions": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Add Assumptions */
+        post: operations["add_assumptions_api_v1_local_review_assumptions_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/local/review/correction": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Add Correction */
+        post: operations["add_correction_api_v1_local_review_correction_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/local/review/seal": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Seal Review */
+        post: operations["seal_review_api_v1_local_review_seal_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** AreaMember */
+        AreaMember: {
+            /** Id */
+            id: string;
+            /** Included */
+            included: boolean;
+            /** Label */
+            label: string;
+            /** Population */
+            population: number | null;
+            /** Reason */
+            reason: string;
+        };
+        /** AssumptionCommand */
+        AssumptionCommand: {
+            assumption: components["schemas"]["ReviewAssumption"];
+            /** Expected Revision */
+            expected_revision: number;
+        };
         /** BootstrapStatus */
         BootstrapStatus: {
             /** Schema Version */
@@ -66,10 +238,295 @@ export interface components {
             /** Status */
             status: string;
         };
+        /** BundleCommand */
+        BundleCommand: {
+            /** Assumptions */
+            assumptions: components["schemas"]["ReviewAssumption"][];
+            /** Defaults Version */
+            defaults_version: string;
+            /** Expected Revision */
+            expected_revision: number;
+        };
+        /** Connector */
+        Connector: {
+            /** Accessible */
+            accessible: boolean | null;
+            /** Distance M */
+            distance_m: number | null;
+            /** Id */
+            id: string;
+            /** Latitude */
+            latitude?: number | null;
+            /** Longitude */
+            longitude?: number | null;
+            /** Point Id */
+            point_id: string;
+            /** Reviewed */
+            reviewed: boolean;
+            /** Road Node Id */
+            road_node_id: string | null;
+            /** Source */
+            source: string;
+        };
+        /** CorrectionCommand */
+        CorrectionCommand: {
+            correction: components["schemas"]["ReviewClaim"];
+            /** Expected Revision */
+            expected_revision: number;
+        };
+        /** Gap */
+        Gap: {
+            /** Dependent Conclusions */
+            dependent_conclusions: string[];
+            /** Engine Reason */
+            engine_reason: string;
+            /** Field */
+            field: string;
+            /** Reason */
+            reason: string;
+            /** Remedy */
+            remedy: string;
+        };
+        /** GeographyReviewCommand */
+        GeographyReviewCommand: {
+            /** Expected Revision */
+            expected_revision: number;
+            /** Expected Scope Digest */
+            expected_scope_digest: string;
+        };
+        /** GeographyReviewResult */
+        GeographyReviewResult: {
+            /** Review Revision */
+            review_revision: number;
+            /** Scenario Reviewed */
+            scenario_reviewed: boolean;
+            /** Scope Id */
+            scope_id: string;
+        };
+        /** GeographySnapshot */
+        GeographySnapshot: {
+            area: components["schemas"]["StudyArea"];
+            /** Blockers */
+            blockers: string[];
+            /**
+             * Case
+             * @enum {string}
+             */
+            case: "qc" | "guiguinto";
+            /** Graph Edge Count */
+            graph_edge_count: number;
+            /** Graph Sha256 */
+            graph_sha256: string;
+            /** Route Distance Mm */
+            route_distance_mm: number | null;
+            /** Route Seconds */
+            route_seconds: number | null;
+            /** Route Status */
+            route_status: string;
+            /** Scope Digest */
+            scope_digest: string;
+            /** Scope Id */
+            scope_id: string;
+            /** Source Sha256 */
+            source_sha256: string;
+        };
         /** HTTPValidationError */
         HTTPValidationError: {
             /** Detail */
             detail?: components["schemas"]["ValidationError"][];
+        };
+        /** Readiness */
+        Readiness: {
+            /** Computable */
+            computable: boolean;
+            /** Document Review Available */
+            document_review_available: boolean;
+            /** Documentation Gaps */
+            documentation_gaps: string[];
+            /** Gaps */
+            gaps: components["schemas"]["Gap"][];
+            /** Material Hash */
+            material_hash: string;
+            /** Ready To Run */
+            ready_to_run: boolean;
+            /** Source Only Gaps */
+            source_only_gaps: components["schemas"]["Gap"][];
+        };
+        /** RequiredField */
+        RequiredField: {
+            /** Dependent Conclusions */
+            dependent_conclusions: string[];
+            /** Engine Reason */
+            engine_reason: string;
+            /** Field */
+            field: string;
+            /** Remedy */
+            remedy: string;
+            /** Unit */
+            unit: string;
+        };
+        /** ReviewAssumption */
+        ReviewAssumption: {
+            /**
+             * Applicable From
+             * Format: date
+             */
+            applicable_from: string;
+            /**
+             * Applicable Through
+             * Format: date
+             */
+            applicable_through: string;
+            /** Assumption Id */
+            assumption_id: string;
+            conversion?: components["schemas"]["ReviewConversion"] | null;
+            /** Field */
+            field: string;
+            /** Limitations */
+            limitations: string;
+            /** Rationale */
+            rationale: string;
+            /** Scope Id */
+            scope_id: string;
+            /** Unit */
+            unit: string;
+            /** Usable */
+            usable: boolean;
+            /** Value */
+            value: string;
+        };
+        /** ReviewClaim */
+        ReviewClaim: {
+            /** Applicable From */
+            applicable_from?: string | null;
+            /** Applicable Through */
+            applicable_through?: string | null;
+            /** Claim Id */
+            claim_id: string;
+            /** Conflict Group */
+            conflict_group?: string | null;
+            /** Entity Id */
+            entity_id?: string | null;
+            /** Field */
+            field: string;
+            /** Fragment */
+            fragment: string;
+            /**
+             * Kind
+             * @enum {string}
+             */
+            kind: "document" | "external_evidence" | "user_assertion" | "correction";
+            /** Physical Page */
+            physical_page?: number | null;
+            /** Resolution Note */
+            resolution_note?: string | null;
+            /** Scope Id */
+            scope_id: string;
+            /** Source Id */
+            source_id?: string | null;
+            /**
+             * Statement Type
+             * @enum {string}
+             */
+            statement_type: "reported_existing" | "proposed_target" | "historical";
+            /**
+             * Status
+             * @default candidate
+             * @enum {string}
+             */
+            status: "candidate" | "accepted" | "contested";
+            /** Unit */
+            unit: string;
+            /** Value */
+            value: string;
+        };
+        /** ReviewConversion */
+        ReviewConversion: {
+            /** Denominator */
+            denominator: number;
+            /** Numerator */
+            numerator: number;
+            /** Result */
+            result: number;
+            /**
+             * Rounding
+             * @enum {string}
+             */
+            rounding: "exact" | "floor" | "ceil";
+            /** Selected Source Value */
+            selected_source_value: string;
+            /** Source Claim Id */
+            source_claim_id: string;
+        };
+        /** ReviewDraft */
+        ReviewDraft: {
+            /** Acknowledged Hash */
+            acknowledged_hash?: string | null;
+            /** Assumptions */
+            assumptions: components["schemas"]["ReviewAssumption"][];
+            /** Claims */
+            claims: components["schemas"]["ReviewClaim"][];
+            /**
+             * Pending Annexes
+             * @default []
+             */
+            pending_annexes: string[];
+            /** Required Fields */
+            required_fields: components["schemas"]["RequiredField"][];
+            /** Revision */
+            revision: number;
+            /**
+             * Scenario Date
+             * Format: date
+             */
+            scenario_date: string;
+            /** Scenario Reviewed */
+            scenario_reviewed: boolean;
+            /** Scope Id */
+            scope_id: string;
+            /** Sealed Hash */
+            sealed_hash?: string | null;
+            /** Sources */
+            sources: components["schemas"]["ReviewSource"][];
+            /**
+             * Unsupported Procedures
+             * @default []
+             */
+            unsupported_procedures: string[];
+            /** Workspace Id */
+            workspace_id: string;
+        };
+        /** ReviewSnapshot */
+        ReviewSnapshot: {
+            /** Default Assumptions */
+            default_assumptions: components["schemas"]["ReviewAssumption"][];
+            /** Defaults Version */
+            defaults_version: string;
+            draft: components["schemas"]["ReviewDraft"];
+            readiness: components["schemas"]["Readiness"];
+        };
+        /** ReviewSource */
+        ReviewSource: {
+            /** Physical Page Count */
+            physical_page_count: number;
+            /** Publication Reference */
+            publication_reference: string;
+            /**
+             * Role
+             * @enum {string}
+             */
+            role: "primary" | "supplement";
+            /** Sha256 */
+            sha256: string;
+            /** Source Id */
+            source_id: string;
+            /** Title */
+            title: string;
+        };
+        /** RevisionCommand */
+        RevisionCommand: {
+            /** Expected Revision */
+            expected_revision: number;
         };
         /** SkeletonCase */
         SkeletonCase: {
@@ -130,6 +587,38 @@ export interface components {
             water_sufficient_people: number;
             /** Water Used Ml */
             water_used_ml: number;
+        };
+        /** StudyArea */
+        StudyArea: {
+            /** Boundary Lon Lat */
+            boundary_lon_lat: [
+                number,
+                number
+            ][];
+            /** Connectors */
+            connectors: components["schemas"]["Connector"][];
+            /** Cross Boundary Assumptions */
+            cross_boundary_assumptions: string[];
+            /** Id */
+            id: string;
+            /** Label */
+            label: string;
+            /** Members */
+            members: components["schemas"]["AreaMember"][];
+            /** Reviewer */
+            reviewer?: string | null;
+            /**
+             * Revision
+             * @default 0
+             */
+            revision: number;
+            /** Routing Buffer M */
+            routing_buffer_m: number;
+            /**
+             * Source
+             * @enum {string}
+             */
+            source: "manual" | "geoapify-suggestion";
         };
         /** ValidationError */
         ValidationError: {
@@ -230,6 +719,321 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["SkeletonResult"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    read_geography_api_v1_local_geography__case__get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                case: "qc" | "guiguinto";
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["GeographySnapshot"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    review_geography_api_v1_local_geography__case__review_post: {
+        parameters: {
+            query?: never;
+            header: {
+                "x-fixture-owner": string;
+            };
+            path: {
+                case: "qc" | "guiguinto";
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["GeographyReviewCommand"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["GeographyReviewResult"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    suggestions_api_v1_local_geography__case__suggestions_get: {
+        parameters: {
+            query: {
+                text: string;
+            };
+            header?: never;
+            path: {
+                case: "qc" | "guiguinto";
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": {
+                        [key: string]: unknown;
+                    };
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    read_review_api_v1_local_review_get: {
+        parameters: {
+            query?: never;
+            header: {
+                "x-fixture-owner": string;
+                "x-fixture-case"?: "synthetic" | "qc" | "guiguinto";
+            };
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ReviewSnapshot"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    acknowledge_review_api_v1_local_review_acknowledge_post: {
+        parameters: {
+            query?: never;
+            header: {
+                "x-fixture-owner": string;
+                "x-fixture-case"?: "synthetic" | "qc" | "guiguinto";
+            };
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["RevisionCommand"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ReviewSnapshot"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    add_assumption_api_v1_local_review_assumption_post: {
+        parameters: {
+            query?: never;
+            header: {
+                "x-fixture-owner": string;
+                "x-fixture-case"?: "synthetic" | "qc" | "guiguinto";
+            };
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["AssumptionCommand"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ReviewSnapshot"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    add_assumptions_api_v1_local_review_assumptions_post: {
+        parameters: {
+            query?: never;
+            header: {
+                "x-fixture-owner": string;
+                "x-fixture-case"?: "synthetic" | "qc" | "guiguinto";
+            };
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["BundleCommand"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ReviewSnapshot"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    add_correction_api_v1_local_review_correction_post: {
+        parameters: {
+            query?: never;
+            header: {
+                "x-fixture-owner": string;
+                "x-fixture-case"?: "synthetic" | "qc" | "guiguinto";
+            };
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["CorrectionCommand"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ReviewSnapshot"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    seal_review_api_v1_local_review_seal_post: {
+        parameters: {
+            query?: never;
+            header: {
+                "x-fixture-owner": string;
+                "x-fixture-case"?: "synthetic" | "qc" | "guiguinto";
+            };
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["RevisionCommand"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ReviewSnapshot"];
                 };
             };
             /** @description Validation Error */

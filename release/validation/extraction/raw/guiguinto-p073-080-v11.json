@@ -1,0 +1,51 @@
+{
+  "candidates": [
+    {
+      "field_key": "flood_exposed_population",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "56,516",
+      "unit": "PERSON",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 80,
+        "region_id": "p80",
+        "excerpt": "A total population of 56,516 and 11,300 households are affected"
+      }
+    },
+    {
+      "field_key": "flood_exposed_households",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "11,300",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 80,
+        "region_id": "p80",
+        "excerpt": "A total population of 56,516 and 11,300 households are affected"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p73",
+    "p74",
+    "p75",
+    "p76",
+    "p77",
+    "p78",
+    "p79",
+    "p80"
+  ],
+  "visually_inspected_regions": [
+    "p73",
+    "p74",
+    "p75",
+    "p76",
+    "p77",
+    "p78",
+    "p79",
+    "p80"
+  ],
+  "unresolved_regions": []
+}

@@ -1,0 +1,337 @@
+{
+  "candidates": [
+    {
+      "field_key": "informal_settler_population",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "2,011",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "As of 2021, there were 14 barangays reported with informal settlers of around 2,011 individuals."
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "1,563",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "TOTAL: 1,563 737 1,193 214 1,442 5,149 2,011"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "cutcut",
+      "source_value": "73",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Cutcut 73 3 76 64"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "daungan",
+      "source_value": "20",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Daungan 20 241 4 2 267 141"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "ilang_ilang",
+      "source_value": "297",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Ilang-Ilang 297 12 93 4 406 143"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "malis",
+      "source_value": "223",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Malis 223 438 62 723 400"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "panginay",
+      "source_value": "36",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Panginay 36 86 122 12"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "poblacion",
+      "source_value": "73",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Poblacion 73 97 170 38"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "pritil",
+      "source_value": "35",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Pritil 35 12 5 52 16"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "pulonggubat",
+      "source_value": "43",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Pulonggubat 43 3 46 23"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "sta_cruz",
+      "source_value": "104",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Sta. Cruz 104 27 131 85"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "sta_rita",
+      "source_value": "252",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Sta. Rita 252 165 16 708 1,141 25"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "tabang",
+      "source_value": "39",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Tabang 39 27 34 100 24"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "tabe",
+      "source_value": "164",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Tabe 164 7 658 829 139"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "tiaong",
+      "source_value": "124",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Tiaong 124 457 117 41 76 815 766"
+      }
+    },
+    {
+      "field_key": "informal_settler_families_along_waterways",
+      "entity_key": "tuktukan",
+      "source_value": "80",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "Tuktukan 80 110 81 271 135"
+      }
+    },
+    {
+      "field_key": "total_informal_settler_families",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "5,149",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "TOTAL: 1,563 737 1,193 214 1,442 5,149 2,011"
+      }
+    },
+    {
+      "field_key": "total_informal_settler_families",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "2,011",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2020",
+      "citation": {
+        "physical_page": 57,
+        "region_id": "p57",
+        "excerpt": "TOTAL: 1,563 737 1,193 214 1,442 5,149 2,011"
+      }
+    },
+    {
+      "field_key": "police_patrol_transport",
+      "entity_key": "guiguinto_municipal_police_station",
+      "source_value": "6",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": "2020",
+      "citation": {
+        "physical_page": 61,
+        "region_id": "p61",
+        "excerpt": "6 (3 Patrol vehicles and 3 motorcycles)"
+      }
+    },
+    {
+      "field_key": "fire_truck_transport",
+      "entity_key": "fire_protection",
+      "source_value": "3",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": "2020",
+      "citation": {
+        "physical_page": 61,
+        "region_id": "p61",
+        "excerpt": "3 (1 local Big truck & 2 old trucks)"
+      }
+    },
+    {
+      "field_key": "barangay_patrol_vehicles",
+      "entity_key": "barangay_peace_keeping_patrol_tanod",
+      "source_value": "42",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": "2020",
+      "citation": {
+        "physical_page": 61,
+        "region_id": "p61",
+        "excerpt": "42 Patrol Vehicles"
+      }
+    },
+    {
+      "field_key": "sports_recreation_facilities",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "73",
+      "unit": "COUNT",
+      "statement_type": "historical",
+      "applicable_date": "2018",
+      "citation": {
+        "physical_page": 64,
+        "region_id": "p64",
+        "excerpt": "As of 2018, there are 73 sports facilities for basketball, badminton, volleyball, tennis games or simply for other outdoor play across barangays (Table 25)."
+      }
+    },
+    {
+      "field_key": "barangay_owned_sports_facilities",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "23",
+      "unit": "COUNT",
+      "statement_type": "historical",
+      "applicable_date": "2018",
+      "citation": {
+        "physical_page": 64,
+        "region_id": "p64",
+        "excerpt": "The 23 facilities are owned by the barangay government and 50 facilities are owned by private group."
+      }
+    },
+    {
+      "field_key": "privately_owned_sports_facilities",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "50",
+      "unit": "COUNT",
+      "statement_type": "historical",
+      "applicable_date": "2018",
+      "citation": {
+        "physical_page": 64,
+        "region_id": "p64",
+        "excerpt": "The 23 facilities are owned by the barangay government and 50 facilities are owned by private group."
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p57",
+    "p58",
+    "p59",
+    "p60",
+    "p61",
+    "p62",
+    "p63",
+    "p64"
+  ],
+  "visually_inspected_regions": [
+    "p57",
+    "p58",
+    "p59",
+    "p60",
+    "p61",
+    "p62",
+    "p63",
+    "p64"
+  ],
+  "unresolved_regions": []
+}

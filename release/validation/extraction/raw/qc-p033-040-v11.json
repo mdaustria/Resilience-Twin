@@ -1,0 +1,77 @@
+{
+  "candidates": [
+    {
+      "field_key": "evacuation_facility_count",
+      "entity_key": "regional_evacuation_center_and_training_facility",
+      "source_value": "1",
+      "unit": "COUNT",
+      "statement_type": "historical",
+      "applicable_date": "2020",
+      "citation": {
+        "physical_page": 35,
+        "region_id": "p35",
+        "excerpt": "In 2020, the Regional Evacuation Center and Training Facility was established and became the Center for Trainings and Capacity Building on disaster preparedness for the city government."
+      }
+    },
+    {
+      "field_key": "total_population",
+      "entity_key": "quezon_city",
+      "source_value": "2.86 million",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2010",
+      "citation": {
+        "physical_page": 36,
+        "region_id": "p36",
+        "excerpt": "Quezon City has a population of 2.86 million. Based on data from the 2010 Census of Population and Housing, an increase of 82,270 from 2007 approximates the city’s 2.92% estimated annual population growth rate."
+      }
+    },
+    {
+      "field_key": "total_land_area",
+      "entity_key": "quezon_city",
+      "source_value": "16,112",
+      "unit": "HECTARE",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 37,
+        "region_id": "p37",
+        "excerpt": "The city’s highly urbanized region consisting of 16,112 hectares of land of both commercial and residential spaces serves as an ideal distribution hub"
+      }
+    },
+    {
+      "field_key": "reservoir_area",
+      "entity_key": "la_mesa_dam",
+      "source_value": "700",
+      "unit": "HECTARE",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 39,
+        "region_id": "p39",
+        "excerpt": "The northern half of the city is close to the La Mesa Dam, a 700-hectare reservoir at 100 m above sea level"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p33",
+    "p34",
+    "p35",
+    "p36",
+    "p37",
+    "p38",
+    "p39",
+    "p40"
+  ],
+  "visually_inspected_regions": [
+    "p33",
+    "p34",
+    "p35",
+    "p36",
+    "p37",
+    "p38",
+    "p39",
+    "p40"
+  ],
+  "unresolved_regions": []
+}

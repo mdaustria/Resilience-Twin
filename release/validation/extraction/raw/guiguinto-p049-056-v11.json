@@ -1,0 +1,139 @@
+{
+  "candidates": [
+    {
+      "field_key": "agricultural_land_area",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "879",
+      "unit": "HECTARE",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 49,
+        "region_id": "p49",
+        "excerpt": "agricultural lands, which is about 879 hectares or 39.5% of the town’s total land area"
+      }
+    },
+    {
+      "field_key": "irrigable_area",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "3,036",
+      "unit": "HECTARE",
+      "statement_type": "reported_existing",
+      "applicable_date": "2020",
+      "citation": {
+        "physical_page": 50,
+        "region_id": "p50",
+        "excerpt": "TABLE 12- IRRIGATION SERVICES\n\nIrrigable Area (Has) 3,036"
+      }
+    },
+    {
+      "field_key": "irrigated_area",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "2,530",
+      "unit": "HECTARE",
+      "statement_type": "reported_existing",
+      "applicable_date": "2020",
+      "citation": {
+        "physical_page": 50,
+        "region_id": "p50",
+        "excerpt": "Irrigated Area (Has) 2,530"
+      }
+    },
+    {
+      "field_key": "farmer_beneficiaries_count",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "3,042",
+      "unit": "PERSON",
+      "statement_type": "reported_existing",
+      "applicable_date": "2020",
+      "citation": {
+        "physical_page": 50,
+        "region_id": "p50",
+        "excerpt": "NO. OF FARMER BENEFICIARIES 3,042"
+      }
+    },
+    {
+      "field_key": "public_school_buildings_evacuation_centers",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "Most",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 53,
+        "region_id": "p53",
+        "excerpt": "Most of the public school buildings in Municipality of Guiguinto are made of concrete and can be used as an additional Evacuation Center during the unexpected disaster"
+      }
+    },
+    {
+      "field_key": "subdivision_lots_count",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "2,500",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 55,
+        "region_id": "p55",
+        "excerpt": "There are around thirty subdivisions in the town with more than 2,500 lots or units."
+      }
+    },
+    {
+      "field_key": "subdivision_count",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "30",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 55,
+        "region_id": "p55",
+        "excerpt": "There are around thirty subdivisions in the town with more than 2,500 lots or units."
+      }
+    },
+    {
+      "field_key": "subdivision_total_lots",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "2,541",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 56,
+        "region_id": "p56",
+        "excerpt": "TOTAL 205.066 2,541"
+      }
+    },
+    {
+      "field_key": "subdivision_total_area",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "205.066",
+      "unit": "HECTARE",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 56,
+        "region_id": "p56",
+        "excerpt": "TOTAL 205.066 2,541"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p49",
+    "p50",
+    "p51",
+    "p52",
+    "p53",
+    "p54",
+    "p55",
+    "p56"
+  ],
+  "visually_inspected_regions": [
+    "p50",
+    "p52",
+    "p54",
+    "p55",
+    "p56"
+  ],
+  "unresolved_regions": []
+}

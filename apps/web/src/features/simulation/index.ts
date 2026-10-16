@@ -4,3 +4,4 @@
 // TODO(agent): implement
 
 export {};
+export { LiveSimulation } from './LiveSimulation';

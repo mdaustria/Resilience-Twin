@@ -1,7 +1,23 @@
 import { expect, test } from '@playwright/test';
 
 test('review, run, and recover against the local API and engine', async ({ page }) => {
+  let active = false;
+  await page.route(/\/api\/v1\/temporary-sessions(?:\/.*)?$/, async (route) => {
+    const request = route.request();
+    const path = new URL(request.url()).pathname;
+    if (request.method() === 'GET' && path.endsWith('/current')) {
+      await route.fulfill(active
+        ? { status: 200, json: { workspace_id: 'synthetic-smoke', expires_at: new Date(Date.now() + 60 * 60_000).toISOString(), absolute_expires_at: new Date(Date.now() + 24 * 60 * 60_000).toISOString(), csrf_token: 'smoke-csrf' } }
+        : { status: 401 });
+    } else if (request.method() === 'POST' && path.endsWith('/temporary-sessions')) {
+      active = true;
+      await route.fulfill({ status: 201, json: { workspace_id: 'synthetic-smoke', expires_at: new Date(Date.now() + 60 * 60_000).toISOString(), absolute_expires_at: new Date(Date.now() + 24 * 60 * 60_000).toISOString(), csrf_token: 'smoke-csrf' } });
+    } else {
+      await route.fulfill({ status: 404 });
+    }
+  });
   await page.goto('/');
+  await page.getByRole('button', { name: 'Start analysis' }).click();
 
   await expect(page.getByRole('heading', { name: 'Review the synthetic case' })).toBeVisible();
   await expect(page.getByText('Synthetic training fixture; no source plan')).toBeVisible();

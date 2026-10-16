@@ -1,6 +1,7 @@
-<!--
-Purpose: Reserve the seeds module or artifact location for: Persist exclusive ownership and immutable versions in PostGIS.
-Task: docs/plan.md 4.1.
-Uses: docs/architecture.md, packages/contracts/__init__.py.
-TODO(agent): implement
--->
+# Firestore test data
+
+There is no production seed. Integration tests create distinct temporary
+owners with the same synthetic source checksum in the emulator, then
+delete emulator data. Never seed a real user's workspace or copy analysis
+across owners. A cloud smoke uses a unique nonproduction prefix and cleans up
+only its own records.

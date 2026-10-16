@@ -1,0 +1,38 @@
+{
+  "candidates": [
+    {
+      "field_key": "child_friendly_spaces_target",
+      "entity_key": "evacuation_centers",
+      "source_value": "1",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": "2023-2025",
+      "citation": {
+        "physical_page": 168,
+        "region_id": "p168",
+        "excerpt": "Child friendly spaces in Evacuation Centers | 1 CFS in every EC"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p162",
+    "p163",
+    "p164",
+    "p165",
+    "p166",
+    "p167",
+    "p168",
+    "p169"
+  ],
+  "visually_inspected_regions": [
+    "p162",
+    "p163",
+    "p164",
+    "p165",
+    "p166",
+    "p167",
+    "p168",
+    "p169"
+  ],
+  "unresolved_regions": []
+}

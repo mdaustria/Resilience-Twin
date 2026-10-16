@@ -1,0 +1,1009 @@
+{
+  "assumption_bundle": "pilot-trip-water-v1",
+  "baseline": [
+    {
+      "event_hash": "d278412e97cb15f16755edc94c034c2011498fab127b53e937bb396479e2b36a",
+      "events": [
+        {
+          "kind": "allocate",
+          "phase": 5,
+          "sequence": 1,
+          "target_id": null,
+          "time_seconds": 0
+        },
+        {
+          "kind": "pickup",
+          "phase": 2,
+          "sequence": 2,
+          "target_id": null,
+          "time_seconds": 1
+        },
+        {
+          "kind": "depart",
+          "phase": 2,
+          "sequence": 3,
+          "target_id": null,
+          "time_seconds": 2
+        },
+        {
+          "kind": "arrive",
+          "phase": 2,
+          "sequence": 4,
+          "target_id": null,
+          "time_seconds": 213
+        },
+        {
+          "kind": "admit",
+          "phase": 2,
+          "sequence": 5,
+          "target_id": null,
+          "time_seconds": 214
+        },
+        {
+          "kind": "terminal",
+          "phase": 6,
+          "sequence": 0,
+          "target_id": null,
+          "time_seconds": 259200
+        }
+      ],
+      "member_id": "normal",
+      "metric_hash": "74d091fbd166481f8bb28a1c86598892e222dee500657d97ec2bdd3d6e4ca0e5",
+      "metrics": {
+        "population": {
+          "$fields": {
+            "by_state": {
+              "$dict": [
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "in_transit"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "loading"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "not_requested"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "sheltered"
+                  },
+                  20
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "unloading"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "waiting"
+                  },
+                  80
+                ]
+              ]
+            },
+            "deadline_missed": 80,
+            "initial_people": 100,
+            "late_arrivals": 0,
+            "on_time_arrivals": 20,
+            "pending_after_horizon": 0,
+            "unfinished_movement": 0,
+            "unserved_demand": 80
+          },
+          "$type": "PopulationMetrics"
+        },
+        "water": {
+          "$fields": {
+            "consumed_ml": 219901,
+            "exhaustion_by_store": {
+              "$dict": [
+                [
+                  "pickup",
+                  53947
+                ],
+                [
+                  "shelter",
+                  null
+                ]
+              ]
+            },
+            "initial_ml": 500000,
+            "remaining_ml": 280099,
+            "unmet_by_cohort": {
+              "$dict": [
+                [
+                  "pilot-trip",
+                  0
+                ],
+                [
+                  "pilot-waiting",
+                  380099
+                ]
+              ]
+            },
+            "unmet_ml": 380099
+          },
+          "$type": "WaterMetrics"
+        }
+      },
+      "outcome": {
+        "evidence_event_ids": [
+          "1:allocate",
+          "2:pickup",
+          "3:depart",
+          "4:arrive",
+          "5:admit",
+          "0:terminal"
+        ],
+        "on_time_people": 20,
+        "stranded_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 380099
+      },
+      "route_distance_mm": 2053257,
+      "route_edge_ids": [
+        "osm:1429165551:4:reverse",
+        "osm:1429165551:3:reverse",
+        "osm:1429165551:2:reverse",
+        "osm:1429165551:1:reverse",
+        "osm:1429165551:0:reverse",
+        "osm:107948780:9:forward",
+        "osm:107948780:10:forward",
+        "osm:107948780:11:forward",
+        "osm:107948780:12:forward",
+        "osm:107948780:13:forward",
+        "osm:107948780:14:forward",
+        "osm:107948780:15:forward",
+        "osm:107948780:16:forward",
+        "osm:107948780:17:forward",
+        "osm:107948780:18:forward",
+        "osm:107948780:19:forward",
+        "osm:107948780:20:forward",
+        "osm:107948780:21:forward",
+        "osm:107948780:22:forward",
+        "osm:107948780:23:forward",
+        "osm:107948780:24:forward",
+        "osm:107948780:25:forward",
+        "osm:107948780:26:forward",
+        "osm:1059628907:0:forward",
+        "osm:1059628907:1:forward",
+        "osm:1059628907:2:forward",
+        "osm:1059628907:3:forward",
+        "osm:1244754160:1:reverse",
+        "osm:1244754160:0:reverse",
+        "osm:1301547408:0:reverse",
+        "osm:834381826:3:reverse",
+        "osm:834381826:2:reverse",
+        "osm:834381826:1:reverse",
+        "osm:834381826:0:reverse",
+        "osm:30414594:11:reverse",
+        "osm:30414594:10:reverse",
+        "osm:30414594:9:reverse",
+        "osm:30414594:8:reverse",
+        "osm:30414594:7:reverse",
+        "osm:30414594:6:reverse",
+        "osm:30414594:5:reverse",
+        "osm:30414594:4:reverse",
+        "osm:30414594:3:reverse",
+        "osm:30414594:2:reverse",
+        "osm:30414594:1:reverse",
+        "osm:30414594:0:reverse",
+        "osm:30414590:0:forward",
+        "osm:180360402:0:forward",
+        "osm:1061596108:0:forward",
+        "osm:1061596107:0:forward",
+        "osm:30414591:0:forward",
+        "osm:154098237:0:forward",
+        "osm:154098237:1:forward",
+        "osm:1279846090:4:reverse",
+        "osm:5453350:0:reverse",
+        "osm:229359791:2:forward",
+        "osm:229359791:3:forward",
+        "osm:229359791:4:forward",
+        "osm:229359791:5:forward",
+        "osm:229359791:6:forward",
+        "osm:229359791:7:forward",
+        "osm:229359791:8:forward",
+        "osm:5452868:0:forward",
+        "osm:5452704:0:forward"
+      ],
+      "route_seconds": 211
+    },
+    {
+      "event_hash": "20a82827a9007b509f047380f3efcc663aea95ba415e27c3398794e87b90eb7b",
+      "events": [
+        {
+          "kind": "road_close",
+          "phase": 1,
+          "sequence": 1,
+          "target_id": "osm:107948780:13:forward",
+          "time_seconds": 0
+        },
+        {
+          "kind": "allocate",
+          "phase": 5,
+          "sequence": 2,
+          "target_id": null,
+          "time_seconds": 0
+        },
+        {
+          "kind": "pickup",
+          "phase": 2,
+          "sequence": 3,
+          "target_id": null,
+          "time_seconds": 1
+        },
+        {
+          "kind": "depart",
+          "phase": 2,
+          "sequence": 4,
+          "target_id": null,
+          "time_seconds": 2
+        },
+        {
+          "kind": "arrive",
+          "phase": 2,
+          "sequence": 5,
+          "target_id": null,
+          "time_seconds": 223
+        },
+        {
+          "kind": "admit",
+          "phase": 2,
+          "sequence": 6,
+          "target_id": null,
+          "time_seconds": 224
+        },
+        {
+          "kind": "terminal",
+          "phase": 6,
+          "sequence": 0,
+          "target_id": null,
+          "time_seconds": 259200
+        }
+      ],
+      "member_id": "road_close",
+      "metric_hash": "84a467132f1ff27faaae87f87d4fd3a798e9f32ca8cdd2750c8f1d8e315722d5",
+      "metrics": {
+        "population": {
+          "$fields": {
+            "by_state": {
+              "$dict": [
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "in_transit"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "loading"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "not_requested"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "sheltered"
+                  },
+                  20
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "unloading"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "waiting"
+                  },
+                  80
+                ]
+              ]
+            },
+            "deadline_missed": 100,
+            "initial_people": 100,
+            "late_arrivals": 20,
+            "on_time_arrivals": 0,
+            "pending_after_horizon": 0,
+            "unfinished_movement": 0,
+            "unserved_demand": 80
+          },
+          "$type": "PopulationMetrics"
+        },
+        "water": {
+          "$fields": {
+            "consumed_ml": 219897,
+            "exhaustion_by_store": {
+              "$dict": [
+                [
+                  "pickup",
+                  53945
+                ],
+                [
+                  "shelter",
+                  null
+                ]
+              ]
+            },
+            "initial_ml": 500000,
+            "remaining_ml": 280103,
+            "unmet_by_cohort": {
+              "$dict": [
+                [
+                  "pilot-trip",
+                  0
+                ],
+                [
+                  "pilot-waiting",
+                  380103
+                ]
+              ]
+            },
+            "unmet_ml": 380103
+          },
+          "$type": "WaterMetrics"
+        }
+      },
+      "outcome": {
+        "evidence_event_ids": [
+          "1:road_close",
+          "2:allocate",
+          "3:pickup",
+          "4:depart",
+          "5:arrive",
+          "6:admit",
+          "0:terminal"
+        ],
+        "on_time_people": 0,
+        "stranded_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 380103
+      },
+      "route_distance_mm": 2101028,
+      "route_edge_ids": [
+        "osm:1429165551:4:reverse",
+        "osm:1429165551:3:reverse",
+        "osm:1429165551:2:reverse",
+        "osm:1429165551:1:reverse",
+        "osm:1429165551:0:reverse",
+        "osm:107948780:9:forward",
+        "osm:107948780:10:forward",
+        "osm:107948780:11:forward",
+        "osm:107948780:12:forward",
+        "osm:1309930953:0:forward",
+        "osm:1309930952:0:forward",
+        "osm:1303360123:0:forward",
+        "osm:1303360123:1:forward",
+        "osm:1303360123:2:forward",
+        "osm:107948780:14:forward",
+        "osm:107948780:15:forward",
+        "osm:107948780:16:forward",
+        "osm:107948780:17:forward",
+        "osm:107948780:18:forward",
+        "osm:107948780:19:forward",
+        "osm:107948780:20:forward",
+        "osm:107948780:21:forward",
+        "osm:107948780:22:forward",
+        "osm:107948780:23:forward",
+        "osm:107948780:24:forward",
+        "osm:107948780:25:forward",
+        "osm:107948780:26:forward",
+        "osm:1059628907:0:forward",
+        "osm:1059628907:1:forward",
+        "osm:1059628907:2:forward",
+        "osm:1059628907:3:forward",
+        "osm:1244754160:1:reverse",
+        "osm:1244754160:0:reverse",
+        "osm:1301547408:0:reverse",
+        "osm:834381826:3:reverse",
+        "osm:834381826:2:reverse",
+        "osm:834381826:1:reverse",
+        "osm:834381826:0:reverse",
+        "osm:30414594:11:reverse",
+        "osm:30414594:10:reverse",
+        "osm:30414594:9:reverse",
+        "osm:30414594:8:reverse",
+        "osm:30414594:7:reverse",
+        "osm:30414594:6:reverse",
+        "osm:30414594:5:reverse",
+        "osm:30414594:4:reverse",
+        "osm:30414594:3:reverse",
+        "osm:30414594:2:reverse",
+        "osm:30414594:1:reverse",
+        "osm:30414594:0:reverse",
+        "osm:30414590:0:forward",
+        "osm:180360402:0:forward",
+        "osm:1061596108:0:forward",
+        "osm:1061596107:0:forward",
+        "osm:30414591:0:forward",
+        "osm:154098237:0:forward",
+        "osm:154098237:1:forward",
+        "osm:1279846090:4:reverse",
+        "osm:5453350:0:reverse",
+        "osm:229359791:2:forward",
+        "osm:229359791:3:forward",
+        "osm:229359791:4:forward",
+        "osm:229359791:5:forward",
+        "osm:229359791:6:forward",
+        "osm:229359791:7:forward",
+        "osm:229359791:8:forward",
+        "osm:5452868:0:forward",
+        "osm:5452704:0:forward"
+      ],
+      "route_seconds": 221
+    }
+  ],
+  "case": "qc",
+  "closed_edge_id": "osm:107948780:13:forward",
+  "comparison_deltas": [
+    {
+      "evidence_event_ids": [
+        "0:terminal",
+        "1:allocate",
+        "2:pickup",
+        "3:depart",
+        "4:arrive",
+        "5:admit"
+      ],
+      "member_id": "normal",
+      "on_time_people": 0,
+      "regression_keys": [],
+      "stranded_people": 0,
+      "vulnerable_on_time_people": 0,
+      "water_unmet_ml": -380099
+    },
+    {
+      "evidence_event_ids": [
+        "0:terminal",
+        "1:road_close",
+        "2:allocate",
+        "3:pickup",
+        "4:depart",
+        "5:arrive",
+        "6:admit"
+      ],
+      "member_id": "road_close",
+      "on_time_people": 0,
+      "regression_keys": [],
+      "stranded_people": 0,
+      "vulnerable_on_time_people": 0,
+      "water_unmet_ml": -380103
+    }
+  ],
+  "comparison_status": "complete",
+  "deadline_seconds": 216,
+  "exports": {
+    "evaluated_html": "release\\validation\\reports\\qc-evaluated.html",
+    "evaluated_pdf": "release\\validation\\reports\\qc-evaluated.pdf",
+    "gap_only_html": "release\\validation\\reports\\qc-gap_only.html",
+    "gap_only_pdf": "release\\validation\\reports\\qc-gap_only.pdf"
+  },
+  "graph_sha256": "d03bc52f0d1337281020eeb100c7d1de289798eb52393651f14ecd70e4f8845d",
+  "horizon_seconds": 259200,
+  "review_ready_to_run": true,
+  "reviewed_defaults": {
+    "evacuee_people": {
+      "applicable_from": "2026-10-14",
+      "applicable_through": "2026-10-14",
+      "scope_id": "qc-talayan-pilot-cell:26df37e5b0afb2e8",
+      "unit": "PERSON",
+      "value": "100"
+    },
+    "opening_water_ml": {
+      "applicable_from": "2026-10-14",
+      "applicable_through": "2026-10-14",
+      "scope_id": "qc-talayan-pilot-cell:26df37e5b0afb2e8",
+      "unit": "ML",
+      "value": "500000"
+    },
+    "shelter_capacity_people": {
+      "applicable_from": "2026-10-14",
+      "applicable_through": "2026-10-14",
+      "scope_id": "qc-talayan-pilot-cell:26df37e5b0afb2e8",
+      "unit": "PERSON",
+      "value": "150"
+    },
+    "vehicle_seats": {
+      "applicable_from": "2026-10-14",
+      "applicable_through": "2026-10-14",
+      "scope_id": "qc-talayan-pilot-cell:26df37e5b0afb2e8",
+      "unit": "PERSON",
+      "value": "20"
+    }
+  },
+  "reviewed_input_hash": "02070cc437e1b9d64372c78ea599e9c5893ec6daebd661fe7383587073e865ec",
+  "scope_digest": "26df37e5b0afb2e83a6d112a38a9f89643a6af27b9ff6512403c957cf98058d5",
+  "source_sha256": "95b5c5e1177946c45f71412599df914de365feb6f6694c684d9fabaefde4990b",
+  "status": "hypothetical_local_engineering_proof",
+  "variant": [
+    {
+      "event_hash": "d278412e97cb15f16755edc94c034c2011498fab127b53e937bb396479e2b36a",
+      "events": [
+        {
+          "kind": "allocate",
+          "phase": 5,
+          "sequence": 1,
+          "target_id": null,
+          "time_seconds": 0
+        },
+        {
+          "kind": "pickup",
+          "phase": 2,
+          "sequence": 2,
+          "target_id": null,
+          "time_seconds": 1
+        },
+        {
+          "kind": "depart",
+          "phase": 2,
+          "sequence": 3,
+          "target_id": null,
+          "time_seconds": 2
+        },
+        {
+          "kind": "arrive",
+          "phase": 2,
+          "sequence": 4,
+          "target_id": null,
+          "time_seconds": 213
+        },
+        {
+          "kind": "admit",
+          "phase": 2,
+          "sequence": 5,
+          "target_id": null,
+          "time_seconds": 214
+        },
+        {
+          "kind": "terminal",
+          "phase": 6,
+          "sequence": 0,
+          "target_id": null,
+          "time_seconds": 259200
+        }
+      ],
+      "member_id": "normal",
+      "metric_hash": "d70330339a5a4d53f779f493fc66da7bae75e6cd9a59d49f6030e3f3cbab257c",
+      "metrics": {
+        "population": {
+          "$fields": {
+            "by_state": {
+              "$dict": [
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "in_transit"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "loading"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "not_requested"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "sheltered"
+                  },
+                  20
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "unloading"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "waiting"
+                  },
+                  80
+                ]
+              ]
+            },
+            "deadline_missed": 80,
+            "initial_people": 100,
+            "late_arrivals": 0,
+            "on_time_arrivals": 20,
+            "pending_after_horizon": 0,
+            "unfinished_movement": 0,
+            "unserved_demand": 80
+          },
+          "$type": "PopulationMetrics"
+        },
+        "water": {
+          "$fields": {
+            "consumed_ml": 600000,
+            "exhaustion_by_store": {
+              "$dict": [
+                [
+                  "pickup",
+                  null
+                ],
+                [
+                  "shelter",
+                  null
+                ]
+              ]
+            },
+            "initial_ml": 1000000,
+            "remaining_ml": 400000,
+            "unmet_by_cohort": {
+              "$dict": [
+                [
+                  "pilot-trip",
+                  0
+                ],
+                [
+                  "pilot-waiting",
+                  0
+                ]
+              ]
+            },
+            "unmet_ml": 0
+          },
+          "$type": "WaterMetrics"
+        }
+      },
+      "outcome": {
+        "evidence_event_ids": [
+          "1:allocate",
+          "2:pickup",
+          "3:depart",
+          "4:arrive",
+          "5:admit",
+          "0:terminal"
+        ],
+        "on_time_people": 20,
+        "stranded_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0
+      },
+      "route_distance_mm": 2053257,
+      "route_edge_ids": [
+        "osm:1429165551:4:reverse",
+        "osm:1429165551:3:reverse",
+        "osm:1429165551:2:reverse",
+        "osm:1429165551:1:reverse",
+        "osm:1429165551:0:reverse",
+        "osm:107948780:9:forward",
+        "osm:107948780:10:forward",
+        "osm:107948780:11:forward",
+        "osm:107948780:12:forward",
+        "osm:107948780:13:forward",
+        "osm:107948780:14:forward",
+        "osm:107948780:15:forward",
+        "osm:107948780:16:forward",
+        "osm:107948780:17:forward",
+        "osm:107948780:18:forward",
+        "osm:107948780:19:forward",
+        "osm:107948780:20:forward",
+        "osm:107948780:21:forward",
+        "osm:107948780:22:forward",
+        "osm:107948780:23:forward",
+        "osm:107948780:24:forward",
+        "osm:107948780:25:forward",
+        "osm:107948780:26:forward",
+        "osm:1059628907:0:forward",
+        "osm:1059628907:1:forward",
+        "osm:1059628907:2:forward",
+        "osm:1059628907:3:forward",
+        "osm:1244754160:1:reverse",
+        "osm:1244754160:0:reverse",
+        "osm:1301547408:0:reverse",
+        "osm:834381826:3:reverse",
+        "osm:834381826:2:reverse",
+        "osm:834381826:1:reverse",
+        "osm:834381826:0:reverse",
+        "osm:30414594:11:reverse",
+        "osm:30414594:10:reverse",
+        "osm:30414594:9:reverse",
+        "osm:30414594:8:reverse",
+        "osm:30414594:7:reverse",
+        "osm:30414594:6:reverse",
+        "osm:30414594:5:reverse",
+        "osm:30414594:4:reverse",
+        "osm:30414594:3:reverse",
+        "osm:30414594:2:reverse",
+        "osm:30414594:1:reverse",
+        "osm:30414594:0:reverse",
+        "osm:30414590:0:forward",
+        "osm:180360402:0:forward",
+        "osm:1061596108:0:forward",
+        "osm:1061596107:0:forward",
+        "osm:30414591:0:forward",
+        "osm:154098237:0:forward",
+        "osm:154098237:1:forward",
+        "osm:1279846090:4:reverse",
+        "osm:5453350:0:reverse",
+        "osm:229359791:2:forward",
+        "osm:229359791:3:forward",
+        "osm:229359791:4:forward",
+        "osm:229359791:5:forward",
+        "osm:229359791:6:forward",
+        "osm:229359791:7:forward",
+        "osm:229359791:8:forward",
+        "osm:5452868:0:forward",
+        "osm:5452704:0:forward"
+      ],
+      "route_seconds": 211
+    },
+    {
+      "event_hash": "20a82827a9007b509f047380f3efcc663aea95ba415e27c3398794e87b90eb7b",
+      "events": [
+        {
+          "kind": "road_close",
+          "phase": 1,
+          "sequence": 1,
+          "target_id": "osm:107948780:13:forward",
+          "time_seconds": 0
+        },
+        {
+          "kind": "allocate",
+          "phase": 5,
+          "sequence": 2,
+          "target_id": null,
+          "time_seconds": 0
+        },
+        {
+          "kind": "pickup",
+          "phase": 2,
+          "sequence": 3,
+          "target_id": null,
+          "time_seconds": 1
+        },
+        {
+          "kind": "depart",
+          "phase": 2,
+          "sequence": 4,
+          "target_id": null,
+          "time_seconds": 2
+        },
+        {
+          "kind": "arrive",
+          "phase": 2,
+          "sequence": 5,
+          "target_id": null,
+          "time_seconds": 223
+        },
+        {
+          "kind": "admit",
+          "phase": 2,
+          "sequence": 6,
+          "target_id": null,
+          "time_seconds": 224
+        },
+        {
+          "kind": "terminal",
+          "phase": 6,
+          "sequence": 0,
+          "target_id": null,
+          "time_seconds": 259200
+        }
+      ],
+      "member_id": "road_close",
+      "metric_hash": "2c629df12e635e5133b0e8257081031e56295d70a9de41365d3a9ad7abdcb29f",
+      "metrics": {
+        "population": {
+          "$fields": {
+            "by_state": {
+              "$dict": [
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "in_transit"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "loading"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "not_requested"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "sheltered"
+                  },
+                  20
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "unloading"
+                  },
+                  0
+                ],
+                [
+                  {
+                    "$enum": "PopulationState",
+                    "value": "waiting"
+                  },
+                  80
+                ]
+              ]
+            },
+            "deadline_missed": 100,
+            "initial_people": 100,
+            "late_arrivals": 20,
+            "on_time_arrivals": 0,
+            "pending_after_horizon": 0,
+            "unfinished_movement": 0,
+            "unserved_demand": 80
+          },
+          "$type": "PopulationMetrics"
+        },
+        "water": {
+          "$fields": {
+            "consumed_ml": 600000,
+            "exhaustion_by_store": {
+              "$dict": [
+                [
+                  "pickup",
+                  null
+                ],
+                [
+                  "shelter",
+                  null
+                ]
+              ]
+            },
+            "initial_ml": 1000000,
+            "remaining_ml": 400000,
+            "unmet_by_cohort": {
+              "$dict": [
+                [
+                  "pilot-trip",
+                  0
+                ],
+                [
+                  "pilot-waiting",
+                  0
+                ]
+              ]
+            },
+            "unmet_ml": 0
+          },
+          "$type": "WaterMetrics"
+        }
+      },
+      "outcome": {
+        "evidence_event_ids": [
+          "1:road_close",
+          "2:allocate",
+          "3:pickup",
+          "4:depart",
+          "5:arrive",
+          "6:admit",
+          "0:terminal"
+        ],
+        "on_time_people": 0,
+        "stranded_people": 0,
+        "vulnerable_on_time_people": 0,
+        "water_unmet_ml": 0
+      },
+      "route_distance_mm": 2101028,
+      "route_edge_ids": [
+        "osm:1429165551:4:reverse",
+        "osm:1429165551:3:reverse",
+        "osm:1429165551:2:reverse",
+        "osm:1429165551:1:reverse",
+        "osm:1429165551:0:reverse",
+        "osm:107948780:9:forward",
+        "osm:107948780:10:forward",
+        "osm:107948780:11:forward",
+        "osm:107948780:12:forward",
+        "osm:1309930953:0:forward",
+        "osm:1309930952:0:forward",
+        "osm:1303360123:0:forward",
+        "osm:1303360123:1:forward",
+        "osm:1303360123:2:forward",
+        "osm:107948780:14:forward",
+        "osm:107948780:15:forward",
+        "osm:107948780:16:forward",
+        "osm:107948780:17:forward",
+        "osm:107948780:18:forward",
+        "osm:107948780:19:forward",
+        "osm:107948780:20:forward",
+        "osm:107948780:21:forward",
+        "osm:107948780:22:forward",
+        "osm:107948780:23:forward",
+        "osm:107948780:24:forward",
+        "osm:107948780:25:forward",
+        "osm:107948780:26:forward",
+        "osm:1059628907:0:forward",
+        "osm:1059628907:1:forward",
+        "osm:1059628907:2:forward",
+        "osm:1059628907:3:forward",
+        "osm:1244754160:1:reverse",
+        "osm:1244754160:0:reverse",
+        "osm:1301547408:0:reverse",
+        "osm:834381826:3:reverse",
+        "osm:834381826:2:reverse",
+        "osm:834381826:1:reverse",
+        "osm:834381826:0:reverse",
+        "osm:30414594:11:reverse",
+        "osm:30414594:10:reverse",
+        "osm:30414594:9:reverse",
+        "osm:30414594:8:reverse",
+        "osm:30414594:7:reverse",
+        "osm:30414594:6:reverse",
+        "osm:30414594:5:reverse",
+        "osm:30414594:4:reverse",
+        "osm:30414594:3:reverse",
+        "osm:30414594:2:reverse",
+        "osm:30414594:1:reverse",
+        "osm:30414594:0:reverse",
+        "osm:30414590:0:forward",
+        "osm:180360402:0:forward",
+        "osm:1061596108:0:forward",
+        "osm:1061596107:0:forward",
+        "osm:30414591:0:forward",
+        "osm:154098237:0:forward",
+        "osm:154098237:1:forward",
+        "osm:1279846090:4:reverse",
+        "osm:5453350:0:reverse",
+        "osm:229359791:2:forward",
+        "osm:229359791:3:forward",
+        "osm:229359791:4:forward",
+        "osm:229359791:5:forward",
+        "osm:229359791:6:forward",
+        "osm:229359791:7:forward",
+        "osm:229359791:8:forward",
+        "osm:5452868:0:forward",
+        "osm:5452704:0:forward"
+      ],
+      "route_seconds": 221
+    }
+  ]
+}

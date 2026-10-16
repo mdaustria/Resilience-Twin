@@ -1,0 +1,24 @@
+{
+  "candidates": [],
+  "inspected_regions": [
+    "p9",
+    "p10",
+    "p11",
+    "p12",
+    "p13",
+    "p14",
+    "p15",
+    "p16"
+  ],
+  "visually_inspected_regions": [
+    "p9",
+    "p10",
+    "p11",
+    "p12",
+    "p13",
+    "p14",
+    "p15",
+    "p16"
+  ],
+  "unresolved_regions": []
+}

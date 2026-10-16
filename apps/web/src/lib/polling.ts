@@ -1,6 +1,5 @@
-// Purpose: Provide polling support for: Build reconnectable Live Simulation playback.
-// Task: docs/plan.md 5.4.
-// Uses: packages/client-generated/README.md.
-// TODO(agent): implement
-
-export {};
+export function pollingDelay(status: string, hidden: boolean, failures: number): number {
+  if (hidden) return 10_000;
+  if (status === 'complete' || status === 'failed' || status === 'cancelled') return 15_000;
+  return Math.min(2_000 * 2 ** Math.min(failures, 3), 16_000);
+}

@@ -1,0 +1,90 @@
+{
+  "source": "qc",
+  "document_sha256": "95b5c5e1177946c45f71412599df914de365feb6f6694c684d9fabaefde4990b",
+  "group_pages": [
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "extractor_version": "gemini-3.8-flash-v1.1-20261014",
+  "mode": "replay",
+  "raw_sha256": "a0a50130d95da5b9724a5b03faa3fcf848edc57f8e405831b4e901154c34face",
+  "candidate_count": 1,
+  "coverage": [
+    {
+      "physical_page": 97,
+      "region_id": "p97",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 98,
+      "region_id": "p98",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 99,
+      "region_id": "p99",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 100,
+      "region_id": "p100",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 101,
+      "region_id": "p101",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 102,
+      "region_id": "p102",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 103,
+      "region_id": "p103",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 104,
+      "region_id": "p104",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    }
+  ],
+  "issues": [
+    {
+      "code": "invalid_unit",
+      "physical_page": 104,
+      "region_id": "p104",
+      "detail": "Source unit needs manual review"
+    }
+  ],
+  "usage": {
+    "input_tokens": 4780,
+    "output_tokens": 502,
+    "total_tokens": 5282
+  },
+  "response_id": "7CTPariQKdqr1e8PzPmzsAY"
+}

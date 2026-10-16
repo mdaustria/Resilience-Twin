@@ -1,0 +1,38 @@
+{
+  "candidates": [
+    {
+      "field_key": "child_friendly_spaces_evacuation_centers",
+      "entity_key": "quezon_city_evacuation_centers",
+      "source_value": "142",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 70,
+        "region_id": "p70",
+        "excerpt": "Child-friendly spaces provided in evacuation centers in 142 Barangays"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p65",
+    "p66",
+    "p67",
+    "p68",
+    "p69",
+    "p70",
+    "p71",
+    "p72"
+  ],
+  "visually_inspected_regions": [
+    "p65",
+    "p66",
+    "p67",
+    "p68",
+    "p69",
+    "p70",
+    "p71",
+    "p72"
+  ],
+  "unresolved_regions": []
+}

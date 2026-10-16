@@ -1,0 +1,168 @@
+{
+  "measurement": {
+    "cases": [
+      {
+        "edge_ids": [
+          "a-west",
+          "b-bridge-local",
+          "h-dest"
+        ],
+        "id": "car_fast_bridge",
+        "iterations": 25,
+        "median_ns": 184200,
+        "p95_ns": 202800,
+        "status": "found"
+      },
+      {
+        "edge_ids": [
+          "a-west",
+          "b-bridge-priority",
+          "h-dest"
+        ],
+        "id": "emergency_profile",
+        "iterations": 25,
+        "median_ns": 172500,
+        "p95_ns": 209800,
+        "status": "found"
+      },
+      {
+        "edge_ids": [
+          "a-west",
+          "d-north",
+          "e-north",
+          "h-dest"
+        ],
+        "id": "equal_cost_tie",
+        "iterations": 25,
+        "median_ns": 135900,
+        "p95_ns": 143300,
+        "status": "found"
+      },
+      {
+        "edge_ids": [
+          "a-west",
+          "f-south",
+          "g-south",
+          "h-dest"
+        ],
+        "id": "node_via_no",
+        "iterations": 25,
+        "median_ns": 112500,
+        "p95_ns": 120200,
+        "status": "found"
+      },
+      {
+        "edge_ids": [
+          "a-west",
+          "d-north",
+          "e-north",
+          "h-dest"
+        ],
+        "id": "node_via_only",
+        "iterations": 25,
+        "median_ns": 124800,
+        "p95_ns": 129900,
+        "status": "found"
+      },
+      {
+        "edge_ids": [
+          "a-west",
+          "f-south",
+          "g-south",
+          "h-dest"
+        ],
+        "id": "way_via_no",
+        "iterations": 25,
+        "median_ns": 145900,
+        "p95_ns": 158300,
+        "status": "found"
+      },
+      {
+        "edge_ids": [
+          "a-west",
+          "d-north",
+          "e-north",
+          "h-dest"
+        ],
+        "id": "way_via_only",
+        "iterations": 25,
+        "median_ns": 132300,
+        "p95_ns": 145900,
+        "status": "found"
+      },
+      {
+        "edge_ids": [
+          "a-west",
+          "f-south",
+          "g-south",
+          "h-dest"
+        ],
+        "id": "ambiguous_via_exclusion",
+        "iterations": 25,
+        "median_ns": 117400,
+        "p95_ns": 126200,
+        "status": "found"
+      },
+      {
+        "edge_ids": [],
+        "id": "conditional_node_exclusion",
+        "iterations": 25,
+        "median_ns": 112000,
+        "p95_ns": 119600,
+        "status": "unreachable"
+      },
+      {
+        "edge_ids": [
+          "c-bridge-west"
+        ],
+        "id": "reverse_bridge",
+        "iterations": 25,
+        "median_ns": 79000,
+        "p95_ns": 87500,
+        "status": "found"
+      },
+      {
+        "edge_ids": [],
+        "id": "reverse_bridge_closed",
+        "iterations": 25,
+        "median_ns": 133300,
+        "p95_ns": 158000,
+        "status": "unreachable"
+      },
+      {
+        "edge_ids": [],
+        "id": "one_way_no_reverse",
+        "iterations": 25,
+        "median_ns": 380600,
+        "p95_ns": 392200,
+        "status": "unreachable"
+      },
+      {
+        "edge_ids": [],
+        "id": "isolated_node",
+        "iterations": 25,
+        "median_ns": 415300,
+        "p95_ns": 511200,
+        "status": "unreachable"
+      },
+      {
+        "edge_ids": [],
+        "id": "incomplete_boundary",
+        "iterations": 25,
+        "median_ns": 120800,
+        "p95_ns": 132300,
+        "status": "boundary_cut"
+      }
+    ],
+    "fixture": "tests/fixtures/roads/reference-small.json",
+    "fixture_sha256": "52559eb934627faad3cfe30ec0be337abafdd360f21398d9e5b0b753d53c9571",
+    "implementation": "stdlib-reference",
+    "peak_process_working_set_bytes": 23691264,
+    "peak_python_allocated_bytes": 12560
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "production_decision_eligible": false,
+  "python": "3.13.16",
+  "same_sample_comparison": false,
+  "schema_version": "routing-benchmark.v1"
+}

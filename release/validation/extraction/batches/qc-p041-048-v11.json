@@ -1,0 +1,83 @@
+{
+  "source": "qc",
+  "document_sha256": "95b5c5e1177946c45f71412599df914de365feb6f6694c684d9fabaefde4990b",
+  "group_pages": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "extractor_version": "gemini-3.8-flash-v1.1-20261014",
+  "mode": "replay",
+  "raw_sha256": "c9ba78a6bc2f44affab8477870295ec78fadc2200c550b3392a758473ec4dca8",
+  "candidate_count": 4,
+  "coverage": [
+    {
+      "physical_page": 41,
+      "region_id": "p41",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 42,
+      "region_id": "p42",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 43,
+      "region_id": "p43",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 44,
+      "region_id": "p44",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 45,
+      "region_id": "p45",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 46,
+      "region_id": "p46",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 47,
+      "region_id": "p47",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 48,
+      "region_id": "p48",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    }
+  ],
+  "issues": [],
+  "usage": {
+    "input_tokens": 4765,
+    "output_tokens": 673,
+    "total_tokens": 5438
+  },
+  "response_id": "wiTPatynI6OJosUPz72pgQ8"
+}

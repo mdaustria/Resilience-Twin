@@ -1,0 +1,22 @@
+{
+  "schema_version": "milestone-b-source-only.partial.v1",
+  "cases": [
+    {
+      "case": "guiguinto",
+      "source_sha256": "b355207cefdee01f3a67876b1f11b442b90c1acb7b7c6b49ad48433c29aafb95",
+      "source_byte_size": 9418109,
+      "physical_pages": 191,
+      "gap_report_sha256": "4de78bfa74242d84e626ae29d4ce1685b435b708da5578e8af0070bb066debbc",
+      "original_bytes_preserved": true
+    },
+    {
+      "case": "qc",
+      "source_sha256": "95b5c5e1177946c45f71412599df914de365feb6f6694c684d9fabaefde4990b",
+      "source_byte_size": 2943608,
+      "physical_pages": 112,
+      "gap_report_sha256": "6da724bd279249d1b3204515f26215f16f595b7be6a5bde6436f5ad885212556",
+      "original_bytes_preserved": true
+    }
+  ],
+  "full_journey_verified": false
+}

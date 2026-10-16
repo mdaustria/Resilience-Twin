@@ -1,0 +1,13 @@
+{
+  "horizon_seconds": 10,
+  "people": 4,
+  "deadline_seconds": 10,
+  "events": [
+    {"time_seconds": 10, "phase": "completion", "kind": "arrive"},
+    {"time_seconds": 10, "phase": "deadline", "kind": "deadline"},
+    {"time_seconds": 10, "phase": "disruption", "kind": "close_shelter"}
+  ],
+  "expected_order": ["close_shelter", "arrive", "deadline", "terminal"],
+  "expected_terminal_state": "unloading",
+  "expected_deadline_missed": 4
+}

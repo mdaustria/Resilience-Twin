@@ -5,7 +5,11 @@ description = "Local bootstrap for the Resilience Twin proof of concept"
 requires-python = "==3.13.16"
 dependencies = [
   "fastapi==0.143.0",
+  "firebase-admin==7.7.0",
+  "google-cloud-tasks==2.26.0",
+  "google-genai==2.29.0",
   "pydantic==2.14.1",
+  "pypdf==6.20.1",
   "uvicorn==0.53.0",
 ]
 
@@ -14,6 +18,7 @@ dev = [
   "pytest==9.1.1",
   "ruff==0.17.0",
   "mypy==2.4.0",
+  "pyvalhalla==3.9.1",
 ]
 
 [tool.uv]

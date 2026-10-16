@@ -1,0 +1,257 @@
+{
+  "boundary_edges": 238,
+  "cases": {
+    "forward_closed": {
+      "closed_asset": "osm:bridge-way:7010992",
+      "distance_mm": 378954,
+      "edge_ids": [
+        "osm:35410212:0:reverse",
+        "osm:310868022:0:reverse",
+        "osm:7010995:0:reverse",
+        "osm:51978656:0:forward",
+        "osm:51978656:1:forward",
+        "osm:51978656:2:forward",
+        "osm:51978656:3:forward",
+        "osm:51978656:4:forward",
+        "osm:305583890:0:forward",
+        "osm:310833908:0:forward",
+        "osm:7010789:0:forward",
+        "osm:259649631:0:forward",
+        "osm:7010756:0:forward",
+        "osm:299962815:0:forward",
+        "osm:299962815:1:forward",
+        "osm:299962815:2:forward",
+        "osm:299962815:3:forward",
+        "osm:299962815:4:forward",
+        "osm:116342858:0:forward",
+        "osm:116342858:1:forward",
+        "osm:34113665:0:forward",
+        "osm:34113665:1:forward",
+        "osm:34113665:2:forward",
+        "osm:34113665:3:forward",
+        "osm:7010981:0:reverse"
+      ],
+      "source": "45150992",
+      "status": "found",
+      "target": "45153531",
+      "travel_seconds": 50
+    },
+    "forward_open": {
+      "closed_asset": null,
+      "distance_mm": 85378,
+      "edge_ids": [
+        "osm:7010992:0:forward",
+        "osm:7010987:0:forward"
+      ],
+      "source": "45150992",
+      "status": "found",
+      "target": "45153531",
+      "travel_seconds": 7
+    },
+    "reverse_closed": {
+      "closed_asset": "osm:bridge-way:7010992",
+      "distance_mm": 1398920,
+      "edge_ids": [
+        "osm:7010981:0:forward",
+        "osm:7010982:0:forward",
+        "osm:7010982:1:forward",
+        "osm:35410211:0:forward",
+        "osm:37036411:0:forward",
+        "osm:37036411:1:forward",
+        "osm:93710724:0:forward",
+        "osm:93710724:1:forward",
+        "osm:93710724:2:forward",
+        "osm:44917250:0:forward",
+        "osm:44917250:1:forward",
+        "osm:44917250:2:forward",
+        "osm:33685109:0:forward",
+        "osm:33685109:1:forward",
+        "osm:33685109:2:forward",
+        "osm:93710717:0:forward",
+        "osm:93710729:0:forward",
+        "osm:44507322:0:forward",
+        "osm:44507322:1:forward",
+        "osm:35410206:0:forward",
+        "osm:7011015:0:forward",
+        "osm:7011015:1:forward",
+        "osm:7011015:2:forward",
+        "osm:7011015:3:forward",
+        "osm:35410205:0:forward",
+        "osm:7011018:0:forward",
+        "osm:368927124:0:forward",
+        "osm:7011030:0:forward",
+        "osm:7011030:1:forward",
+        "osm:7011030:2:forward",
+        "osm:7011030:3:forward",
+        "osm:7011034:4:reverse",
+        "osm:7011034:3:reverse",
+        "osm:7011034:2:reverse",
+        "osm:7011034:1:reverse",
+        "osm:7011034:0:reverse",
+        "osm:7011021:0:forward",
+        "osm:7011024:0:forward",
+        "osm:7011023:1:reverse",
+        "osm:7011023:0:reverse",
+        "osm:372790238:0:reverse",
+        "osm:7011029:0:forward",
+        "osm:7011029:1:forward",
+        "osm:372790233:0:forward",
+        "osm:372790233:1:forward",
+        "osm:24164834:0:forward",
+        "osm:7010978:0:forward",
+        "osm:7010978:1:forward",
+        "osm:7010978:2:forward",
+        "osm:7010978:3:forward",
+        "osm:365555515:6:reverse",
+        "osm:365555515:5:reverse",
+        "osm:365555515:4:reverse",
+        "osm:365555515:3:reverse",
+        "osm:365555515:2:reverse",
+        "osm:365555515:1:reverse",
+        "osm:365555515:0:reverse",
+        "osm:234770481:0:reverse",
+        "osm:299892986:1:reverse",
+        "osm:299892986:0:reverse",
+        "osm:310833889:1:reverse",
+        "osm:310833889:0:reverse",
+        "osm:310833895:0:forward",
+        "osm:310833895:1:forward",
+        "osm:310833895:2:forward",
+        "osm:310833895:3:forward",
+        "osm:310833895:4:forward",
+        "osm:310833892:0:forward",
+        "osm:310833907:0:forward",
+        "osm:310833907:1:forward",
+        "osm:310833907:2:forward",
+        "osm:310833907:3:forward",
+        "osm:310868022:0:forward",
+        "osm:35410212:0:forward"
+      ],
+      "source": "45153531",
+      "status": "found",
+      "target": "45150992",
+      "travel_seconds": 135
+    },
+    "reverse_open": {
+      "closed_asset": null,
+      "distance_mm": 85378,
+      "edge_ids": [
+        "osm:7010987:0:reverse",
+        "osm:7010992:0:reverse"
+      ],
+      "source": "45153531",
+      "status": "found",
+      "target": "45150992",
+      "travel_seconds": 7
+    }
+  },
+  "edges": 886,
+  "fallback_kph": 30,
+  "issues": {
+    "other": [
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:1233903448"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:1688917061"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:1762364678"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:261739401"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:261739402"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:2650803410"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:3039744621"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:3039744624"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:3163233059"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:3163233060"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:3727610984"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:45146335"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:45150992"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:45151845"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:45159349"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:45159496"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:45160016"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:45160331"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:45162776"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:45164877"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:91608257"
+      },
+      {
+        "reason": "incoming edge outside compiled graph",
+        "source_id": "relation:1361130"
+      },
+      {
+        "reason": "incoming edge outside compiled graph",
+        "source_id": "relation:3933953"
+      },
+      {
+        "reason": "incoming edge outside compiled graph",
+        "source_id": "relation:3933954"
+      }
+    ],
+    "unknown_speed_fallback": 96
+  },
+  "nodes": 562,
+  "profile": "car",
+  "restrictions": 6,
+  "route_review_note": "Historical 2.4 reverse_closed probe crossed way 7011033 tagged access=no, psv=yes. The car compiler correctly excludes that way; corrected route is 135 s. Other three reviewed paths still match.",
+  "schema_version": "compiled-small-graph-review.v1",
+  "source_sha256": "8522f893d9c9c201d19d8fc0e39a038ad25fb21f6832370d4d257b4b495b9fa7"
+}

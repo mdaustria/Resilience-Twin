@@ -1,0 +1,38 @@
+{
+  "candidates": [
+    {
+      "field_key": "relief_goods_food_packs_standby_capacity",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "500",
+      "unit": "PERSON",
+      "statement_type": "proposed_target",
+      "applicable_date": "2023-01-01/2025-12-31",
+      "citation": {
+        "physical_page": 159,
+        "region_id": "p159",
+        "excerpt": "Provision relief goods on standby. | 500 pax (initial) | Provision of food packs for evacuees"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p154",
+    "p155",
+    "p156",
+    "p157",
+    "p158",
+    "p159",
+    "p160",
+    "p161"
+  ],
+  "visually_inspected_regions": [
+    "p154",
+    "p155",
+    "p156",
+    "p157",
+    "p158",
+    "p159",
+    "p160",
+    "p161"
+  ],
+  "unresolved_regions": []
+}

@@ -1,0 +1,163 @@
+{
+  "boundary_edges": 607,
+  "edges": 3272,
+  "fallback_kph": 30,
+  "issues": {
+    "other": [
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:11571311151"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:11612219550"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:1239555504"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:12407086384"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:1253843668"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:1417315199"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:1417315204"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:1417315208"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:1417315210"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:31909058"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:331136710"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:331136952"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:335657780"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:5110669698"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:5110669702"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:5551759907"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:6434727224"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:6434727230"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:6434727232"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:7293834612"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:72982789"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:72982790"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:7301241865"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:7301241866"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:8530852456"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:8530852457"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:8672081186"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:8672081187"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:9753508663"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:9753508664"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:9753508665"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:9753508666"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:9868698444"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:9868698445"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:9868698446"
+      },
+      {
+        "reason": "shared road node spans layer tags; connector review required",
+        "source_id": "node:9868698447"
+      },
+      {
+        "reason": "unsupported relation form; entry exits blocked",
+        "source_id": "relation:12617029"
+      }
+    ],
+    "unknown_speed_fallback": 318
+  },
+  "nodes": 1848,
+  "profile": "car",
+  "restrictions": 12,
+  "schema_version": "compiled-small-graph-review.v1",
+  "source_sha256": "fbea4907750e0a10be7be6a7b9188ec91d5c74c9790ab600ea02265434f73ae6"
+}

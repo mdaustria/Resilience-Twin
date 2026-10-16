@@ -1,0 +1,28 @@
+{
+  "vehicle": {
+    "id": "vehicle", "crew_id": "crew", "seats": 4,
+    "supported_needs": ["wheelchair"], "availability": [[0, 30]],
+    "distance_budget_mm": 800, "initial_location_id": "depot",
+    "return_required": true
+  },
+  "crew": {"id": "crew", "availability": [[0, 30]]},
+  "shelter": {
+    "id": "shelter", "capacity_people": 6,
+    "initial_occupancy_people": 2, "permitted_needs": ["wheelchair"]
+  },
+  "trip": {
+    "id": "trip", "cohort_id": "group", "people": 4,
+    "assistance_needs": ["wheelchair"], "vehicle_id": "vehicle",
+    "shelter_id": "shelter", "dispatch_seconds": 0,
+    "pickup_route": {"edge_ids": ["depot-pickup"], "travel_seconds": 5, "distance_mm": 100},
+    "loading_seconds": 3,
+    "passenger_route": {"edge_ids": ["pickup-shelter"], "travel_seconds": 10, "distance_mm": 400},
+    "unloading_seconds": 2,
+    "return_route": {"edge_ids": ["shelter-depot"], "travel_seconds": 8, "distance_mm": 300}
+  },
+  "expected": {
+    "pickup_seconds": 5, "loaded_seconds": 8,
+    "shelter_arrival_seconds": 18, "unloaded_seconds": 20,
+    "release_seconds": 28, "planned_distance_mm": 800
+  }
+}

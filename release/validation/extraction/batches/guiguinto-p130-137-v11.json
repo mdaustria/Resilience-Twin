@@ -1,0 +1,114 @@
+{
+  "source": "guiguinto",
+  "document_sha256": "b355207cefdee01f3a67876b1f11b442b90c1acb7b7c6b49ad48433c29aafb95",
+  "group_pages": [
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137
+  ],
+  "extractor_version": "gemini-3.8-flash-v1.1-20261014",
+  "mode": "replay",
+  "raw_sha256": "5244ce26d025a3794a6676c8a4bb3502701317cf801f7b3097a5d2b3af988c86",
+  "candidate_count": 0,
+  "coverage": [
+    {
+      "physical_page": 130,
+      "region_id": "p130",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 131,
+      "region_id": "p131",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 132,
+      "region_id": "p132",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 133,
+      "region_id": "p133",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 134,
+      "region_id": "p134",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 135,
+      "region_id": "p135",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 136,
+      "region_id": "p136",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 137,
+      "region_id": "p137",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    }
+  ],
+  "issues": [
+    {
+      "code": "invalid_unit",
+      "physical_page": 136,
+      "region_id": "p136",
+      "detail": "Source unit needs manual review"
+    },
+    {
+      "code": "invalid_unit",
+      "physical_page": 136,
+      "region_id": "p136",
+      "detail": "Source unit needs manual review"
+    },
+    {
+      "code": "invalid_unit",
+      "physical_page": 136,
+      "region_id": "p136",
+      "detail": "Source unit needs manual review"
+    },
+    {
+      "code": "invalid_unit",
+      "physical_page": 136,
+      "region_id": "p136",
+      "detail": "Source unit needs manual review"
+    },
+    {
+      "code": "invalid_unit",
+      "physical_page": 136,
+      "region_id": "p136",
+      "detail": "Source unit needs manual review"
+    }
+  ],
+  "usage": {
+    "input_tokens": 4693,
+    "output_tokens": 1083,
+    "total_tokens": 5776
+  },
+  "response_id": "2CXPasmmKraLosUPoOm0wA8"
+}

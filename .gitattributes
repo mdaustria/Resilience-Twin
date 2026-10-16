@@ -1,0 +1,5 @@
+# Frozen Task 2.1 evidence uses byte-level SHA-256 across Windows and Linux.
+/release/validation/protocol.json text eol=lf
+/tests/fixtures/validation/cases.json text eol=lf
+/release/acceptance.json text eol=lf
+/release/validation/extraction/raw/*.json binary

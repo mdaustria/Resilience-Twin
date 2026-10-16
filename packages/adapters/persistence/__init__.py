@@ -1,6 +1,5 @@
-# Purpose: Reserve the persistence module or artifact location for: Persist exclusive ownership and immutable versions in PostGIS.
-# Task: docs/plan.md 4.1, 4.5, 4.10.
-# Uses: packages/application/__init__.py, packages/contracts/__init__.py.
-# TODO(agent): implement
+"""Firestore server repositories. Client rules do not authorize server calls."""
 
-__all__ = ()
+from .firestore import AccessDenied, Actor, Conflict, FirestoreRepository, InvalidRecord
+
+__all__ = ["AccessDenied", "Actor", "Conflict", "FirestoreRepository", "InvalidRecord"]

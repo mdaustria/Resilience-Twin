@@ -3,4 +3,4 @@
 // Uses: packages/client-generated/README.md.
 // TODO(agent): implement
 
-export {};
+export { FindingsView } from './FindingsView';

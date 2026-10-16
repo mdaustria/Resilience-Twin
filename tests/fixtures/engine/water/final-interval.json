@@ -1,0 +1,22 @@
+{
+  "horizon_seconds": 5,
+  "stores": [
+    {"id": "shelter", "initial_ml": 7},
+    {"id": "pickup", "initial_ml": 2},
+    {"id": "transit", "initial_ml": 0}
+  ],
+  "cohorts": [
+    {"id": "initial", "people": 2, "ml_per_person_day": 86400, "supply_id": "shelter"},
+    {"id": "waiting", "people": 1, "ml_per_person_day": 43200, "supply_id": "pickup"},
+    {"id": "moving", "people": 1, "ml_per_person_day": 86400, "supply_id": "transit"}
+  ],
+  "expected": {
+    "initial_ml": 9,
+    "consumed_ml": 9,
+    "remaining_ml": 0,
+    "unmet_ml": 8,
+    "exhaustion_by_store": {"shelter": 4, "pickup": 4, "transit": 0},
+    "unmet_by_cohort": {"initial": 3, "waiting": 0, "moving": 5},
+    "waiting_remainder_numerator": 43200
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "candidates": [
+    {
+      "field_key": "flood_warning_barangay_count",
+      "entity_key": "guiguinto_all_barangays",
+      "source_value": "14",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 119,
+        "region_id": "p119",
+        "excerpt": "Paga-anunsyo sa lahat ng labing -apat (14) na Barangay gamit ang megaphone,mobile radio.txt brigade."
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p117",
+    "p118",
+    "p119"
+  ],
+  "visually_inspected_regions": [
+    "p117",
+    "p118",
+    "p119"
+  ],
+  "unresolved_regions": []
+}

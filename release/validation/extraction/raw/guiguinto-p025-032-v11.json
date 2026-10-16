@@ -1,0 +1,168 @@
+{
+  "candidates": [
+    {
+      "field_key": "total_population",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "112,889",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2020",
+      "citation": {
+        "physical_page": 25,
+        "region_id": "p25",
+        "excerpt": "As of the latest Census conducted in 2020, Guiguinto has a total of 112,889 inhabitants"
+      }
+    },
+    {
+      "field_key": "senior_citizens_total_2022",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "14,004",
+      "unit": "PERSON",
+      "statement_type": "reported_existing",
+      "applicable_date": "2022",
+      "citation": {
+        "physical_page": 26,
+        "region_id": "p26",
+        "excerpt": "TOTAL 10,030 10,405 14,004"
+      }
+    },
+    {
+      "field_key": "senior_citizens_total_2021",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "10,405",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 26,
+        "region_id": "p26",
+        "excerpt": "TOTAL 10,030 10,405 14,004"
+      }
+    },
+    {
+      "field_key": "senior_citizens_total_2020",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "10,030",
+      "unit": "PERSON",
+      "statement_type": "historical",
+      "applicable_date": "2020",
+      "citation": {
+        "physical_page": 26,
+        "region_id": "p26",
+        "excerpt": "TOTAL 10,030 10,405 14,004"
+      }
+    },
+    {
+      "field_key": "land_area_lmb",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "2,750",
+      "unit": "HECTARE",
+      "statement_type": "historical",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 29,
+        "region_id": "p29",
+        "excerpt": "Guiguinto has a total area of 2,750 hectares based on the records of the Land Management Bureau (LMB)"
+      }
+    },
+    {
+      "field_key": "land_area_gis",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "2,221.43",
+      "unit": "HECTARE",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 29,
+        "region_id": "p29",
+        "excerpt": "TOTAL 2,750 2,221.43"
+      }
+    },
+    {
+      "field_key": "land_area_gis_tiaong",
+      "entity_key": "barangay_tiaong",
+      "source_value": "280.760",
+      "unit": "HECTARE",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 29,
+        "region_id": "p29",
+        "excerpt": "Tiaong 258 280.760"
+      }
+    },
+    {
+      "field_key": "land_area_gis_sta_rita",
+      "entity_key": "barangay_sta_rita",
+      "source_value": "266.840",
+      "unit": "HECTARE",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 29,
+        "region_id": "p29",
+        "excerpt": "Sta. Rita 272 266.840"
+      }
+    },
+    {
+      "field_key": "land_area_gis_sta_cruz",
+      "entity_key": "barangay_sta_cruz",
+      "source_value": "227.250",
+      "unit": "HECTARE",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 29,
+        "region_id": "p29",
+        "excerpt": "Sta. Cruz 248 227.250"
+      }
+    },
+    {
+      "field_key": "land_area_gis_malis",
+      "entity_key": "barangay_malis",
+      "source_value": "226.480",
+      "unit": "HECTARE",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 29,
+        "region_id": "p29",
+        "excerpt": "Malis 311 226.480"
+      }
+    },
+    {
+      "field_key": "land_area_gis_pritil",
+      "entity_key": "barangay_pritil",
+      "source_value": "210.210",
+      "unit": "HECTARE",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 29,
+        "region_id": "p29",
+        "excerpt": "Pritil 323 210.210"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p25",
+    "p26",
+    "p27",
+    "p28",
+    "p29",
+    "p30",
+    "p31",
+    "p32"
+  ],
+  "visually_inspected_regions": [
+    "p25",
+    "p26",
+    "p27",
+    "p28",
+    "p29",
+    "p30",
+    "p31",
+    "p32"
+  ],
+  "unresolved_regions": []
+}

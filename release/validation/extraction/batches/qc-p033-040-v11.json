@@ -1,0 +1,83 @@
+{
+  "source": "qc",
+  "document_sha256": "95b5c5e1177946c45f71412599df914de365feb6f6694c684d9fabaefde4990b",
+  "group_pages": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "extractor_version": "gemini-3.8-flash-v1.1-20261014",
+  "mode": "replay",
+  "raw_sha256": "eb6134a5d6b1a6b1fe0eb101681bdaf7736e0e996072ec6bc6d2e5578b9fa9f9",
+  "candidate_count": 4,
+  "coverage": [
+    {
+      "physical_page": 33,
+      "region_id": "p33",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 34,
+      "region_id": "p34",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 35,
+      "region_id": "p35",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 36,
+      "region_id": "p36",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 37,
+      "region_id": "p37",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 38,
+      "region_id": "p38",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 39,
+      "region_id": "p39",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    },
+    {
+      "physical_page": 40,
+      "region_id": "p40",
+      "status": "processed",
+      "method": "text",
+      "recovery_reason": null
+    }
+  ],
+  "issues": [],
+  "usage": {
+    "input_tokens": 4765,
+    "output_tokens": 788,
+    "total_tokens": 5553
+  },
+  "response_id": "uiTPaqL-B7rEvr0PtpiUmAo"
+}

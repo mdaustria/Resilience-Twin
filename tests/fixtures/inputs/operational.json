@@ -1,0 +1,926 @@
+{
+  "schema_version": "operational.inputs.v1",
+  "scope": {
+    "id": "00000000-0000-0000-0000-000000000001",
+    "label": "Synthetic selected study area",
+    "boundary": {
+      "artifact_id": "00000000-0000-0000-0000-000000000065",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "barangay_ids": [
+      "00000000-0000-0000-0000-00000000000a"
+    ],
+    "exclusions": [
+      "All other areas"
+    ],
+    "cross_boundary_assumptions": [
+      "00000000-0000-0000-0000-000000000002"
+    ],
+    "basis": [
+      {
+        "field": "label",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "boundary",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "barangay_ids",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "exclusions",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "cross_boundary_assumptions",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      }
+    ]
+  },
+  "documents": [],
+  "evidence": [],
+  "assumptions": [
+    {
+      "id": "00000000-0000-0000-0000-000000000002",
+      "statement": "All operational values are fictional, explicitly accepted synthetic inputs.",
+      "rationale": "Exercise contract/accounting rules without borrowing held-out or real-plan evidence.",
+      "limitations": "No field accuracy, permission or real-world validity is implied.",
+      "scope_id": "00000000-0000-0000-0000-000000000001",
+      "applicable_from": "2026-10-01",
+      "applicable_through": "2026-10-31",
+      "accepted": true
+    }
+  ],
+  "barangays": [
+    {
+      "id": "00000000-0000-0000-0000-00000000000a",
+      "name": "Synthetic barangay",
+      "boundary": {
+        "artifact_id": "00000000-0000-0000-0000-000000000066",
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "population_people": 100,
+      "population_source_date": "2026-10-01",
+      "basis": [
+        {
+          "field": "name",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "boundary",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "population_people",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "population_source_date",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        }
+      ]
+    }
+  ],
+  "pickups": [
+    {
+      "id": "00000000-0000-0000-0000-000000000014",
+      "barangay_id": "00000000-0000-0000-0000-00000000000a",
+      "location": {
+        "longitude": 121.0,
+        "latitude": 14.5,
+        "graph_node_id": "pickup",
+        "connector_distance_mm": 1000,
+        "connector_time_seconds": 1,
+        "reviewed": true
+      },
+      "staging_limit_people": null,
+      "basis": [
+        {
+          "field": "barangay_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "location",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "staging_limit_people",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        }
+      ]
+    }
+  ],
+  "shelters": [
+    {
+      "id": "00000000-0000-0000-0000-00000000001e",
+      "physical_resource_key": "synthetic-shelter",
+      "location": {
+        "longitude": 121.0,
+        "latitude": 14.5,
+        "graph_node_id": "shelter",
+        "connector_distance_mm": 1000,
+        "connector_time_seconds": 1,
+        "reviewed": true
+      },
+      "capacity_people": 80,
+      "availability": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 7200
+        }
+      ],
+      "permitted_needs": [],
+      "initial_water_ml": 40000000,
+      "cost_centavos": null,
+      "basis": [
+        {
+          "field": "physical_resource_key",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "location",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "capacity_people",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "availability",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "permitted_needs",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "initial_water_ml",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "cost_centavos",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        }
+      ]
+    }
+  ],
+  "crews": [
+    {
+      "id": "00000000-0000-0000-0000-000000000028",
+      "availability": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 7200
+        }
+      ],
+      "basis": [
+        {
+          "field": "availability",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "00000000-0000-0000-0000-000000000032",
+      "physical_resource_key": "synthetic-vehicle",
+      "seats": 10,
+      "initial_location": {
+        "longitude": 121.0,
+        "latitude": 14.5,
+        "graph_node_id": "depot",
+        "connector_distance_mm": 1000,
+        "connector_time_seconds": 1,
+        "reviewed": true
+      },
+      "availability": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 7200
+        }
+      ],
+      "crew_id": "00000000-0000-0000-0000-000000000028",
+      "distance_budget_mm": 10000000,
+      "routing_profile": {
+        "artifact_id": "00000000-0000-0000-0000-000000000067",
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      },
+      "supported_needs": [],
+      "loading_seconds": 30,
+      "unloading_seconds": 30,
+      "return_required": true,
+      "cost_centavos": null,
+      "basis": [
+        {
+          "field": "physical_resource_key",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "seats",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "initial_location",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "availability",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "crew_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "distance_budget_mm",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "routing_profile",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "supported_needs",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "loading_seconds",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "unloading_seconds",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "return_required",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "cost_centavos",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        }
+      ]
+    }
+  ],
+  "supply_stores": [
+    {
+      "id": "00000000-0000-0000-0000-00000000003c",
+      "physical_resource_key": "synthetic-waiting-transit-store",
+      "location": {
+        "longitude": 121.0,
+        "latitude": 14.5,
+        "graph_node_id": "pickup",
+        "connector_distance_mm": 1000,
+        "connector_time_seconds": 1,
+        "reviewed": true
+      },
+      "initial_water_ml": 0,
+      "basis": [
+        {
+          "field": "physical_resource_key",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "location",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "initial_water_ml",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        }
+      ]
+    }
+  ],
+  "cohorts": [
+    {
+      "id": "00000000-0000-0000-0000-000000000046",
+      "barangay_id": "00000000-0000-0000-0000-00000000000a",
+      "assistance_needs": [],
+      "assistance_priority": 0,
+      "evacuation_mode": "vehicle",
+      "water_ml_per_person_day": 2000000,
+      "population_partition_key": "initial-occupants",
+      "people": 20,
+      "initial_state": "sheltered",
+      "pickup_id": null,
+      "shelter_id": "00000000-0000-0000-0000-00000000001e",
+      "request_time_seconds": null,
+      "deadline_seconds": null,
+      "pre_shelter_water_store_id": null,
+      "basis": [
+        {
+          "field": "barangay_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "assistance_needs",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "assistance_priority",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "evacuation_mode",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "water_ml_per_person_day",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "population_partition_key",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "people",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "initial_state",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "pickup_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "shelter_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "request_time_seconds",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "deadline_seconds",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "pre_shelter_water_store_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000047",
+      "barangay_id": "00000000-0000-0000-0000-00000000000a",
+      "assistance_needs": [],
+      "assistance_priority": 0,
+      "evacuation_mode": "vehicle",
+      "water_ml_per_person_day": 2000000,
+      "population_partition_key": "waiting-residents",
+      "people": 40,
+      "initial_state": "waiting",
+      "pickup_id": "00000000-0000-0000-0000-000000000014",
+      "shelter_id": null,
+      "request_time_seconds": 0,
+      "deadline_seconds": 7200,
+      "pre_shelter_water_store_id": "00000000-0000-0000-0000-00000000003c",
+      "basis": [
+        {
+          "field": "barangay_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "assistance_needs",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "assistance_priority",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "evacuation_mode",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "water_ml_per_person_day",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "population_partition_key",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "people",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "initial_state",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "pickup_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "shelter_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "request_time_seconds",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "deadline_seconds",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "pre_shelter_water_store_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000048",
+      "barangay_id": "00000000-0000-0000-0000-00000000000a",
+      "assistance_needs": [],
+      "assistance_priority": 0,
+      "evacuation_mode": "vehicle",
+      "water_ml_per_person_day": 2000000,
+      "population_partition_key": "unrequested-residents",
+      "people": 40,
+      "initial_state": "not_requested",
+      "pickup_id": "00000000-0000-0000-0000-000000000014",
+      "shelter_id": null,
+      "request_time_seconds": null,
+      "deadline_seconds": null,
+      "pre_shelter_water_store_id": "00000000-0000-0000-0000-00000000003c",
+      "basis": [
+        {
+          "field": "barangay_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "assistance_needs",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "assistance_priority",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "evacuation_mode",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "water_ml_per_person_day",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "population_partition_key",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "people",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "initial_state",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "pickup_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "shelter_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "request_time_seconds",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "deadline_seconds",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "pre_shelter_water_store_id",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        }
+      ]
+    }
+  ],
+  "informational_items": [
+    {
+      "id": "00000000-0000-0000-0000-000000000050",
+      "kind": "procedure",
+      "description": "Walking and staged transfers are unmodeled.",
+      "modeled": false,
+      "basis": [
+        {
+          "field": "kind",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "description",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        },
+        {
+          "field": "modeled",
+          "evidence_ids": [],
+          "assumption_id": "00000000-0000-0000-0000-000000000002",
+          "conversion": null,
+          "resolution_note": null
+        }
+      ]
+    }
+  ],
+  "graph": {
+    "id": "00000000-0000-0000-0000-00000000005a",
+    "artifact": {
+      "artifact_id": "00000000-0000-0000-0000-000000000068",
+      "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    },
+    "source_snapshot": {
+      "artifact_id": "00000000-0000-0000-0000-000000000069",
+      "sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    "extent": {
+      "artifact_id": "00000000-0000-0000-0000-00000000006a",
+      "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    "buffer_mm": 100000,
+    "projection": "Synthetic recorded metric projection",
+    "compiler_version": "synthetic-contract-v1",
+    "node_ids": [
+      "pickup",
+      "shelter",
+      "depot"
+    ],
+    "routing_profile_hashes": [
+      "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    ],
+    "edge_count": 4,
+    "review_status": "reviewed",
+    "basis": [
+      {
+        "field": "artifact",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "source_snapshot",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "extent",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "buffer_mm",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "projection",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "compiler_version",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "node_ids",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "routing_profile_hashes",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "edge_count",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "review_status",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      }
+    ]
+  },
+  "scenario": {
+    "id": "00000000-0000-0000-0000-00000000005b",
+    "schema_version": "scenario.metadata.v1",
+    "start_utc": "2026-10-13T00:00:00Z",
+    "horizon_seconds": 3600,
+    "exogenous_scenario": {
+      "artifact_id": "00000000-0000-0000-0000-00000000006b",
+      "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    "suite_member_id": "00000000-0000-0000-0000-00000000005c",
+    "seed": 0,
+    "rng_algorithm": "none-v1",
+    "basis": [
+      {
+        "field": "schema_version",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "start_utc",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "horizon_seconds",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "exogenous_scenario",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "suite_member_id",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "seed",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      },
+      {
+        "field": "rng_algorithm",
+        "evidence_ids": [],
+        "assumption_id": "00000000-0000-0000-0000-000000000002",
+        "conversion": null,
+        "resolution_note": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "candidates": [
+    {
+      "field_key": "cctv_monitoring_count",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "thirty (5)",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 143,
+        "region_id": "p143",
+        "excerpt": "The MDRRMO, for the past 3 years, has strategically put thirty (5) CCTVs in place across the Municipality along the Guiguinto River."
+      }
+    },
+    {
+      "field_key": "evacuation_monitoring_barangay_coverage",
+      "entity_key": "municipality_of_guiguinto",
+      "source_value": "14",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 145,
+        "region_id": "p145",
+        "excerpt": "Implementation of the Sugod Guiguinto Command Center (SGCC). | 14 Barangays | 100% of Barangays monitored and informed"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p138",
+    "p139",
+    "p140",
+    "p141",
+    "p142",
+    "p143",
+    "p144",
+    "p145"
+  ],
+  "visually_inspected_regions": [
+    "p138",
+    "p139",
+    "p140",
+    "p141",
+    "p142",
+    "p143",
+    "p144",
+    "p145"
+  ],
+  "unresolved_regions": []
+}

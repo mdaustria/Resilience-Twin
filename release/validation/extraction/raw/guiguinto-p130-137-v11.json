@@ -1,0 +1,90 @@
+{
+  "candidates": [
+    {
+      "field_key": "evacuation_center_repair_maintenance_cost_2023",
+      "entity_key": "evacuation_center",
+      "source_value": "400,000.00",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": "2023",
+      "citation": {
+        "physical_page": 136,
+        "region_id": "p136",
+        "excerpt": "Repair & Maintenance of Evacuation Center | January | December | | 400,000.00 | 400,000.00 | 400,000.00"
+      }
+    },
+    {
+      "field_key": "evacuation_center_repair_maintenance_cost_2024",
+      "entity_key": "evacuation_center",
+      "source_value": "400,000.00",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": "2024",
+      "citation": {
+        "physical_page": 136,
+        "region_id": "p136",
+        "excerpt": "Repair & Maintenance of Evacuation Center | January | December | | 400,000.00 | 400,000.00 | 400,000.00"
+      }
+    },
+    {
+      "field_key": "evacuation_center_repair_maintenance_cost_2025",
+      "entity_key": "evacuation_center",
+      "source_value": "400,000.00",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": "2025",
+      "citation": {
+        "physical_page": 136,
+        "region_id": "p136",
+        "excerpt": "Repair & Maintenance of Evacuation Center | January | December | | 400,000.00 | 400,000.00 | 400,000.00"
+      }
+    },
+    {
+      "field_key": "rescue_boat_procurement_cost_2023",
+      "entity_key": "rescue_boat",
+      "source_value": "600,000.00",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": "2023",
+      "citation": {
+        "physical_page": 136,
+        "region_id": "p136",
+        "excerpt": "Procurement of Rescue Boat | January | December | Improvement of Response Capabilities and Disaster Mitigation | 600,000.00 | | 1,000,000.00"
+      }
+    },
+    {
+      "field_key": "rescue_boat_procurement_cost_2025",
+      "entity_key": "rescue_boat",
+      "source_value": "1,000,000.00",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": "2025",
+      "citation": {
+        "physical_page": 136,
+        "region_id": "p136",
+        "excerpt": "Procurement of Rescue Boat | January | December | Improvement of Response Capabilities and Disaster Mitigation | 600,000.00 | | 1,000,000.00"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p130",
+    "p131",
+    "p132",
+    "p133",
+    "p134",
+    "p135",
+    "p136",
+    "p137"
+  ],
+  "visually_inspected_regions": [
+    "p130",
+    "p131",
+    "p132",
+    "p133",
+    "p134",
+    "p135",
+    "p136",
+    "p137"
+  ],
+  "unresolved_regions": []
+}

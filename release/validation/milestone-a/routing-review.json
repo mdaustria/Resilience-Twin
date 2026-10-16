@@ -1,0 +1,11 @@
+{
+  "schema_version": "milestone-a-routing-review.v1",
+  "checked_on": "2026-10-14",
+  "selected_router": "standard-library exact-edge directed Dijkstra, ADR-028",
+  "compiler_policy": "car; explicit 30 km/h fallback for unknown speed; conservative ambiguous restrictions",
+  "sources": {
+    "qc": {"graph_sha256": "d03bc52f0d1337281020eeb100c7d1de289798eb52393651f14ecd70e4f8845d", "directed_edges": 3272, "normal_route_seconds": 211, "closed_route_seconds": 221, "closed_exact_edge": "osm:107948780:13:forward"},
+    "guiguinto": {"graph_sha256": "ef85554a12909a7d0728ee1ca390718714b2c721cf73cec04e222435fd0f9500", "directed_edges": 2231, "normal_route_seconds": 64, "closed_route_seconds": 71, "closed_exact_edge": "osm:1341516497:0:forward"}
+  },
+  "limitations": ["OSM geometry and tags are dated, not observed road conditions", "Boundary cuts and layer/access issues are recorded in compiled review artifacts", "Physical connector access and facility operability are assumptions", "No city-wide or municipal routing claim"]
+}

@@ -1,0 +1,51 @@
+{
+  "candidates": [
+    {
+      "field_key": "evacuation_plans_target",
+      "entity_key": "quezon_city_barangays",
+      "source_value": "100%",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "• 100% Formulated Evacuation Plans | 142 Barangays in Quezon City"
+      }
+    },
+    {
+      "field_key": "evacuation_plans_target_barangays",
+      "entity_key": "quezon_city_barangays",
+      "source_value": "142",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 104,
+        "region_id": "p104",
+        "excerpt": "Formulation and implementation of an adaptive, standard evacuation plan with a lead team focused on all evacuation needs, procedures, and protocols | Evacuation Plans in BDRRMPs | •Uncooperative Barangays • Change in Administration in the Barangay Level | • 100% Formulated Evacuation Plans | 142 Barangays in Quezon City"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p97",
+    "p98",
+    "p99",
+    "p100",
+    "p101",
+    "p102",
+    "p103",
+    "p104"
+  ],
+  "visually_inspected_regions": [
+    "p97",
+    "p98",
+    "p99",
+    "p100",
+    "p101",
+    "p102",
+    "p103",
+    "p104"
+  ],
+  "unresolved_regions": []
+}

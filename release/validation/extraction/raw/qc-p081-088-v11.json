@@ -1,0 +1,103 @@
+{
+  "candidates": [
+    {
+      "field_key": "permanent_evacuation_centers_per_district",
+      "entity_key": "quezon_city_districts",
+      "source_value": "1",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": "2021/2027",
+      "citation": {
+        "physical_page": 82,
+        "region_id": "p82",
+        "excerpt": "One (1) Permanent Evacuation Area per District"
+      }
+    },
+    {
+      "field_key": "district_level_evacuation_centers_districts_targeted",
+      "entity_key": "quezon_city_districts",
+      "source_value": "6",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 83,
+        "region_id": "p83",
+        "excerpt": "Six (6) Quezon City Districts"
+      }
+    },
+    {
+      "field_key": "shelter_area_identified_per_hotspot_barangay",
+      "entity_key": "hotspot_barangays",
+      "source_value": "1",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 83,
+        "region_id": "p83",
+        "excerpt": "One (1) shelter area identified for each hotspot barangay"
+      }
+    },
+    {
+      "field_key": "portable_portalets_purchased",
+      "entity_key": "evacuation_centers",
+      "source_value": "4",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 84,
+        "region_id": "p84",
+        "excerpt": "Purchase of portable portalets (4 units) for male, female, all gender and PWDs (25M) and portable drinking water stations in designated evacuation centers"
+      }
+    },
+    {
+      "field_key": "prepositioned_storage_container_vans",
+      "entity_key": "quezon_city",
+      "source_value": "12",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 85,
+        "region_id": "p85",
+        "excerpt": "Twelve (12) container vans positioned"
+      }
+    },
+    {
+      "field_key": "storage_facility_per_district",
+      "entity_key": "quezon_city_districts",
+      "source_value": "1",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 87,
+        "region_id": "p87",
+        "excerpt": "One (1) storage facility per District"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p81",
+    "p82",
+    "p83",
+    "p84",
+    "p85",
+    "p86",
+    "p87",
+    "p88"
+  ],
+  "visually_inspected_regions": [
+    "p81",
+    "p82",
+    "p83",
+    "p84",
+    "p85",
+    "p86",
+    "p87",
+    "p88"
+  ],
+  "unresolved_regions": []
+}

@@ -1,0 +1,31 @@
+{
+  "bucket": "ai-projects-250716-resilliencetwin",
+  "checked_at_utc": "2026-10-15T22:52:26.149147+00:00",
+  "cleanup_verified": true,
+  "create_precondition_denial": true,
+  "firebase_anonymous_http_status": 403,
+  "firestore_database": "resillience-twin",
+  "gcs_anonymous_http_status": 401,
+  "generation_precondition_denial": true,
+  "guest_owner_denial": true,
+  "iam_configuration": {
+    "bucketPolicyOnly": {
+      "enabled": false
+    },
+    "publicAccessPrevention": "inherited",
+    "uniformBucketLevelAccess": {
+      "enabled": false
+    }
+  },
+  "location": "US-EAST1",
+  "physical_pages": 1,
+  "project": "ai-projects-250716",
+  "retention_period_seconds": null,
+  "soft_delete_policy": {
+    "effectiveTime": "2026-10-15T03:19:15.437Z",
+    "retentionDurationSeconds": "604800"
+  },
+  "source_bytes": 431,
+  "source_sha256": "b37a58fb510237b6b60b1e610deecd3eb013ff71836b831faf66958f83affbe3",
+  "versioning_enabled": false
+}

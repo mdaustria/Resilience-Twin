@@ -1,0 +1,102 @@
+{
+  "candidates": [
+    {
+      "field_key": "area_high_susceptibility_flooding",
+      "entity_key": "municipality_total",
+      "source_value": "11.43",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 84,
+        "region_id": "p84_image_table",
+        "excerpt": "TOTAL 21.7 11.43 10.01"
+      }
+    },
+    {
+      "field_key": "area_low_to_moderate_susceptibility_flooding",
+      "entity_key": "municipality_total",
+      "source_value": "10.01",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 84,
+        "region_id": "p84_image_table",
+        "excerpt": "TOTAL 21.7 11.43 10.01"
+      }
+    },
+    {
+      "field_key": "area_high_susceptibility_flooding",
+      "entity_key": "barangay_tuktukan",
+      "source_value": "1.56",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 84,
+        "region_id": "p84_image_table",
+        "excerpt": "Tuktukan 195 1.57 1.56 0"
+      }
+    },
+    {
+      "field_key": "area_high_susceptibility_flooding",
+      "entity_key": "barangay_malis",
+      "source_value": "1.39",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 84,
+        "region_id": "p84_image_table",
+        "excerpt": "Malis 311 2.18 1.39 0.79"
+      }
+    },
+    {
+      "field_key": "area_high_susceptibility_flooding",
+      "entity_key": "barangay_pritil",
+      "source_value": "1.39",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 84,
+        "region_id": "p84_image_table",
+        "excerpt": "Pritil 323 2.09 1.39 0.7"
+      }
+    },
+    {
+      "field_key": "area_high_susceptibility_flooding",
+      "entity_key": "barangay_tiaong",
+      "source_value": "1.34",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 84,
+        "region_id": "p84_image_table",
+        "excerpt": "Tiaong 258 2.78 1.34 1.44"
+      }
+    },
+    {
+      "field_key": "area_low_to_moderate_susceptibility_flooding",
+      "entity_key": "barangay_sta_rita",
+      "source_value": "1.93",
+      "unit": "SQUARE_KILOMETER",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 84,
+        "region_id": "p84_image_table",
+        "excerpt": "Sta. Rita 272 2.6 0.67 1.93"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p84_image_table"
+  ],
+  "visually_inspected_regions": [
+    "p84_image_table"
+  ],
+  "unresolved_regions": []
+}

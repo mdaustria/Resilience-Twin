@@ -1,0 +1,17 @@
+{
+  "schema_version": "purge-schedule.v1",
+  "environment": "authorized-nonproduction",
+  "schedule_utc": "0 * * * *",
+  "target": "bounded purge job",
+  "command": [
+    "python", "-m", "services.worker.purge",
+    "--project", "ai-projects-250716",
+    "--database", "resillience-twin",
+    "--bucket", "ai-projects-250716-resilliencetwin",
+    "--workspace-limit", "100",
+    "--page-limit", "100"
+  ],
+  "required_environment": {"RT_PURGE_ENABLED": "1"},
+  "rehearsal": "tests/integration/test_purge.py::test_generation_purge_and_scheduler_cycle_rehearsal",
+  "deployment_gate": "Task 6.2 provisions and authenticates Cloud Scheduler and the Cloud Run job; Task 6.4 measures real provider retention and restore."
+}

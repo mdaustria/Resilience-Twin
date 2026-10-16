@@ -1,6 +1,5 @@
-# Purpose: Verify owner rls behavior for: Persist exclusive ownership and immutable versions in PostGIS.
-# Task: docs/plan.md 4.1.
-# Uses: packages/adapters/persistence/__init__.py.
-# TODO(agent): implement
+"""Retired SQL/RLS placeholder.
 
-__all__ = ()
+Firestore owner checks run in test_owner_access.py; direct Firebase client
+denial runs in test_firestore_rules.py. Firestore server SDKs bypass rules.
+"""

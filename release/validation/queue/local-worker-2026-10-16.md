@@ -1,0 +1,7 @@
+# Task 4.7 local worker verification — 2026-10-16
+
+Command: `uv run pytest tests/integration/test_outbox_delivery.py tests/integration/test_worker_fencing.py -q --tb=short` with the pinned Python runtime, Firestore emulator, `TEMP`/`TMP` set to `.runtime/tmp`, and `GOOGLE_APPLICATION_CREDENTIALS` pointing to the authorized nonproduction service account key outside this repository.
+
+Result: 5 passed, 1 upstream Starlette TestClient deprecation warning, in 11.64 seconds. The new check opened a loopback HTTP server, presented a Google-signed OIDC token for the configured audience, observed `200` twice for the same job, and confirmed one completed Firestore job. A forged task-name header without a bearer token and a valid token for a different audience each returned `401`. Existing emulator tests covered outbox replay after an injected enqueue/mark crash, expired lease reconciliation, stale-fence publication denial, and idempotent task-name requests to an injected Cloud Tasks client. The local server and synthetic Firestore test data were disposed of by test fixtures.
+
+Boundary: No Cloud Tasks queue or reachable cloud worker was created or contacted. The test service account cannot list project queues (`cloudtasks.queues.list` returned 403 on the read-only probe), and the collaborator reports none created. This record is local authenticated-worker evidence, not managed queue delivery or production throughput evidence. Task 6.3 requires actual staged queue delivery and scoped IAM before deployment.

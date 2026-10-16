@@ -1,6 +1,7 @@
-<!--
-Purpose: Reserve the reports module or artifact location for: Render gap-only and evaluated proof reports.
-Task: docs/plan.md 3.8.
-Uses: docs/architecture.md, docs/plan.md.
-TODO(agent): implement
--->
+# Local public-source proof reports
+
+For each public plan, `*-gap_only.html/.pdf` is a source-only evidence and readiness export with no measured metrics. `*-evaluated.html/.pdf` is a separate exploratory analysis based on the checked original PDF, pinned local OSM graph and visible hypothetical inputs. `*-pilot-proof.json` records the baseline, time-zero exact-road-closure disruption, paired additional-water variant, event/metric hashes, geography scope and personally reviewed local input seal. Both model cells exclude the rest of their jurisdictions.
+
+Rebuild with `uv run python scripts/run_pilot_proof.py` from the repository root while both original public PDFs are in Downloads; use `--pdf-directory` for a different source location. The command checks original SHA-256s before exporting and uses offline Chromium with JavaScript disabled and all requests aborted. `uv run pytest tests/integration/test_reports.py` checks the report contract and deterministic case proofs; `pnpm exec playwright test tests/e2e/model-proof.spec.ts` checks both exported HTML states offline. PDFs were rendered with Poppler and visually inspected.
+
+The reports are independent and hypothetical. Source only gaps remain visible in the evaluated reports. The Guiguinto source's conflicting FAMILY capacity totals are documentary facts and do not determine the assumed 150-person local shelter. Report URLs/coordinates and OSM geometry do not establish live road or facility conditions.

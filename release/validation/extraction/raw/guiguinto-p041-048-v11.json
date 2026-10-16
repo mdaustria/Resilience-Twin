@@ -1,0 +1,129 @@
+{
+  "candidates": [
+    {
+      "field_key": "water_bodies_area",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "9.80",
+      "unit": "HECTARE",
+      "statement_type": "historical",
+      "applicable_date": "2012",
+      "citation": {
+        "physical_page": 45,
+        "region_id": "p45",
+        "excerpt": "The 2012 Socio-Economic Profile of the Municipality of Guiguinto revealed that there is about 9.80 hectares of water bodies in the municipality."
+      }
+    },
+    {
+      "field_key": "level_3_water_connection_households",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "11,861",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2014-06",
+      "citation": {
+        "physical_page": 46,
+        "region_id": "p46",
+        "excerpt": "As of June 2014, about 11,861 (or 59%) of the 20,194 households in Guiguinto has level 3 water connections."
+      }
+    },
+    {
+      "field_key": "total_households",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "20,194",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2014-06",
+      "citation": {
+        "physical_page": 46,
+        "region_id": "p46",
+        "excerpt": "about 11,861 (or 59%) of the 20,194 households in Guiguinto has level 3 water connections."
+      }
+    },
+    {
+      "field_key": "water_pumping_stations_count",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "23",
+      "unit": "COUNT",
+      "statement_type": "reported_existing",
+      "applicable_date": "2022",
+      "citation": {
+        "physical_page": 46,
+        "region_id": "p46",
+        "excerpt": "Guiguinto Water District has 23 pumping stations located strategically within the town as shown in Table 10."
+      }
+    },
+    {
+      "field_key": "households_water_supply",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "22,522",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 46,
+        "region_id": "p46",
+        "excerpt": "TOTAL 22,522 23,810 106"
+      }
+    },
+    {
+      "field_key": "households_water_supply",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "23,810",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": "2022-06",
+      "citation": {
+        "physical_page": 46,
+        "region_id": "p46",
+        "excerpt": "TOTAL 22,522 23,810 106"
+      }
+    },
+    {
+      "field_key": "households_access_clean_water",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "22,522",
+      "unit": "FAMILY",
+      "statement_type": "historical",
+      "applicable_date": "2021",
+      "citation": {
+        "physical_page": 48,
+        "region_id": "p48",
+        "excerpt": "TOTAL 22,522 23,810"
+      }
+    },
+    {
+      "field_key": "households_access_clean_water",
+      "entity_key": "guiguinto_municipality",
+      "source_value": "23,810",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": "2022",
+      "citation": {
+        "physical_page": 48,
+        "region_id": "p48",
+        "excerpt": "TOTAL 22,522 23,810"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p41",
+    "p42",
+    "p43",
+    "p44",
+    "p45",
+    "p46",
+    "p47",
+    "p48"
+  ],
+  "visually_inspected_regions": [
+    "p41",
+    "p42",
+    "p43",
+    "p44",
+    "p45",
+    "p46",
+    "p47",
+    "p48"
+  ],
+  "unresolved_regions": []
+}

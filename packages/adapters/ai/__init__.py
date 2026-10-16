@@ -1,6 +1,6 @@
-# Purpose: Reserve the ai module or artifact location for: Extract validated fact candidates with provenance.
-# Task: docs/plan.md 3.3.
-# Uses: packages/application/__init__.py, packages/contracts/__init__.py.
-# TODO(agent): implement
+"""Extraction provider implementations."""
 
-__all__ = ()
+from .gemini_pdf import GeminiPdfAdapter
+from .replay import SavedResponseAdapter
+
+__all__ = ["GeminiPdfAdapter", "SavedResponseAdapter"]

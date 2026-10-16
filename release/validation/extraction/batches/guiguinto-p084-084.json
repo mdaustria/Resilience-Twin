@@ -1,0 +1,27 @@
+{
+  "source": "guiguinto",
+  "document_sha256": "b355207cefdee01f3a67876b1f11b442b90c1acb7b7c6b49ad48433c29aafb95",
+  "group_pages": [
+    84
+  ],
+  "extractor_version": "gemini-3.8-flash-v1-20261014",
+  "mode": "live",
+  "raw_sha256": "21606aacd5ef87623d862a3dd8d9e0ca2e2c308c2601dd85c9a2407c645b00a0",
+  "candidate_count": 0,
+  "coverage": [
+    {
+      "physical_page": 84,
+      "region_id": "p84_image_table",
+      "status": "processed",
+      "method": "visual",
+      "recovery_reason": null
+    }
+  ],
+  "issues": [],
+  "usage": {
+    "input_tokens": 868,
+    "output_tokens": 66,
+    "total_tokens": 934
+  },
+  "response_id": "tyPPatr4BfON1e8P_6jA6Ao"
+}

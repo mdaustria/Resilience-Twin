@@ -1,0 +1,38 @@
+{
+  "candidates": [
+    {
+      "field_key": "evacuation_management_target_barangays",
+      "entity_key": "guiguinto_all_barangays",
+      "source_value": "14",
+      "unit": "COUNT",
+      "statement_type": "proposed_target",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 179,
+        "region_id": "p179",
+        "excerpt": "Evacuation Management | 14 Barangays | Participation of the Community | Post Activity Report Number of Participants | 14 barangays"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p178",
+    "p179",
+    "p180",
+    "p181",
+    "p182",
+    "p183",
+    "p184",
+    "p185"
+  ],
+  "visually_inspected_regions": [
+    "p178",
+    "p179",
+    "p180",
+    "p181",
+    "p182",
+    "p183",
+    "p184",
+    "p185"
+  ],
+  "unresolved_regions": []
+}

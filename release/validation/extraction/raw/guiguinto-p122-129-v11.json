@@ -1,0 +1,64 @@
+{
+  "candidates": [
+    {
+      "field_key": "water_emergency_standard_per_person",
+      "entity_key": "emergency_standard",
+      "source_value": "7.6",
+      "unit": "LITER_PER_DAY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 126,
+        "region_id": "p126",
+        "excerpt": "WATER 7.6 L per person/day"
+      }
+    },
+    {
+      "field_key": "evacuation_center_capacity_family",
+      "entity_key": "GMACC_basket_ball_court",
+      "source_value": "400 - 500",
+      "unit": "FAMILY",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 127,
+        "region_id": "p127",
+        "excerpt": "Kapasidad: 400 - 500 Pamilya\n(2000 - 2500 Indibidwal)"
+      }
+    },
+    {
+      "field_key": "evacuation_center_capacity_person",
+      "entity_key": "GMACC_basket_ball_court",
+      "source_value": "2000 - 2500",
+      "unit": "PERSON",
+      "statement_type": "reported_existing",
+      "applicable_date": null,
+      "citation": {
+        "physical_page": 127,
+        "region_id": "p127",
+        "excerpt": "Kapasidad: 400 - 500 Pamilya\n(2000 - 2500 Indibidwal)"
+      }
+    }
+  ],
+  "inspected_regions": [
+    "p122",
+    "p123",
+    "p124",
+    "p125",
+    "p126",
+    "p127",
+    "p128",
+    "p129"
+  ],
+  "visually_inspected_regions": [
+    "p122",
+    "p123",
+    "p124",
+    "p125",
+    "p126",
+    "p127",
+    "p128",
+    "p129"
+  ],
+  "unresolved_regions": []
+}

@@ -1,6 +1,11 @@
-# Purpose: Reserve the routing module or artifact location for: Implement the small reference router and road fixtures.
-# Task: docs/plan.md 2.3, 3.6.
-# Uses: packages/contracts/__init__.py.
-# TODO(agent): implement
+"""Deterministic reference routing for reviewed road fixtures."""
 
-__all__ = ()
+from packages.simulation.routing.reference import (
+    RoadEdge,
+    RoadGraph,
+    RouteResult,
+    TurnRestriction,
+    shortest_route,
+)
+
+__all__ = ("RoadEdge", "RoadGraph", "RouteResult", "TurnRestriction", "shortest_route")
